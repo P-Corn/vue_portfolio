@@ -1,0 +1,72 @@
+
+
+:root {
+    /* COLORS */
+    /* -------------- */
+    /* COOL GRAY */
+    --cool-gray0: hsl(209, 15%, 28%);
+    --cool-gray1: hsl(207, 12%, 43%);
+    --cool-gray2: hsl(207, 12%, 58%);
+    --cool-gray3: hsl(207, 16%, 76%);
+    --cool-gray4: hsl(207, 21%, 88%);
+
+    /* ----------------- */
+    
+    /* FONT SIZES */
+    --font-size0: (12px);
+    --font-size1: (14px);
+    --font-size2: (16px);
+    --font-size3: (18px);
+    --font-size4: (20px);
+    --font-size5: (24px);
+    --font-size6: (30px);
+    --font-size7: (36px);
+    --font-size8: (48px);
+    --font-size9: (60px);
+    --font-size10: (72px);
+
+    /* ----------------- */
+
+
+    /* Font Weight */
+    --font-weight0: 400;
+    --font-weight1: 600;
+
+    /* ----------------- */
+
+    /* SIZES */
+    --size0: 4px;
+    --size1: 8px;
+    --size2: 12px;
+    --size3: 16px;
+    --size4: 24px;
+    --size5: 32px;
+    --size6: 48px;
+    --size7: 64px;
+    --size8: 96px;
+    --size9: 128px;
+    --size10: 192px;
+    --size11: 256px;
+    --size12: 384px;
+    --size13: 512px;
+    --size14: 640px;
+    --size15: 768px;
+
+    /* Line Height */
+
+    /* Margin */
+
+    /* Padding */
+
+    /* Width */
+
+    /* Height */
+    
+    /* Box Shadows */
+
+    /* Border Radius */
+
+    /* Border Width */
+
+    /* Opacity */
+}
