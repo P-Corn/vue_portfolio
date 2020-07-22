@@ -1,8 +1,12 @@
 
 
 :root {
+    /* FONTS */
+
+    /* For a "playful" look use a rounded sans serif */
+
     /* COLORS */
-    /* -------------- */
+
     /* COOL GRAY */
     --cool-gray0: hsl(209, 15%, 28%);
     --cool-gray1: hsl(207, 12%, 43%);
@@ -53,20 +57,15 @@
     --size15: 768px;
 
     /* Line Height */
-
-    /* Margin */
-
-    /* Padding */
-
-    /* Width */
-
-    /* Height */
     
     /* Box Shadows */
 
     /* Border Radius */
+    --border-radius0: 15%;
+    --border-radius1: 30%;
 
     /* Border Width */
 
     /* Opacity */
 }
+
