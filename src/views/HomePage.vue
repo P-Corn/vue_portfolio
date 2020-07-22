@@ -1,21 +1,19 @@
 <template>
-    <div>
-        <div class="hey">
-            <h1>TheHomePage</h1>
-        </div>
-    </div>
+    <main>
+        
+    </main>
 </template>
 
 <script>
 export default {
-  name: 'TheHomePage',
+  name: 'HomePage',
 }
 </script>
 
 <style scoped>
     .hey {
         height: var(--size10);
-        width: var(--size10);
+        width: 100%;
         background-color: var(--cool-gray3);
     }
 </style>

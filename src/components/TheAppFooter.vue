@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+     <footer class="footer">
         <b-container>
             <ul>
                 <li>About</li>
@@ -12,18 +12,20 @@
 
 <script>
 export default {
-  name: 'TheFooter',
+  name: 'TheAppFooter',
 }
 </script>
 
 <style scoped>
     ul{
         list-style: none;
-        margin: auto 0;
+        padding: 0;
     }
     .footer{
-        height: 120px;
-        width: 100%;
+        height: 150px;
         background-color: var(--cool-gray4);
+    }
+    .footer-content{
+        margin: auto 0;
     }
 </style>
