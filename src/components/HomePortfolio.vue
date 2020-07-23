@@ -23,10 +23,11 @@ export default {
   },
   data: function() {
     return {
+      hoverHide: false,
       imageObjects: [
         {
           imgTitle: "Title 1",
-          imgText: "This is a paragraph",
+          imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it is",
           imgSrc: require("@/assets/images/img0.png"),
         },
         {
@@ -64,7 +65,6 @@ export default {
   .grid-image-card {
     margin: var(--size1);
     flex: 30%;
-    max-height: 354px;
   }
 
   ul {

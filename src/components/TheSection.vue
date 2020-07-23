@@ -13,5 +13,7 @@ export default {
 </script>
 
 <style scoped>
-
+  section {
+    margin: var(--size9) 0;
+  }
 </style>

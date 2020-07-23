@@ -7,9 +7,8 @@ import TheServicesPage from '@/views/TheServicesPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
-    { path: '/home', name: 'home', component: TheHomePage },
+    { path: '/', name: 'home', component: TheHomePage },
     { path: '/services', name: 'services', component: TheServicesPage }
-    // { path: '/', name: 'home', component: Home }
   ]
 
 const router = new VueRouter({
