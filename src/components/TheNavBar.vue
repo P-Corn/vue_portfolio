@@ -1,6 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="lg" variant="">
+            <b-container>
             <b-navbar-brand>
                 <router-link to="/home">Logo</router-link>
             </b-navbar-brand>
@@ -18,6 +19,7 @@
                 <b-nav-item href="#">Contact</b-nav-item>
             </b-navbar-nav>
             </b-collapse>
+            </b-container>
         </b-navbar>
     </div>
 </template>

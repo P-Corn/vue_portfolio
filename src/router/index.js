@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import TheHomePage from '@/views/TheHomePage.vue'
+import TheHomePage from '@/views/HomePage/index.vue'
 import TheServicesPage from '@/views/TheServicesPage.vue'
 // import Home from './Home.vue'
 
