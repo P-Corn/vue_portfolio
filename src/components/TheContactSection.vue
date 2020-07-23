@@ -54,17 +54,19 @@ export default {
             }
         },
         created() {
-            let ckeditor = document.createElement('script');    ckeditor.setAttribute('src',"//cdn.ckeditor.com/4.6.2/full/ckeditor.js");
-            document.head.appendChild(ckeditor);
+            let ckeditor = document.createElement('script');
+            // let emailjsFunction = document.createElement('script');
+                ckeditor.setAttribute('src',"https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js");
+                document.head.appendChild(ckeditor);
         },
         methods: {
         // sendEmail: (e) => {
-        // // emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
-        // //     .then((result) => {
-        // //         console.log('SUCCESS!', result.status, result.text);
-        // //     }, (error) => {
-        // //         console.log('FAILED...', error);
-        // //     });
+        // emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
+        //     .then((result) => {
+        //         console.log('SUCCESS!', result.status, result.text);
+        //     }, (error) => {
+        //         console.log('FAILED...', error);
+        //     });
         // },
         onSubmit(evt) {
             evt.preventDefault()

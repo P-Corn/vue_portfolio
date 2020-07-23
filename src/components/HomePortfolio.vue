@@ -23,7 +23,6 @@ export default {
   },
   data: function() {
     return {
-      hoverHide: false,
       imageObjects: [
         {
           imgTitle: "Title 1",

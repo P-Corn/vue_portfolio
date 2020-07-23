@@ -1,11 +1,13 @@
 <template>
-    <a v-on:hover="hoverHide=true" class="grid-image-card__container" href="#">
+    <a @mouseover="hoverHide = true" @mouseleave="hoverHide = false" class="grid-image-card__container" href="#">
       <img :src="imgSrc" alt="">
-      <div v-show="!hoverHide" class="grid-image-card__text">
-        <h3>{{ imgTitle }}</h3>
-        <p>{{imgText}}</p>
-      </div>
-      <div class="dark-overlay"></div>
+      <transition class="fade">
+        <div v-show="!hoverHide" class="grid-image-card__text">
+          <h3>{{ imgTitle }}</h3>
+          <p>{{imgText}}</p>
+        </div>
+      </transition>
+      <div v-show="!hoverHide" class="dark-overlay"></div>
     </a>
 </template>
 
@@ -16,11 +18,20 @@ export default {
       imgSrc: String,
       imgTitle: String,
       imgText: String
+  },
+  data: function() {
+    return {
+      hoverHide: false
+      } 
   }
 }
 </script>
 
 <style scoped>
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 3s;
+}
 
   .dark-overlay {
     height: 100%;
