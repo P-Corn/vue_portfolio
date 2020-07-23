@@ -1,16 +1,29 @@
 <template>
     <TheSection>
         <div class="contact-section">
-            <div class="contact-text">This part is going to be the content on the left of the Form</div>
+            <div class="contact-text">
+                <h4>Contact Us</h4>
+                <h1>We'll respond if we aren't asleep</h1>
+            </div>
             <div class="contact-form-container">
-                <form action="#">
+                <form @submit.prevent="sendEmail">
                     <fieldset>
-                        <div>
-                            <input type="text" id="firstName" value="First Name">
-                            <input type="text" id="lastName" value="Last Name">
+                        <div class="small-input-container">
+                            <input type="text" id="firstName" placeholder="First Name">
+                            <input type="text" id="lastName" placeholder="Last Name">
                         </div>
-                        <div>
-                            <input type="text" id="email" value="Email">
+                        <div class="company-container">
+                            <input type="text" id="company" placeholder="Company Name">
+                        </div>
+                        <div class="small-input-container">
+                            <input type="text" id="email" placeholder="Email">
+                            <input type="text" id="phoneNumber" placeholder="Phone Number">
+                        </div>
+                        <div class="textarea-container">
+                            <textarea name="message"/>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">Submit</button>
                         </div>
                     </fieldset>
                 </form>
@@ -20,6 +33,7 @@
 </template>
 
 <script>
+// import emailjs from 'emailjs-com'
 import TheSection from './TheSection.vue'
 
 export default {
@@ -37,9 +51,21 @@ export default {
             },
             foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
             show: true
-        }
+            }
+        },
+        created() {
+            let ckeditor = document.createElement('script');    ckeditor.setAttribute('src',"//cdn.ckeditor.com/4.6.2/full/ckeditor.js");
+            document.head.appendChild(ckeditor);
         },
         methods: {
+        // sendEmail: (e) => {
+        // // emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
+        // //     .then((result) => {
+        // //         console.log('SUCCESS!', result.status, result.text);
+        // //     }, (error) => {
+        // //         console.log('FAILED...', error);
+        // //     });
+        // },
         onSubmit(evt) {
             evt.preventDefault()
             alert(JSON.stringify(this.form))
@@ -62,14 +88,54 @@ export default {
 </script>
 
 <style scoped>
-    .contact-section{
-        margin: 100px 0;
+    .contact-section {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .contact-text{
+    .contact-text {
+        max-width: var(--size13);
         margin: auto 0;
     }
-    .contact-form-container{
-        margin: 0 auto;
+
+    .contact-text h1{
+        font-weight: var(--font-weight1);
+    }
+    .contact-text h4 {
+        font-weight: var(--font-weight0);
+    }
+    /* containers and inside of contact form */
+    .contact-form-container {
+        padding: var(--size4) var(--size0);
+        background-color: var(--cool-gray4);
+    }
+    .small-input-container input {
+        margin: var(--size4);
+    }
+
+    /* Company part of container */
+    .company-container{
+        margin: var(--size2) var(--size4);
+    }
+    .company-container input {
+        width: 100%;
+        margin: var(--size2) 0;
+    }
+
+    /* textarea part of form */
+    textarea {
+        width: 100%;
+        height: var(--size8);
+    }
+    .textarea-container{
+        margin: var(--size4) var(--size4);
+    }
+
+    button{
+        width: 100%;
+        margin: var(--size4) 0;
+    }
+    .button-container{
+        margin: 0 var(--size4);
     }
 </style>
