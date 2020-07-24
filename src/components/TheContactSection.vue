@@ -50,7 +50,7 @@ export default {
                 .then((result) => {
                     var frm = document.getElementsByName('contact-form')[0];
                     var notification = document.getElementsByName('notification')[0];
-                    console.log(notification);
+                    
                     frm.reset();
                     console.log('SUCCESS!', result.status, result.text);
                     notification.style.display = "block";
