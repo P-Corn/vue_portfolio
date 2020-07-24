@@ -6,21 +6,24 @@
                 <h1>We'll respond if we aren't asleep</h1>
             </div>
             <div class="contact-form-container">
-                <form @submit.prevent="sendEmail">
+                <form name="contact-form" @submit.prevent="sendEmail">
                     <fieldset>
                         <div class="small-input-container">
-                            <input type="text" id="firstName" placeholder="First Name">
-                            <input type="text" id="lastName" placeholder="Last Name">
+                            <input type="text" name="firstName" placeholder="First Name">
+                            <input type="text" name="lastName" placeholder="Last Name">
                         </div>
                         <div class="company-container">
-                            <input type="text" id="company" placeholder="Company Name">
+                            <input type="text" name="company" placeholder="Company Name">
                         </div>
                         <div class="small-input-container">
-                            <input type="text" id="email" placeholder="Email">
-                            <input type="text" id="phoneNumber" placeholder="Phone Number">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <input type="text" name="phoneNumber" placeholder="Phone Number(optional)">
                         </div>
                         <div class="textarea-container">
                             <textarea name="message"/>
+                        </div>
+                        <div class="notification" name="notification">
+                            Thank you for submitting! We will get back to you shortly.
                         </div>
                         <div class="button-container">
                             <button type="submit">Submit</button>
@@ -33,7 +36,7 @@
 </template>
 
 <script>
-// import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 import TheSection from './TheSection.vue'
 
 export default {
@@ -41,51 +44,23 @@ export default {
   components: {
     TheSection,
   },
-    data() {
-        return {
-            form: {
-            email: '',
-            name: '',
-            food: null,
-            checked: []
-            },
-            foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
-            show: true
-            }
-        },
-        created() {
-            let ckeditor = document.createElement('script');
-            // let emailjsFunction = document.createElement('script');
-                ckeditor.setAttribute('src',"https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js");
-                document.head.appendChild(ckeditor);
-        },
-        methods: {
-        // sendEmail: (e) => {
-        // emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
-        //     .then((result) => {
-        //         console.log('SUCCESS!', result.status, result.text);
-        //     }, (error) => {
-        //         console.log('FAILED...', error);
-        //     });
-        // },
-        onSubmit(evt) {
-            evt.preventDefault()
-            alert(JSON.stringify(this.form))
-        },
-        onReset(evt) {
-            evt.preventDefault()
-            // Reset our form values
-            this.form.email = ''
-            this.form.name = ''
-            this.form.food = null
-            this.form.checked = []
-            // Trick to reset/clear native browser form validation state
-            this.show = false
-            this.$nextTick(() => {
-            this.show = true
-            })
+    methods: {
+        sendEmail: (e) => {
+        emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
+            .then((result) => {
+                var frm = document.getElementsByName('contact-form')[0];
+                var notification = document.getElementsByName('notification')[0];
+                console.log(notification);
+                frm.reset();
+                console.log('SUCCESS!', result.status, result.text);
+                notification.style.display = "block";
+                //here i needs to add a notification
+            }, (error) => {
+                console.log('FAILED...', error);
+                //here i need to put an error notification
+            });
         }
-        }
+    }
 }
 </script>
 
@@ -95,11 +70,19 @@ export default {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    /* class of notification on submit */
+    .notification {
+        display: none;
+        margin: auto var(--size4);
+        text-align: center;
+        background-color: var(--cool-gray2);
+        padding: var(--size2) 0;
+    }
+    /* text section of container section */
     .contact-text {
         max-width: var(--size13);
         margin: auto 0;
     }
-
     .contact-text h1{
         font-weight: var(--font-weight1);
     }
@@ -114,7 +97,6 @@ export default {
     .small-input-container input {
         margin: var(--size4);
     }
-
     /* Company part of container */
     .company-container{
         margin: var(--size2) var(--size4);
@@ -123,7 +105,6 @@ export default {
         width: 100%;
         margin: var(--size2) 0;
     }
-
     /* textarea part of form */
     textarea {
         width: 100%;

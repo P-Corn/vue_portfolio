@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import TheSection from './TheSection.vue'
-import GridImageCard from './GridImageCard.vue'
+import TheSection from '@/components/TheSection.vue'
+import GridImageCard from '@/components/GridImageCard.vue'
 
 export default {
   name: 'HomePortfolio',

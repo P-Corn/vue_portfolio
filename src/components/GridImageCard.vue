@@ -1,13 +1,11 @@
 <template>
     <a @mouseover="hoverHide = true" @mouseleave="hoverHide = false" class="grid-image-card__container" href="#">
-      <img :src="imgSrc" alt="">
-      <transition class="fade">
-        <div v-show="!hoverHide" class="grid-image-card__text">
+      <img v-bind:class="[hoverHide ? 'zoom-out' : 'zoom-in']" :src="imgSrc" alt="">
+        <div v-bind:class="[hoverHide ? 'hide' : 'show']" class="grid-image-card__text">
           <h3>{{ imgTitle }}</h3>
           <p>{{imgText}}</p>
         </div>
-      </transition>
-      <div v-show="!hoverHide" class="dark-overlay"></div>
+      <div v-bind:class="[hoverHide ? 'hide' : 'show']" class="dark-overlay"></div>
     </a>
 </template>
 
@@ -29,9 +27,24 @@ export default {
 
 <style scoped>
 
-.fade-enter-active, .fade-leave-active {
-  transition: all 3s;
-}
+/* ANIMATION CLASSES */
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .zoom-in {
+    transform: scale(1.15);
+  }
+
+  .zoom-out {
+    transform: scale(1);
+  }
+
+/* ---------------- */
 
   .dark-overlay {
     height: 100%;
@@ -40,6 +53,8 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 2;
+    transition: all ease .4s;
   }
 
   .grid-image-card__container {
@@ -47,6 +62,7 @@ export default {
     color: inherit;
     position: relative;
     display: inline-block;
+    overflow: hidden;
   }
 
   .grid-image-card__text {
@@ -54,7 +70,8 @@ export default {
     bottom: 0;
     padding: var(--size5);
     color: #fff;
-    z-index: 2;
+    z-index: 4;
+    transition: ease .3s;
   }
 
   h3 {
@@ -64,5 +81,6 @@ export default {
 
   img {
     width: 100%;
+    transition: all ease .4s;
   }
 </style>

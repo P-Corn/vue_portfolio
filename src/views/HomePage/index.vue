@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HomePortfolio from '@/components/HomePortfolio.vue'
+import HomePortfolio from './HomePortfolio.vue'
 import TheContactSection from '@/components/TheContactSection.vue'
 
 export default {
