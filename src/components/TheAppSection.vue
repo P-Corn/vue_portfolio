@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'TheSection',
+  name: 'TheAppSection',
 }
 </script>
 

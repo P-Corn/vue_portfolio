@@ -10,6 +10,7 @@
 
 <script>
 import HomePortfolio from './HomePortfolio.vue'
+import HomeServices from './HomeServices.vue'
 import TheContactSection from '@/components/TheContactSection.vue'
 import TheFooter from '@/components/TheFooter.vue'
 
@@ -17,6 +18,7 @@ export default {
   name: 'HomePage',
   components: {
       HomePortfolio,
+      HomeServices,
       TheContactSection,
       TheFooter
   }

@@ -1,7 +1,7 @@
 <template>
     <div class="service-card__container">
-      <div class="service-card__image">
-        <img :src="imgSrc" alt="">
+      <div class="service-card__icon">
+        <b-icon :icon="iconSrc"></b-icon>
       </div>
       <div class="service-card__title">
         <h3>{{imgTitle}}</h3>
@@ -16,7 +16,7 @@
 export default {
   name: 'ServiceItemCard',
   props: {
-      imgSrc: String,
+      iconSrc: String,
       imgTitle: String,
       imgText: String
   },
@@ -29,5 +29,14 @@ export default {
 </script>
 
 <style scoped>
+
+.service-card__container {
+  background-color: var(--cool-gray5);
+  height: var(--size12);
+}
+
+.service-card__image {
+
+}
 
 </style>

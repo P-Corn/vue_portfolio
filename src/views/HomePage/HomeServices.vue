@@ -1,10 +1,9 @@
 <template>
     <TheSection>
       <ul class="services-section__grid">
-        <li v-for="imageObject in imageObjects" :key="imageObject.id">
+        <li class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
           <ServiceItemCard 
             :imgSrc="imageObject.imgSrc" 
-            :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
         </li>
       </ul>
@@ -27,22 +26,17 @@ export default {
         {
           imgTitle: "Title 1",
           imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it is",
-          imgSrc: require("@/assets/images/img0.png"),
+          iconSrc: "circle-fill",
         },
         {
           imgTitle: "Title 2",
           imgText: "This is a paragraph as well",
-          imgSrc: require("@/assets/images/img1.png"),
+          iconSrc: "circle-fill",
         },
         {
           imgTitle: "Title 3",
           imgText: "This is paragraph 3",
-          imgSrc: require("@/assets/images/img2.png"),
-        },
-        {
-          imgTitle: "Title 4",
-          imgText: "This is a paragraph 4",
-          imgSrc: require("@/assets/images/img3.png"),
+          iconSrc: "circle-fill",
         }
       ]
     }
@@ -51,5 +45,19 @@ export default {
 </script>
 
 <style scoped>
+.services-section__grid {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: var(--size6);
+  /* grid-template-columns: 300px 300px 300px; */
+}
+
+.services-section__grid-card {
+}
 
 </style>
