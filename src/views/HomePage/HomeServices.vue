@@ -1,7 +1,7 @@
 <template>
     <TheSection>
       <ul class="services-section__grid">
-        <li class="service-item-card" v-for="imageObject in imageObjects" :key="imageObject.id">
+        <!-- <li class="service-item-card" v-for="imageObject in imageObjects" :key="imageObject.id"> I WENT TO GET FOOD!! AM HACKED U -->
           <GridImageCard 
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"

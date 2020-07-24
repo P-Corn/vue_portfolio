@@ -46,19 +46,19 @@ export default {
   },
     methods: {
         sendEmail: (e) => {
-        emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
-            .then((result) => {
-                var frm = document.getElementsByName('contact-form')[0];
-                var notification = document.getElementsByName('notification')[0];
-                console.log(notification);
-                frm.reset();
-                console.log('SUCCESS!', result.status, result.text);
-                notification.style.display = "block";
-                //here i needs to add a notification
-            }, (error) => {
-                console.log('FAILED...', error);
-                //here i need to put an error notification
-            });
+            emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
+                .then((result) => {
+                    var frm = document.getElementsByName('contact-form')[0];
+                    var notification = document.getElementsByName('notification')[0];
+                    console.log(notification);
+                    frm.reset();
+                    console.log('SUCCESS!', result.status, result.text);
+                    notification.style.display = "block";
+                    //here i needs to add a notification
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    //here i need to put an error notification
+                });
         }
     }
 }

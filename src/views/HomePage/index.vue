@@ -3,18 +3,21 @@
         <h1 class="text-center">This is the home page!</h1>
         <HomePortfolio />
         <TheContactSection />
+        <TheFooter />
     </main>
 </template>
 
 <script>
 import HomePortfolio from './HomePortfolio.vue'
 import TheContactSection from '@/components/TheContactSection.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 export default {
   name: 'HomePage',
   components: {
       HomePortfolio,
-      TheContactSection
+      TheContactSection,
+      TheFooter
   }
 }
 </script>
