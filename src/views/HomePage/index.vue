@@ -2,6 +2,7 @@
     <main>
         <h1 class="text-center">This is the home page!</h1>
         <HomePortfolio />
+        <HomeServices />
         <TheContactSection />
         <TheFooter />
     </main>

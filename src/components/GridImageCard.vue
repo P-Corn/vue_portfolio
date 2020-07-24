@@ -1,11 +1,11 @@
 <template>
     <a @mouseover="hoverHide = true" @mouseleave="hoverHide = false" class="grid-image-card__container" href="#">
-      <img v-bind:class="[hoverHide ? 'zoom-out' : 'zoom-in']" :src="imgSrc" alt="">
-        <div v-bind:class="[hoverHide ? 'hide' : 'show']" class="grid-image-card__text">
+      <img :class="[hoverHide ? 'zoom-out' : 'zoom-in']" :src="imgSrc" alt="">
+        <div :class="[hoverHide ? 'hide' : 'show']" class="grid-image-card__text">
           <h3>{{ imgTitle }}</h3>
           <p>{{imgText}}</p>
         </div>
-      <div v-bind:class="[hoverHide ? 'hide' : 'show']" class="dark-overlay"></div>
+      <div :class="[hoverHide ? 'hide' : 'show']" class="dark-overlay"></div>
     </a>
 </template>
 
@@ -71,7 +71,7 @@ export default {
     padding: var(--size5);
     color: #fff;
     z-index: 4;
-    transition: ease .3s;
+    transition: ease .35s;
   }
 
   h3 {

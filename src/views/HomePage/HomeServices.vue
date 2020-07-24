@@ -1,8 +1,8 @@
 <template>
     <TheSection>
       <ul class="services-section__grid">
-        <!-- <li class="service-item-card" v-for="imageObject in imageObjects" :key="imageObject.id"> I WENT TO GET FOOD!! AM HACKED U -->
-          <GridImageCard 
+        <li v-for="imageObject in imageObjects" :key="imageObject.id">
+          <ServiceItemCard 
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
@@ -19,7 +19,7 @@ export default {
   name: 'HomePortfolio',
   components: {
     TheSection,
-    GridImageCard
+    ServiceItemCard
   },
   data: function() {
     return {

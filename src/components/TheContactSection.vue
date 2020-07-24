@@ -6,7 +6,7 @@
                 <h1>We'll respond if we aren't asleep</h1>
             </div>
             <div class="contact-form-container">
-                <form name="contact-form" @submit.prevent="sendEmail">
+                <form name="contact-form" v-bind:class="[loading ? 'hideAnimate' : '']" @submit.prevent="sendEmail">
                     <fieldset>
                         <div class="small-input-container">
                             <input type="text" name="firstName" placeholder="First Name">
@@ -30,6 +30,12 @@
                         </div>
                     </fieldset>
                 </form>
+                <transition
+                     name="spin"
+                     enter-active-class="loadAnimate"
+                     leave-active-class="hideAnimate">
+                     <b-icon-arrow-clockwise v-bind:class="[loading ? 'loadAnimate' : 'hideAnimate']"></b-icon-arrow-clockwise>
+                </transition>
             </div>
         </div>
     </TheSection>
@@ -40,31 +46,57 @@ import emailjs from 'emailjs-com'
 import TheSection from './TheSection.vue'
 
 export default {
-  name: 'TheContactSection',
-  components: {
-    TheSection,
-  },
+    name: 'TheContactSection',
+    components: {
+        TheSection,
+    },
+    data: function() {
+        return {
+            loading: false,
+        }
+    },
     methods: {
         sendEmail: (e) => {
+            // v-bind: :) to :(
+            console.log(e);
+            e.loading = true;
             emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
                 .then((result) => {
-                    var frm = document.getElementsByName('contact-form')[0];
-                    var notification = document.getElementsByName('notification')[0];
-                    
+                    let frm = document.getElementsByName('contact-form')[0];
+                    let notification = document.getElementsByName('notification')[0];
+
+                    frm.style.display = "none"; //removes form from container
+
+                    //removes text after submit is pressed
                     frm.reset();
                     console.log('SUCCESS!', result.status, result.text);
                     notification.style.display = "block";
-                    //here i needs to add a notification
+
                 }, (error) => {
                     console.log('FAILED...', error);
                     //here i need to put an error notification
-                });
+            });
+            e.loading = false;
         }
     }
 }
 </script>
 
 <style scoped>
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .loadAnimate{
+        animation: spin 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .hideAnimate{
+        display: none !important;
+    }
     .contact-section {
         display: flex;
         flex-wrap: wrap;
