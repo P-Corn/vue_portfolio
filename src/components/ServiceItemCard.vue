@@ -1,7 +1,7 @@
 <template>
     <div class="service-card__container">
       <div class="service-card__icon">
-        <b-icon :icon="iconSrc"></b-icon>
+        <b-icon class="service-card__icon-svg" icon="circle-fill"></b-icon>
       </div>
       <div class="service-card__title">
         <h3>{{imgTitle}}</h3>
@@ -32,11 +32,14 @@ export default {
 
 .service-card__container {
   background-color: var(--cool-gray5);
-  height: var(--size12);
+  text-align: center;
 }
 
-.service-card__image {
-
+svg {
+  color: var(--cool-gray4);
+  height: var(--size7);
+  width: var(--size7);
+  margin-bottom: var(--size3);
 }
 
 </style>

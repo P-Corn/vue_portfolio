@@ -4,7 +4,8 @@
         <li class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
           <ServiceItemCard 
             :imgSrc="imageObject.imgSrc" 
-            :imgText="imageObject.imgText"   />
+            :imgText="imageObject.imgText"
+            :imgTitle="imageObject.imgTitle"   />
         </li>
       </ul>
     </TheSection>
