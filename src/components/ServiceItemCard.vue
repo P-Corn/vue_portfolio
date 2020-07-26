@@ -31,15 +31,27 @@ export default {
 <style scoped>
 
 .service-card__container {
-  background-color: var(--cool-gray5);
+  /* background-color: var(--cool-gray5); */
   text-align: center;
 }
 
 svg {
+  /* Not the final color, this is a placeholder to show off the intent */
+  fill: #B8EAFF;
   color: var(--cool-gray4);
   height: var(--size7);
   width: var(--size7);
   margin-bottom: var(--size3);
+}
+
+.service-card__title h3 {
+  font-weight: var(--font-weight1);
+  font-size: var(--font-size5);
+}
+
+.service-card__text p {
+  color: var(--cool-gray1);
+  margin: 0;
 }
 
 </style>

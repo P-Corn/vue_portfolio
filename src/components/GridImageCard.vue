@@ -75,7 +75,7 @@ export default {
   }
 
   h3 {
-    font-size: var(--size7);
+    font-size: var(--font-size9);
     font-weight: var(--font-weight1);
   }
 

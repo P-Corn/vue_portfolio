@@ -25,18 +25,18 @@ export default {
     return {
       imageObjects: [
         {
-          imgTitle: "Title 1",
+          imgTitle: "Maintenance",
           imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it is",
           iconSrc: "circle-fill",
         },
         {
-          imgTitle: "Title 2",
-          imgText: "This is a paragraph as well",
+          imgTitle: "Hosting",
+          imgText: "This is a paragraph as well. More text lorem yeah yeah test test 123 adding test text.",
           iconSrc: "circle-fill",
         },
         {
-          imgTitle: "Title 3",
-          imgText: "This is paragraph 3",
+          imgTitle: "Web development",
+          imgText: "This is paragraph 3. We make cool sites isn't that obvious by the awesome stuff we have here?",
           iconSrc: "circle-fill",
         }
       ]
@@ -53,9 +53,11 @@ export default {
   width: 100%;
   display: grid;
   list-style: none;
-  grid-template-columns: repeat(auto-fill, 300px);
+
+  /* COULDNT USE OUR CSS SHEET FOR SIZING HERE. GIVES AN ERROR USING VAR. IS THERE A SOLUTION FOR THIS?? */
+  grid-template-columns: repeat(auto-fill, 265px);
+
   grid-gap: var(--size6);
-  /* grid-template-columns: 300px 300px 300px; */
 }
 
 .services-section__grid-card {

@@ -3,7 +3,7 @@
         <div class="contact-section">
             <div class="contact-text">
                 <h4>Contact Us</h4>
-                <h1>We'll respond if we aren't asleep</h1>
+                <h2>We'll respond if we aren't asleep</h2>
             </div>
             <div class="contact-form-container">
                 <form name="contact-form" v-bind:class="[loading ? 'hideAnimate' : '']" @submit.prevent="sendEmail">
@@ -115,8 +115,9 @@ export default {
         max-width: var(--size13);
         margin: auto 0;
     }
-    .contact-text h1{
+    .contact-text h2{
         font-weight: var(--font-weight1);
+        font-size: var(--font-size7);
     }
     .contact-text h4 {
         font-weight: var(--font-weight0);

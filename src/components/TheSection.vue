@@ -14,6 +14,6 @@ export default {
 
 <style scoped>
   section {
-    margin: var(--size9) 0;
+    margin: var(--size10) 0;
   }
 </style>
