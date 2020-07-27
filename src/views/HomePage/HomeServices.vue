@@ -38,7 +38,7 @@ export default {
           imgTitle: "Web development",
           imgText: "This is paragraph 3. We make cool sites isn't that obvious by the awesome stuff we have here?",
           iconSrc: "circle-fill",
-        }
+        },
       ]
     }
   }
@@ -47,24 +47,18 @@ export default {
 
 <style scoped>
 .services-section__grid {
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   display: flex;
   padding: 0;
 }
 
 .services-section__grid-card {
-  justify-content: center;
-  display: flex;
   margin-bottom: var(--size6);
+  max-width: var(--size12);
 }
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
 
 </style>

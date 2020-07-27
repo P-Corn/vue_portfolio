@@ -1,20 +1,19 @@
+-----------------!!!!!!!!PRIORITY TODOS!!!!!!!!!!!!!!---------------------------
 Go listen to Logic's The Incredible True Story
-and No Pressure
-
+followed by the new album No Pressure
+-------------------------------------------------------------------------------- :)
 -----
 ISSUES
 -----
-
 -Needed to change the background color of the contact section. Couldn't color the entire
 section because of the margin. Changed it to padding and it works... But it doesn't use the 
-awesome overlapping effect like margin does. It's less consistent.
+awesome overlapping effect like margin does. It's less consistent. Not a huge issue.
 
 -------------------------
 
 -----
 TODOS
 -----
-
 -Contact form was changed so the forms functionality might need to be adjusted.
 
 -------------------------
@@ -26,5 +25,10 @@ NOTES
 
 -Make sure to use the font size variables for font sizes and not the general sizing variables.
 I did this..
+
+-USE BOOTSTRAP GRID TO LAYOUT A SECTION. You can look at other sections for examples. https://bootstrap-vue.org/docs/components/layout#utilities-for-layout
+
+-Make things separate components from the get go. Dividing a component later is just kinda hell.
+Makes redoing the styling tedious.
 
 -------------------------

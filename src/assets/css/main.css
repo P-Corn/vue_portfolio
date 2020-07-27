@@ -24,11 +24,12 @@
     --font-size3: 18px;
     --font-size4: 20px;
     --font-size5: 24px;
-    --font-size6: 30px;
-    --font-size7: 36px;
-    --font-size8: 48px;
-    --font-size9: 60px;
-    --font-size10: 72px;
+    --font-size6: 26px;
+    --font-size7: 30px;
+    --font-size8: 36px;
+    --font-size9: 48px;
+    --font-size10: 60px;
+    --font-size11: 72px;
 
     /* ----------------- */
 
@@ -53,10 +54,18 @@
     --size10: 192px;
     --size11: 256px;
     --size12: 290px;
+    --size-345: 345px;
     --size13: 384px;
     --size14: 512px;
     --size15: 640px;
     --size16: 768px;
+
+    /* SCREEN SIZES */
+
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl-sz: 1200;
 
     /* Line Height */
     

@@ -7,16 +7,16 @@
                             <input class="small-input" type="text" name="companyName" placeholder="Company name">
                         </div>
                         <div class="small-input-container">
-                            <input class="small-input" type="text" name="email" id="email" placeholder="Email">
-                            <input class="small-input" type="text" name="phoneNumber" placeholder="Phone number">
+                            <input class="small-input" type="email" name="email" id="email" placeholder="Email">
+                            <input class="small-input" type="tel" name="phoneNumber" placeholder="Phone number">
                         </div>
                         <div class="text-area-container">
-                            <textarea class="text-area" name="message"/>
+                            <textarea placeholder="What can we do for you?" class="text-area" name="message"/>
                         </div>
                         <div class="notification" name="notification">
                             Thank you for submitting! We will get back to you shortly.
                         </div>
-                        <div class="button-container">
+                        <div class="submit-button-container">
                             <button type="submit">Submit</button>
                         </div>
                     </fieldset>
@@ -74,18 +74,16 @@ export default {
     /* containers and inside of contact form */
 
     .contact-form-container {
-        padding: 0 var(--size3);
         background-color: var(--cool-gray5);
     }
 
     .small-input-container,
     .text-area-container,
-    .button-container {
+    .submit-button-container {
         margin: var(--size6) 0;
     }
 
     .small-input,
-    .large-input,
     .text-area,
     button {
         border: none;
@@ -97,21 +95,19 @@ export default {
     }
 
     .small-input {
-        width: 48%;
+        width: 46%;
+        padding: var(--size0);
     }
 
     textarea {
         width: 100%;
         height: var(--size8);
     }
-    .textarea-container{
 
-    }
-
-    button{
+    .submit-button-container button{
         width: 100%;
-    }
-    .button-container{
+        background-color: var(--cool-gray4);
+        padding: var(--size0);
     }
 
      @keyframes spin {
@@ -136,4 +132,13 @@ export default {
         background-color: var(--cool-gray2);
         padding: var(--size2) 0;
     }
+
+    /* MEDIA */
+
+    @media only screen and (max-width: 576px) {
+  
+        .small-input {
+            width: 46%;
+        }
+}
 </style>

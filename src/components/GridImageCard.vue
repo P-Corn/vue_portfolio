@@ -69,15 +69,19 @@ export default {
   .grid-image-card__text {
     position: absolute;
     bottom: 0;
-    padding: var(--size5);
+    padding: var(--size4);
     color: #fff;
     z-index: 4;
     transition: ease .35s;
   }
 
   h3 {
-    font-size: var(--font-size9);
+    font-size: var(--font-size8);
     font-weight: var(--font-weight1);
+  }
+
+  p {
+    font-size: var(--font-size3);
   }
 
   img {

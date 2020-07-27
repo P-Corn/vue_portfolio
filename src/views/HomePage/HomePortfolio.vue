@@ -1,6 +1,6 @@
 <template>
     <TheSection>
-      <b-row cols="1" cols-md="2" cols-lg="3" class="portfolio-section-grid">
+      <b-row cols="1" cols-md="1" cols-lg="2" class="portfolio-section-grid">
         <b-col class="portfolio-section-card" v-for="imageObject in imageObjects" :key="imageObject.id">
           <GridImageCard 
             :imgSrc="imageObject.imgSrc" 
@@ -25,22 +25,22 @@ export default {
     return {
       imageObjects: [
         {
-          imgTitle: "Title 1",
-          imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it is",
+          imgTitle: "Casa Ole",
+          imgText: "A mexican restaurant chain with stuff. Filler text yeah yeah.",
           imgSrc: require("@/assets/images/img0.png"),
         },
         {
-          imgTitle: "Title 2",
-          imgText: "This is a paragraph as well",
+          imgTitle: "Acatea",
+          imgText: "We actually never finished this site. We dun learnt tho.",
           imgSrc: require("@/assets/images/img1.png"),
         },
         {
-          imgTitle: "Title 3",
-          imgText: "This is paragraph 3",
+          imgTitle: "Fyresite",
+          imgText: "We definitely didn't build this site.",
           imgSrc: require("@/assets/images/img2.png"),
         },
         {
-          imgTitle: "Title 4",
+          imgTitle: "Raine's Logo Design",
           imgText: "This is a paragraph 4",
           imgSrc: require("@/assets/images/img3.png"),
         },
@@ -68,8 +68,53 @@ export default {
   }
 
   .portfolio-section-card {
-    max-width: var(--size13);
+    max-width: var(--size15);
     margin-bottom: var(--size5);
+    max-height: var(--size13);
+
+    /* WIDE */
+    /* max-width: var(--size16);
+    max-height: var(--size14); */
+  }
+
+  /* MEDIA */
+
+  @media only screen and (max-width: 576px) {
+    .portfolio-section-card {
+      max-height: var(--size12);
+      max-width: var(--size-345);
+    }
+  }
+
+  @media only screen and (min-width: 576px) (max-width: 768px){
+    .portfolio-section-card {
+      max-height: var(--size12);
+    }
+  }
+
+  @media only screen and (min-width: 768px) (max-width: 992px){
+
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px){
+    .portfolio-section-card {
+      max-height: var(--size12);
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .portfolio-section-card {
+      max-height: var(--size-345);
+      margin-bottom: var(--size5);
+    }
+  }
+
+  /* --------- */
+
+  @media only screen and (max-width: 992px){
+    .portfolio-section-card {
+      margin-bottom: var(--size6);
+    }
   }
 
 </style>
