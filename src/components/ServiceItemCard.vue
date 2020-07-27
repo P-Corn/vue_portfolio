@@ -33,6 +33,7 @@ export default {
 .service-card__container {
   /* background-color: var(--cool-gray5); */
   text-align: center;
+  max-width: var(--size12);
 }
 
 svg {

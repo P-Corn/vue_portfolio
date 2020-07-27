@@ -13,7 +13,11 @@ export default {
 </script>
 
 <style scoped>
+  .bg-color {
+    height: 100%;
+  }
+
   section {
-    margin: var(--size10) 0;
+    padding: var(--size7) 0;
   }
 </style>

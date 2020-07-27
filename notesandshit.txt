@@ -1,0 +1,30 @@
+Go listen to Logic's The Incredible True Story
+and No Pressure
+
+-----
+ISSUES
+-----
+
+-Needed to change the background color of the contact section. Couldn't color the entire
+section because of the margin. Changed it to padding and it works... But it doesn't use the 
+awesome overlapping effect like margin does. It's less consistent.
+
+-------------------------
+
+-----
+TODOS
+-----
+
+-Contact form was changed so the forms functionality might need to be adjusted.
+
+-------------------------
+
+-----
+NOTES
+-----
+-Organize CSS like you're looking at the thing you are styling, from top to bottom.
+
+-Make sure to use the font size variables for font sizes and not the general sizing variables.
+I did this..
+
+-------------------------

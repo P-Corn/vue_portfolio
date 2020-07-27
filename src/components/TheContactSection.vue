@@ -1,5 +1,5 @@
 <template>
-    <TheSection>
+    <TheSection class="bg-color">
         <div class="contact-section">
             <div class="contact-text">
                 <h4>Contact Us</h4>
@@ -34,20 +34,11 @@ export default {
 </script>
 
 <style scoped>
-    /* @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+
+    .bg-color {
+        background-color: var(--cool-gray5);
     }
-    .loadAnimate{
-        animation: spin 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    }
-    .hideAnimate{
-        display: none !important;
-    } */
+
     .contact-section {
         display: flex;
         flex-wrap: wrap;
@@ -68,9 +59,11 @@ export default {
     }
     .contact-text h2{
         font-weight: var(--font-weight1);
-        font-size: var(--font-size7);
+        font-size: var(--font-size8);
     }
     .contact-text h4 {
         font-weight: var(--font-weight0);
+        font-size: var(--font-size6);
+        margin-bottom: var(--size3);
     }
 </style>

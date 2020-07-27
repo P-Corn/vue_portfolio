@@ -3,18 +3,15 @@
                 <form name="contact-form" v-bind:class="[loading ? 'hideAnimate' : '']" @submit.prevent="sendEmail">
                     <fieldset>
                         <div class="small-input-container">
-                            <input type="text" name="firstName" placeholder="First Name">
-                            <input type="text" name="lastName" placeholder="Last Name">
-                        </div>
-                        <div class="company-container">
-                            <input type="text" name="company" placeholder="Company Name">
+                            <input class="small-input" type="text" name="name" placeholder="Your name">
+                            <input class="small-input" type="text" name="companyName" placeholder="Company name">
                         </div>
                         <div class="small-input-container">
-                            <input type="text" name="email" id="email" placeholder="Email">
-                            <input type="text" name="phoneNumber" placeholder="Phone Number(optional)">
+                            <input class="small-input" type="text" name="email" id="email" placeholder="Email">
+                            <input class="small-input" type="text" name="phoneNumber" placeholder="Phone number">
                         </div>
-                        <div class="textarea-container">
-                            <textarea name="message"/>
+                        <div class="text-area-container">
+                            <textarea class="text-area" name="message"/>
                         </div>
                         <div class="notification" name="notification">
                             Thank you for submitting! We will get back to you shortly.
@@ -74,7 +71,50 @@ export default {
 </script>
 
 <style scoped>
-    @keyframes spin {
+    /* containers and inside of contact form */
+
+    .contact-form-container {
+        padding: 0 var(--size3);
+        background-color: var(--cool-gray5);
+    }
+
+    .small-input-container,
+    .text-area-container,
+    .button-container {
+        margin: var(--size6) 0;
+    }
+
+    .small-input,
+    .large-input,
+    .text-area,
+    button {
+        border: none;
+    }
+
+    .small-input-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .small-input {
+        width: 48%;
+    }
+
+    textarea {
+        width: 100%;
+        height: var(--size8);
+    }
+    .textarea-container{
+
+    }
+
+    button{
+        width: 100%;
+    }
+    .button-container{
+    }
+
+     @keyframes spin {
         from {
             transform: rotate(0deg);
         }
@@ -95,37 +135,5 @@ export default {
         text-align: center;
         background-color: var(--cool-gray2);
         padding: var(--size2) 0;
-    }
-    /* containers and inside of contact form */
-    .contact-form-container {
-        padding: var(--size4) var(--size0);
-        background-color: var(--cool-gray4);
-    }
-    .small-input-container input {
-        margin: var(--size4);
-    }
-    /* Company part of container */
-    .company-container{
-        margin: var(--size2) var(--size4);
-    }
-    .company-container input {
-        width: 100%;
-        margin: var(--size2) 0;
-    }
-    /* textarea part of form */
-    textarea {
-        width: 100%;
-        height: var(--size8);
-    }
-    .textarea-container{
-        margin: var(--size4) var(--size4);
-    }
-
-    button{
-        width: 100%;
-        margin: var(--size4) 0;
-    }
-    .button-container{
-        margin: 0 var(--size4);
     }
 </style>

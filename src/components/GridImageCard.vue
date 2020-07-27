@@ -63,6 +63,7 @@ export default {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    height: 100%;
   }
 
   .grid-image-card__text {

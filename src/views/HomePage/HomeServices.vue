@@ -1,13 +1,13 @@
 <template>
     <TheSection>
-      <ul class="services-section__grid">
-        <li class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
+      <b-row cols="1" cols-sm="2" cols-lg="3" class="services-section__grid">
+        <b-col class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
           <ServiceItemCard 
             :imgSrc="imageObject.imgSrc" 
             :imgText="imageObject.imgText"
             :imgTitle="imageObject.imgTitle"   />
-        </li>
-      </ul>
+        </b-col>
+      </b-row>
     </TheSection>
 </template>
 
@@ -49,18 +49,22 @@ export default {
 .services-section__grid {
   justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
   padding: 0;
-  width: 100%;
-  display: grid;
-  list-style: none;
-
-  /* COULDNT USE OUR CSS SHEET FOR SIZING HERE. GIVES AN ERROR USING VAR. IS THERE A SOLUTION FOR THIS?? */
-  grid-template-columns: repeat(auto-fill, 265px);
-
-  grid-gap: var(--size6);
 }
 
 .services-section__grid-card {
+  justify-content: center;
+  display: flex;
+  margin-bottom: var(--size6);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
 
 </style>
