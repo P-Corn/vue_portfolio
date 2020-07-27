@@ -2,7 +2,7 @@
     <main>
         <HomeServices />
         <HomePortfolio />
-        <TheContactSection />
+        <HomeContactSection />
         <TheFooter />
     </main>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import HomePortfolio from './HomePortfolio.vue'
 import HomeServices from './HomeServices.vue'
-import TheContactSection from '@/components/TheContactSection.vue'
+import HomeContactSection from './HomeContactSection.vue'
 import TheFooter from '@/components/TheFooter.vue'
 
 export default {
@@ -18,7 +18,7 @@ export default {
   components: {
       HomePortfolio,
       HomeServices,
-      TheContactSection,
+      HomeContactSection,
       TheFooter
   }
 }

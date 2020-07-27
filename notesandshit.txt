@@ -2,6 +2,7 @@
 Go listen to Logic's The Incredible True Story
 followed by the new album No Pressure
 -------------------------------------------------------------------------------- :)
+
 -----
 ISSUES
 -----
@@ -21,6 +22,8 @@ TODOS
 -----
 NOTES
 -----
+-I added a media query txt file that contains a basic setup for the media queries.
+
 -Organize CSS like you're looking at the thing you are styling, from top to bottom.
 
 -Make sure to use the font size variables for font sizes and not the general sizing variables.

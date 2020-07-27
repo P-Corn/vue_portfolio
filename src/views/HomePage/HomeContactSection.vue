@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import TheSection from './TheSection.vue'
-import ContactForm from './ContactForm'
+import TheSection from '@/components/TheSection.vue'
+import ContactForm from '@/components/ContactForm'
 
 export default {
     name: 'TheContactSection',
