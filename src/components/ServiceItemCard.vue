@@ -57,7 +57,16 @@ svg {
 }
 
 @media only screen and (max-width: 768px) {
+  .service-card__text p {
+    font-size: var(--font-size2);
+  }
+}
 
+@media only screen and (max-width: 576px) {
+
+  .service-card__container {
+    text-align: left;
+  }
 }
 
 </style>

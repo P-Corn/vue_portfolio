@@ -83,7 +83,7 @@ export default {
     }
     
     .contact-text h4 {
-        font-size: var(--font-size6)
+        font-size: var(--font-size6);
     }
     }
 
