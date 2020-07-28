@@ -77,6 +77,10 @@ export default {
     max-height: var(--size14); */
   }
 
+  .portfolio-section-card:last-of-type {
+    margin-bottom: 0;
+  }
+
   /* MEDIA */
 
   @media only screen and (max-width: 576px) {

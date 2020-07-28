@@ -78,14 +78,14 @@ export default {
 
     @media only screen and (max-width: 768px) {
   
-  .contact-text h2 {
-      font-size: var(--font-size7);
-  }
-  
-  .contact-text h4 {
-      font-size: var(--font-size5)
-  }
-}
+    .contact-text h2 {
+        font-size: var(--font-size8);
+    }
+    
+    .contact-text h4 {
+        font-size: var(--font-size6)
+    }
+    }
 
     @media only screen and (min-width: 1200px) {
     .contact-section {

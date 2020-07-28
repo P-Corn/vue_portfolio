@@ -26,7 +26,7 @@ export default {
       imageObjects: [
         {
           imgTitle: "Maintenance",
-          imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it is",
+          imgText: "This is a paragraph but I'm making this one extra long for testing reasons so yeah here it",
           iconSrc: "circle-fill",
         },
         {
@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style scoped>
+
 .services-section__grid {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -58,7 +59,39 @@ export default {
   max-width: var(--size12);
 }
 
+.services-section__grid-card:last-of-type {
+  margin-bottom: 0;
+}
+
 /* MEDIA QUERIES */
+
+  @media only screen and (max-width: 576px) {
+
+  }
+
+  @media only screen and (min-width: 576px) (max-width: 768px){
+
+  }
+
+  @media only screen and (min-width: 768px) (max-width: 992px){
+
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px){
+
+  }
+
+  @media only screen and (min-width: 1200px){
+
+  }
+
+  /* ------------ */
+
+  @media only screen and (max-width: 992px) {
+    .services-section__grid-card {
+    margin-bottom: var(--size7);
+  }
+  }
 
 
 </style>
