@@ -16,7 +16,7 @@ import TheSection from '@/components/TheSection.vue'
 import ServiceItemCard from '@/components/ServiceItemCard.vue'
 
 export default {
-  name: 'HomePortfolio',
+  name: 'HomeServices',
   components: {
     TheSection,
     ServiceItemCard
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 
 .services-section__grid {
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   display: flex;
   padding: 0;
