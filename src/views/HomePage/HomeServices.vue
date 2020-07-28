@@ -1,13 +1,13 @@
 <template>
     <TheSection>
-      <b-row cols="1" cols-sm="2" cols-lg="3" class="services-section__grid">
-        <b-col class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
-          <ServiceItemCard 
-            :imgSrc="imageObject.imgSrc" 
-            :imgText="imageObject.imgText"
-            :imgTitle="imageObject.imgTitle"   />
-        </b-col>
-      </b-row>
+        <b-row cols="1" cols-sm="2" cols-lg="2" class="services-section__grid">
+          <b-col class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
+            <ServiceItemCard 
+              :imgSrc="imageObject.imgSrc" 
+              :imgText="imageObject.imgText"
+              :imgTitle="imageObject.imgTitle"   />
+          </b-col>
+        </b-row>
     </TheSection>
 </template>
 
@@ -55,7 +55,6 @@ export default {
 }
 
 .services-section__grid-card {
-  margin-bottom: var(--size6);
   max-width: var(--size-345);
 }
 
@@ -66,11 +65,9 @@ export default {
 /* MEDIA QUERIES */
 
   @media only screen and (max-width: 576px) {
-    
-  }
-
-  @media only screen and (min-width: 576px) {
-
+    .services-section__grid-card {
+      margin-bottom: var(--size5);
+    }
   }
 
   @media only screen and (min-width: 576px) (max-width: 768px){
@@ -86,16 +83,19 @@ export default {
   }
 
   @media only screen and (min-width: 1200px){
-
+   
   }
 
   /* ------------ */
 
   @media only screen and (max-width: 992px) {
     .services-section__grid-card {
-    margin-bottom: var(--size5);
     max-width: var(--size-345);
   }
+  }
+
+  @media only screen and (max-width: 1200px){
+
   }
 
 

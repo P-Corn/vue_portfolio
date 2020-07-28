@@ -89,6 +89,12 @@ export default {
         border: none;
     }
 
+    .small-input,
+    .text-area {
+        border-bottom: var(--border0) solid var(--cool-gray3);
+        background-color: var(--cool-gray5);
+    }
+
     .small-input-container {
         display: flex;
         justify-content: space-between;
@@ -124,7 +130,7 @@ export default {
     .hideAnimate{
         display: none !important;
     }
-    /* class of notification on submit */
+
     .notification {
         display: none;
         margin: auto var(--size4);
@@ -136,9 +142,41 @@ export default {
     /* MEDIA */
 
     @media only screen and (max-width: 576px) {
-  
-        .small-input {
-            width: 46%;
+
+        .small-input-container,
+        .text-area-container,
+        .submit-button-container {
+            margin: var(--size5) 0;
+    }
+
+        .small-input-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-}
+
+        .small-input {
+            width: 100%;
+        }
+
+        .small-input:first-of-type {
+            margin-bottom: var(--size5)
+        }
+    }
+
+    @media only screen and (min-width: 576px) (max-width: 768px){
+
+    }
+
+    @media only screen and (min-width: 768px) (max-width: 992px){
+
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    }
+
+    @media only screen and (min-width: 1200px){
+
+    }
 </style>

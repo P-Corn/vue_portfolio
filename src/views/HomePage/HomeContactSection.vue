@@ -76,6 +76,12 @@ export default {
 
     /* MEDIA QUERIES */
 
+    @media only screen and (max-width: 576px) {
+        .contact-section {
+            padding: 0 var(--size3);
+        }
+    }
+
     @media only screen and (max-width: 768px) {
   
     .contact-text h2 {

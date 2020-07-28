@@ -75,6 +75,12 @@
 
     /* Border Width */
 
+    --border0: 1px;
+    --border1: 2px;
+    --border2: 3px;
+    --border3: 4px;
+    -border4: 5px;
+
     /* Opacity */
 }
 

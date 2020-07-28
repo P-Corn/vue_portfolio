@@ -1,5 +1,6 @@
 <template>
     <main>
+        <HomeHeaderSection />
         <HomeServices />
         <HomePortfolio />
         <HomeContactSection />
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import HomeHeaderSection from './HomeHeaderSection'
 import HomePortfolio from './HomePortfolio.vue'
 import HomeServices from './HomeServices.vue'
 import HomeContactSection from './HomeContactSection.vue'
@@ -16,6 +18,7 @@ import TheFooter from '@/components/TheFooter.vue'
 export default {
   name: 'HomePage',
   components: {
+      HomeHeaderSection,
       HomePortfolio,
       HomeServices,
       HomeContactSection,

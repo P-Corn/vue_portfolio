@@ -1,5 +1,7 @@
 <template>
-    <div class="service-card__container">
+  <div>
+    <div class="vl"></div>
+      <div class="service-card__container">
       <hr>
       <div class="service-card__icon">
         <b-icon class="service-card__icon-svg" icon="circle-fill"></b-icon>
@@ -12,6 +14,8 @@
       </div>
       <hr>
     </div>
+    <div class="vl"></div>
+  </div>
 </template>
 
 <script>
@@ -31,6 +35,12 @@ export default {
 </script>
 
 <style scoped>
+
+.vl {
+  height: 100%;
+  width: 1px;
+  background-color: blue;
+}
 
 .service-card__container {
   /* background-color: var(--cool-gray5); */
