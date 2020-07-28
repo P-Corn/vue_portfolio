@@ -88,4 +88,12 @@ export default {
     width: 100%;
     transition: all ease .4s;
   }
+
+  /* MEDIA */
+
+  @media only screen and (max-width: 576px) {
+    .grid-image-card__text {
+      padding: var(--size2);
+    }
+  }
 </style>

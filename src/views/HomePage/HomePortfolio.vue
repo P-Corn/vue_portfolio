@@ -85,7 +85,7 @@ export default {
 
   @media only screen and (max-width: 576px) {
     .portfolio-section-card {
-      max-height: var(--size12);
+      max-height: var(--size11);
       max-width: var(--size-345);
     }
   }

@@ -48,7 +48,7 @@ export default {
 <style scoped>
 
 .services-section__grid {
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   display: flex;
   padding: 0;
@@ -66,6 +66,10 @@ export default {
 /* MEDIA QUERIES */
 
   @media only screen and (max-width: 576px) {
+    
+  }
+
+  @media only screen and (min-width: 576px) {
 
   }
 
@@ -89,7 +93,7 @@ export default {
 
   @media only screen and (max-width: 992px) {
     .services-section__grid-card {
-    margin-bottom: var(--size7);
+    margin-bottom: var(--size5);
     max-width: var(--size-345);
   }
   }

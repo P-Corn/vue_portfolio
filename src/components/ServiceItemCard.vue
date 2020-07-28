@@ -1,5 +1,6 @@
 <template>
     <div class="service-card__container">
+      <hr>
       <div class="service-card__icon">
         <b-icon class="service-card__icon-svg" icon="circle-fill"></b-icon>
       </div>
@@ -9,6 +10,7 @@
       <div class="service-card__text">
         <p>{{imgText}}</p>
       </div>
+      <hr>
     </div>
 </template>
 
@@ -65,8 +67,28 @@ svg {
 @media only screen and (max-width: 576px) {
 
   .service-card__container {
-    text-align: left;
+    text-align: center;
   }
+
+  hr {
+    opacity: 1;
+  }
+
+  /* .service-card__container:last-of-type {
+    text-align: center;
+  } */
+}
+
+@media only screen and (min-width: 576px) {
+
+
+  hr {
+    opacity: 0;
+  }
+
+  /* .service-card__container:last-of-type {
+    text-align: center;
+  } */
 }
 
 </style>

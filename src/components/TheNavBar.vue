@@ -3,7 +3,7 @@
         <b-navbar toggleable="lg" variant="">
             <b-container>
             <b-navbar-brand>
-                <router-link to="/home">Logo</router-link>
+                <router-link to="/ ">Logo</router-link>
             </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
