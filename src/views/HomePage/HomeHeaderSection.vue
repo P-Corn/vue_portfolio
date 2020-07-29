@@ -99,7 +99,10 @@ svg {
   @media only screen and (max-width: 768px) {
     .header-text {
       padding-bottom: var(--size6);
-      /* text-align: center; */
+    }
+
+    .header-text-title {
+      font-size: var(--font-size42);
     }
   }
 
@@ -111,6 +114,12 @@ svg {
 
   @media only screen and (min-width: 768px) (max-width: 992px){
 
+  }
+
+  @media only screen and (max-width: 992px) {
+    .header-text-title {
+      font-size: var(--font-size42);
+    }
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1200px){

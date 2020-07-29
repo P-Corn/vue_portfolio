@@ -58,7 +58,7 @@ export default {
 
     .contact-text h2{
         font-weight: var(--font-weight1);
-        font-size: var(--font-size9);
+        font-size: var(--font-size42);
         margin-bottom: var(--size4);
     }
 
@@ -82,12 +82,11 @@ export default {
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
   
     .contact-text h2 {
         font-size: var(--font-size8);
     }
-    
     .contact-text h4 {
         font-size: var(--font-size6);
     }

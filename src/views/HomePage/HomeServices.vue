@@ -66,7 +66,7 @@ export default {
 
   @media only screen and (max-width: 576px) {
     .services-section__grid-card {
-      margin-bottom: var(--size5);
+      margin-bottom: var(--size4);
     }
   }
 
