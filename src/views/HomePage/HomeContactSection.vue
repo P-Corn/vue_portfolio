@@ -29,7 +29,8 @@ export default {
     },
     data: function() {
         return {
-            dynamicComponent: ContactForm
+            dynamicComponent: ContactForm,
+            loading: true
         }
     },
     methods: {
