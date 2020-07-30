@@ -1,5 +1,6 @@
 <template>
-    <TheSection>
+    <TheSection class="section">
+      <h2 class="section-title">OUR PROJECTS</h2>
       <b-row cols="1" cols-md="1" cols-lg="2" class="portfolio-section-grid">
         <b-col class="portfolio-section-card" v-for="imageObject in imageObjects" :key="imageObject.id">
           <GridImageCard 
@@ -62,63 +63,56 @@ export default {
 
 <style scoped>
 
-  .portfolio-section-grid {
+.section {
+  border: var(--bootstrap-card-border);
+}
+
+  .section-title {
+    text-align: center;
+    margin-bottom: var(--size7);
+    font-weight: var(--font-weight1);
+    word-spacing: var(--size0);
+  }
+
+    .portfolio-section-grid {
     display: flex;
     justify-content: space-around;
-  }
+     } 
 
   .portfolio-section-card {
-    max-width: var(--size15);
     margin-bottom: var(--size5);
-    max-height: var(--size13);
-
-    /* WIDE */
-    /* max-width: var(--size16);
-    max-height: var(--size14); */
+    max-width: 570px;
   }
-
+  /*
   .portfolio-section-card:last-of-type {
     margin-bottom: 0;
-  }
+  } */
 
-  /* MEDIA */
 
   @media only screen and (max-width: 576px) {
-    .portfolio-section-card {
-      max-height: var(--size11);
-      max-width: var(--size-345);
-    }
+     
   }
 
   @media only screen and (min-width: 576px) (max-width: 768px){
-    .portfolio-section-card {
-      max-height: var(--size12);
-    }
+
   }
 
   @media only screen and (min-width: 768px) (max-width: 992px){
 
   }
 
-  @media only screen and (min-width: 992px) and (max-width: 1200px){
+  @media only screen and (max-width: 992px){
     .portfolio-section-card {
-      max-height: var(--size12);
+      margin-bottom: var(--size7);
     }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px){
+
   }
 
   @media only screen and (min-width: 1200px){
-    .portfolio-section-card {
-      max-height: var(--size-345);
-      margin-bottom: var(--size5);
-    }
-  }
 
-  /* --------- */
-
-  @media only screen and (max-width: 992px){
-    .portfolio-section-card {
-      margin-bottom: var(--size6);
-    }
-  }
+  } 
 
 </style>

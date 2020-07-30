@@ -1,6 +1,6 @@
 <template>
             <div class="contact-form-container">
-                <form name="contact-form" v-bind:class="[loading ? 'hideAnimate' : '']" @submit.prevent="sendEmail">
+                <form name="contact-form" @submit.prevent="sendEmail">
                     <fieldset>
                         <div class="small-input-container">
                             <input class="small-input" type="text" name="name" placeholder="Your name">
@@ -13,20 +13,11 @@
                         <div class="text-area-container">
                             <textarea placeholder="What can we do for you?" class="text-area" name="message"/>
                         </div>
-                        <div class="notification" name="notification">
-                            Thank you for submitting! We will get back to you shortly.
-                        </div>
                         <div class="submit-button-container">
                             <button type="submit">Submit</button>
                         </div>
                     </fieldset>
                 </form>
-                <transition
-                     name="spin"
-                     enter-active-class="loadAnimate"
-                     leave-active-class="hideAnimate">
-                     <b-icon-arrow-clockwise v-bind:class="[loading ? 'loadAnimate' : 'hideAnimate']"></b-icon-arrow-clockwise>
-                </transition>
             </div>
 </template>
 
@@ -35,37 +26,28 @@ import emailjs from 'emailjs-com'
 
 export default {
     name: 'ContactForm',
-    components: {
-
-    },
-    data: function() {
-        return {
-            loading: false,
-        }
-    },
     methods: {
-        sendEmail: (e) => {
-            // v-bind: :) to :(
-            console.log(e);
-            e.loading = true;
+        sendEmail(e) {
+            var globalVar = this
+            globalVar.$emit('changeComponent', 'ContactFormAnimation')
             emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
                 .then((result) => {
-                    let frm = document.getElementsByName('contact-form')[0];
-                    let notification = document.getElementsByName('notification')[0];
-
-                    frm.style.display = "none"; //removes form from container
-
-                    //removes text after submit is pressed
-                    frm.reset();
                     console.log('SUCCESS!', result.status, result.text);
-                    notification.style.display = "block";
 
                 }, (error) => {
                     console.log('FAILED...', error);
                     //here i need to put an error notification
-            });
-            e.loading = false;
-        }
+                });
+        },
+            // sendEmailPromise(result, val) => {
+            //     //removes text after submit is pressed
+            //     console.log('SUCCESS!', result.status, result.text);
+            //     val.$emit('changeComponent', 'ContactFormAnimation')
+
+            //     }, (error) => {
+            //         console.log('FAILED...', error);
+            //         //here i need to put an error notification
+            // });
     }
 }
 </script>

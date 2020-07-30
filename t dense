@@ -1,0 +1,203 @@
+[33mcommit 5c5c5f0b61cf80f888c6bcffe7171aa591d87b3e[m[33m ([m[1;36mHEAD -> [m[1;32mpeyton[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mtestarea[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 28 20:29:33 2020 -0500
+
+    font size changes on the headers
+
+[33mcommit 6c41c81edbf82a7fe16459b610dfa5e7f45128e2[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 28 18:22:04 2020 -0500
+
+    Made a header, made the contact section mobile friendly and removed the input background then added a bottom border, added padding around the header and contact section for a more consistent look
+
+[33mcommit 4f08c92df9c2b8648081e306fb81e4c0575c2c4f[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 28 11:58:18 2020 -0500
+
+    adjust mobile service card
+
+[33mcommit ea247702e9404cd55dce0cd5dc4aba0964fb097c[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 20:38:49 2020 -0500
+
+    small update
+
+[33mcommit 9daa8a69ccd22a933bffe7a4108615981e80316f[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 20:31:41 2020 -0500
+
+    changed service card width and mobile look
+
+[33mcommit 8fa708fc8379fb50b8b55d8d84a21f6b4dd379a6[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 20:16:37 2020 -0500
+
+    test
+
+[33mcommit 6902b4d3cf2ea6e1865ec770088cf75d065181ba[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 18:05:27 2020 -0500
+
+    renamed the contact section and moved the component to the homepage folder
+
+[33mcommit 55d7ebf6824c9a4aef90d07d1f15d54f25fe9605[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 18:00:47 2020 -0500
+
+    Created a media query txt file that contains a basic set up. Adjusted the portfolio section cards to be rectangles. Made the portfolio section mobile friendly. Added a notes.txt
+
+[33mcommit ee58f1102c1688587d2eab56c81cda86de61dc53[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 27 13:15:09 2020 -0500
+
+    Contact section: Made first name and last name one input, changed the title fonts, removed input borders, adjusted sizes, changed the section background color.
+
+[33mcommit 20765944ec7092136d779047833e44833c3f195e[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Sun Jul 26 14:45:29 2020 -0500
+
+    Made the contact form a separate component. Might need to check it's functionality but I think I moved everything just fine.
+
+[33mcommit ef1582263d6ac23c5a5f1e1ec9c3a7220b7b74a3[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Sun Jul 26 14:30:48 2020 -0500
+
+    completed v1 of the service section. Fixed the font size variables (the syntax was not right). Bumped up the section margin by 1 step.
+
+[33mcommit ef3937246e2a8fd98d694bd3bee86cd7cbb28ea9[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Sun Jul 26 13:47:52 2020 -0500
+
+    Worked on the building the service cards. Not finished, still a work in progress.
+
+[33mcommit bddb6626c134c5baddeb5bdcb53cc613e2135ebe[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Fri Jul 24 18:27:42 2020 -0500
+
+    Worked on creating the service cards and their grid layout
+
+[33mcommit 26b7df4c81a95583855dee1199528a85cccad09b[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 23:04:13 2020 -0500
+
+    Loading animation not yet done in TheContactSection.vue. Created service section and card thingy. Was fun. My favorite part was when the train came by and Aston said choo choo. :)
+
+[33mcommit 34a5a87ef9d3443259381689b420aeb3d7ff90ae[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 21:12:23 2020 -0500
+
+    Took TheContactSection out of gitignore.
+
+[33mcommit 7cbea2d053b27a926f68cbf18049b7ef9de261d5[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 21:02:29 2020 -0500
+
+    pushed to github.
+
+[33mcommit 530814f729c80298ebc3b2384f5c1deccb5dbc5f[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 20:44:47 2020 -0500
+
+    finished contact form functionality. Home Portfolio has hover effect to it. Services page added and is still in production.
+
+[33mcommit 56a5cd27226a3aab3f164f66fa4a5bba043fde5e[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 17:45:09 2020 -0500
+
+    adding animation to portfolio ish
+
+[33mcommit 578290403167901761266aefd1752dd73c5dcdf4[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 17:17:35 2020 -0500
+
+    Backend not yet hooked up for contact section.
+
+[33mcommit c0fbb4911fb5dc8b319e9323189d8521a94f24e3[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 17:04:59 2020 -0500
+
+    anoter .gitignore test
+
+[33mcommit db683fe4a3d7e2921bae1adde63f6206676787b3[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 17:00:30 2020 -0500
+
+    Partially Designed Contact Section and portfolio section. Router to /home is /.
+
+[33mcommit 1a02ce54855f125825b6937fd7b6df3eaa3c8ead[m
+Author: Aston Jones <astonbradleyjones@gmail.com>
+Date:   Thu Jul 23 14:17:43 2020 -0500
+
+    Added HomePortfolio Section and Cards(That have their own section) within that Section. Started the Contact Section. Footer was deleted.
+
+[33mcommit bcd4031b054fddcdb8b40fed6e46ffdad215309c[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Thu Jul 23 11:55:52 2020 -0500
+
+    bug fixes and changes
+
+[33mcommit e46bf79a3790c3785dcaa2095e77a134098ee8e9[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Wed Jul 22 16:50:06 2020 -0500
+
+    added new components for pages and stuff
+
+[33mcommit d7cfc961386e4df1ac27816183a4406354bdcacc[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Wed Jul 22 15:52:14 2020 -0500
+
+    set up routing, added footer and nav, good shit
+
+[33mcommit af9ce075dd07f6e897410dd9b480bfd372343d97[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Wed Jul 22 13:54:13 2020 -0500
+
+    added systems in main.css
+
+[33mcommit 695654d9ce6ef30d706875d4011810613b39696f[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Wed Jul 22 12:33:19 2020 -0500
+
+    just a small update to main.js
+
+[33mcommit ae94682b97188a0049c7a694b3c3adc3ecd4701e[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 21 19:21:24 2020 -0500
+
+    Set up vue router
+
+[33mcommit 06aee235be8aca3f31b7ee876792aeb2832fff0a[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 21 18:54:22 2020 -0500
+
+    added vue router
+
+[33mcommit ed601c2d83668e249308e331794b8244e604437b[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 21 18:16:25 2020 -0500
+
+    added folders
+
+[33mcommit 3944b2ceaf9ecf3b8cca8354239f6cf269434fa5[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Tue Jul 21 17:36:44 2020 -0500
+
+    added bootstrap to main.js
+
+[33mcommit cac07c7d6416d9b4c1f81efd7b0d45e46c86913a[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 20 19:04:08 2020 -0500
+
+    added bootstrap-vue, bootstrap, and popper.js
+
+[33mcommit b2bf1be57d333bd5a53dc0e950155d52b4c3c048[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 20 15:08:27 2020 -0500
+
+    test
+
+[33mcommit e68d0453a27b0dcf3492b01e051303909062d6be[m
+Author: Peyton Cornelison <peytoncornelison@gmail.com>
+Date:   Mon Jul 20 14:59:54 2020 -0500
+
+    init

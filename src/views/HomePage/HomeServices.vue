@@ -1,5 +1,5 @@
 <template>
-    <TheSection>
+    <TheSection class="bg-color">
         <b-row cols="1" cols-sm="2" cols-lg="2" class="services-section__grid">
           <b-col class="services-section__grid-card" v-for="imageObject in imageObjects" :key="imageObject.id">
             <ServiceItemCard 
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+
+.bg-color {
+        /* background-color: var(--cool-gray5); */
+    }
 
 .services-section__grid {
   justify-content: space-around;

@@ -6,7 +6,8 @@
                 <h2>We'll respond if we aren't asleep</h2>
             </b-col>
             <b-col class="contact-form">
-                <ContactForm />
+                <!-- <ContactForm /> -->
+                <component :is="dynamicComponent" @changeComponent="changeComponent($event)" @changeComponent2="changeComponent($event)"></component>
             </b-col>
         </b-row>
     </TheSection>
@@ -15,20 +16,27 @@
 <script>
 import TheSection from '@/components/TheSection.vue'
 import ContactForm from '@/components/ContactForm'
+import ContactFormAnimation from '@/components/ContactFormAnimation.vue'
+import ContactFormNotification from '@/components/ContactFormNotification.vue'
 
 export default {
     name: 'TheContactSection',
     components: {
         TheSection,
-        ContactForm
+        ContactForm,
+        ContactFormAnimation,
+        ContactFormNotification
     },
     data: function() {
         return {
-
+            dynamicComponent: ContactForm
         }
     },
     methods: {
-        
+        changeComponent(value) {
+            this.dynamicComponent = value;
+            console.log(value);
+        }
     }
 }
 </script>
