@@ -34,7 +34,7 @@ export default {
         }
     },
     methods: {
-        changeComponent(value) {
+        changeComponent(value) { 
             this.dynamicComponent = value;
             console.log(value);
         }

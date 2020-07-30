@@ -48,8 +48,8 @@ export default {
 <style scoped>
 
 .bg-color {
-        /* background-color: var(--cool-gray5); */
-    }
+  border: var(--bootstrap-card-border);
+}
 
 .services-section__grid {
   justify-content: space-around;

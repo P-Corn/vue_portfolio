@@ -63,9 +63,7 @@ export default {
 
 <style scoped>
 
-.section {
-  border: var(--bootstrap-card-border);
-}
+
 
   .section-title {
     text-align: center;
