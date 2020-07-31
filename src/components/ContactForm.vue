@@ -31,7 +31,7 @@ export default {
         sendEmail: e => {
             //changes component to animation when loading
             store.changeComponent('ContactFormAnimation')
-            //function sends email
+            //sends email
             emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
                 .then((result) => {
                     console.log('SUCCESS!', result.status, result.text);

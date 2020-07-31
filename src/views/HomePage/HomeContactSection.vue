@@ -7,7 +7,7 @@
             </b-col>
             <b-col class="contact-form">
                 <!-- <ContactForm /> -->
-                <component :is="storeState.dynamicComponent" @changeComponent="changeComponent($event)" @changeComponent2="changeComponent($event)"></component>
+                <component :is="storeState.dynamicComponent"></component>
             </b-col>
         </b-row>
     </TheSection>
