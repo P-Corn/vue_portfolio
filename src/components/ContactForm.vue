@@ -23,32 +23,26 @@
 
 <script>
 import emailjs from 'emailjs-com'
+import { store } from '@/store.js'
 
 export default {
     name: 'ContactForm',
     methods: {
-        sendEmail(e) {
-            var globalVar = this
-            globalVar.$emit('changeComponent', 'ContactFormAnimation')
+        sendEmail: e => {
+            //changes component to animation when loading
+            store.changeComponent('ContactFormAnimation')
+            //function sends email
             emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
                 .then((result) => {
                     console.log('SUCCESS!', result.status, result.text);
+                    store.changeComponent('ContactFormNotification')
 
                 }, (error) => {
                     console.log('FAILED...', error);
-                    //here i need to put an error notification
+                    //need to put error notification here!
                 });
         },
-            // sendEmailPromise(result, val) => {
-            //     //removes text after submit is pressed
-            //     console.log('SUCCESS!', result.status, result.text);
-            //     val.$emit('changeComponent', 'ContactFormAnimation')
-
-            //     }, (error) => {
-            //         console.log('FAILED...', error);
-            //         //here i need to put an error notification
-            // });
-    }
+    },
 }
 </script>
 

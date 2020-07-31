@@ -7,20 +7,21 @@
             </b-col>
             <b-col class="contact-form">
                 <!-- <ContactForm /> -->
-                <component :is="dynamicComponent" @changeComponent="changeComponent($event)" @changeComponent2="changeComponent($event)"></component>
+                <component :is="storeState.dynamicComponent" @changeComponent="changeComponent($event)" @changeComponent2="changeComponent($event)"></component>
             </b-col>
         </b-row>
     </TheSection>
 </template>
 
 <script>
+import { store } from '@/store.js'
 import TheSection from '@/components/TheSection.vue'
 import ContactForm from '@/components/ContactForm'
 import ContactFormAnimation from '@/components/ContactFormAnimation.vue'
 import ContactFormNotification from '@/components/ContactFormNotification.vue'
 
 export default {
-    name: 'TheContactSection',
+    name: 'HomeContactSection',
     components: {
         TheSection,
         ContactForm,
@@ -29,15 +30,11 @@ export default {
     },
     data: function() {
         return {
-            dynamicComponent: ContactForm,
-            loading: true
+            storeState: store.state
         }
     },
-    methods: {
-        changeComponent(value) { 
-            this.dynamicComponent = value;
-            console.log(value);
-        }
+    created(){
+        store.changeComponent('ContactForm')
     }
 }
 </script>
