@@ -63,8 +63,8 @@ export default {
 }
 
 .header-text-button:last-of-type {
-  background-color: var(--cool-gray4);
-  color: var(--cool-gray0);
+  background-color: var(--primary-base);
+  color: var(--cool-gray5);
 }
 
 .header-image {

@@ -63,7 +63,9 @@ export default {
 
 <style scoped>
 
-
+  .section {
+    background-color: #fafafa;
+  }
 
   .section-title {
     text-align: center;
