@@ -48,7 +48,7 @@ export default {
 <style scoped>
 
 .bg-color {
-  border: var(--bootstrap-card-border);
+  background-color: var(--primary9);
 }
 
 .services-section__grid {

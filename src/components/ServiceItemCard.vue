@@ -50,8 +50,7 @@ export default {
 
 svg {
   /* Not the final color, this is a placeholder to show off the intent */
-  fill: #B8EAFF;
-  color: var(--cool-gray4);
+  fill: var(--primary7);
   height: var(--size7);
   width: var(--size7);
   margin-bottom: var(--size3);
@@ -59,7 +58,8 @@ svg {
 
 .service-card__title h3 {
   font-weight: var(--font-weight1);
-  font-size: var(--font-size6);
+  font-size: var(--font-size5);
+  color: var(--primary1);
 }
 
 .service-card__text p {

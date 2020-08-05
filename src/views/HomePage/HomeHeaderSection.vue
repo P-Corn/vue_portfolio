@@ -1,5 +1,5 @@
 <template>
-    <TheSection>
+    <TheSection class="section">
       <b-row cols="1" cols-md="2">
           <b-col>
               <div class="header-text">
@@ -63,7 +63,7 @@ export default {
 }
 
 .header-text-button:last-of-type {
-  background-color: var(--primary-base);
+  background-color: var(--primary5);
   color: var(--cool-gray5);
 }
 

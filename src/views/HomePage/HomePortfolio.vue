@@ -80,8 +80,8 @@ export default {
      } 
 
   .portfolio-section-card {
-    margin-bottom: var(--size5);
-    max-width: 570px;
+    margin-bottom: var(--size7);
+    max-width: var(--size14);
   }
   /*
   .portfolio-section-card:last-of-type {
