@@ -3,7 +3,7 @@
       <h2 class="section-title">OUR PROJECTS</h2>
       <b-row cols="1" cols-md="1" cols-lg="2" class="portfolio-section-grid">
         <b-col class="portfolio-section-card" v-for="imageObject in imageObjects" :key="imageObject.id">
-          <GridImageCard 
+          <GridImageCard
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
@@ -64,7 +64,7 @@ export default {
 <style scoped>
 
   .section {
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
   }
 
   .section-title {

@@ -1,7 +1,7 @@
 <template>
     <a class="image-card__container" href="#">
       <b-card
-      class="image-card__image"
+      class="image-card"
       :img-src="imgSrc"
       >
       <b-card-text class="image-card__text">
@@ -34,9 +34,20 @@ export default {
   text-decoration: none;
 }
 
+.image-card {
+  box-shadow: var(--boxshadow2);
+  border: none;
+  transition: .15s all;
+}
+
+.image-card:hover {
+  box-shadow: var(--boxshadow3);
+  transform: translateY(-1.5px);
+}
+
 .card-body {
-  padding-top: var(--size2);
-  padding-bottom: var(--size2);
+  padding-top: var(--size1);
+  padding-bottom: var(--size1);
 }
 
 .image-card__text {
@@ -50,11 +61,18 @@ h3 {
   color: var(--cool-gray0);
   font-weight: var(--font-weight1);
   font-size: var(--font-size5);
+  text-decoration: none;
+  /* position: absolute; */
 }
 
-.image-card__image img {
-  max-height: var(--size12);
-  border-bottom: var(--bootstrap-card-border);
+/* .card-img {
+  border-radius: .
+} */
+
+.image-card img {
+  max-height: var(--size11);
+  object-fit: cover;
+  /* border-bottom: var(--bootstrap-card-border); */
 }
 
 .image-card__icon {
@@ -64,7 +82,7 @@ h3 {
   font-weight: var(--font-weight1);
   position: absolute;
   right: 0;
-  top: 54%;
+  top: 51%;
   transform: translateY(-50%);
 }
 
