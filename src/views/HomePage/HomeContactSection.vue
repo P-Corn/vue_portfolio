@@ -1,15 +1,15 @@
 <template>
     <TheSection class="bg-color">
-        <b-row cols="1" cols-lg="2" class="contact-section">
-            <b-col class="contact-text">
+        <v-row class="contact-section">
+            <v-col cols="12" md="6" class="contact-text">
                 <h4>Contact Us</h4>
                 <h2>We'll respond if we aren't asleep</h2>
-            </b-col>
-            <b-col class="contact-form">
+            </v-col>
+            <v-col cols="12" md="6" class="contact-form">
                 <!-- <ContactForm /> -->
                 <component :is="storeState.dynamicComponent"></component>
-            </b-col>
-        </b-row>
+            </v-col>
+        </v-row>
     </TheSection>
 </template>
 

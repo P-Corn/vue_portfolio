@@ -1,8 +1,8 @@
 <template>
     <section>
-        <b-container>
+        <v-container>
           <slot></slot>
-        </b-container>
+        </v-container>
     </section>
 </template>
 
@@ -13,11 +13,18 @@ export default {
 </script>
 
 <style scoped>
-  .bg-color {
-    height: 100%;
-  }
 
   section {
     padding: var(--size7) 0;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  @media only screen and (max-width: 1200px){
+    .container {
+      padding: 0 var(--size4);
+    }
   }
 </style>

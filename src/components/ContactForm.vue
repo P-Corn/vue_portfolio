@@ -1,23 +1,44 @@
 <template>
             <div class="contact-form-container">
-                <form name="contact-form" @submit.prevent="sendEmail">
-                    <fieldset>
+                <v-form name="contact-form" @submit.prevent="sendEmail">
                         <div class="small-input-container">
-                            <input class="small-input" type="text" name="name" placeholder="Your name">
-                            <input class="small-input" type="text" name="companyName" placeholder="Company name">
+                            <v-text-field
+                                name="name"
+                                label="Name"
+                                class="small-input"
+                                required
+                            ></v-text-field>
+                            <v-text-field
+                                name="companyName"
+                                label="Company"
+                                class="small-input"
+                                required
+                            ></v-text-field>
                         </div>
                         <div class="small-input-container">
-                            <input class="small-input" type="email" name="email" id="email" placeholder="Email">
-                            <input class="small-input" type="tel" name="phoneNumber" placeholder="Phone number">
+                            <v-text-field
+                                name="email"
+                                label="Email"
+                                class="small-input"
+                                required
+                            ></v-text-field>
+                            <v-text-field
+                                name="phoneNumber"
+                                label="Phone Number"
+                                class="small-input"
+                                required
+                            ></v-text-field>
                         </div>
                         <div class="text-area-container">
-                            <textarea placeholder="What can we do for you?" class="text-area" name="message"/>
+                            <v-textarea
+                                name="message"
+                                label="Message"
+                            ></v-textarea>
                         </div>
                         <div class="submit-button-container">
-                            <button type="submit">Submit</button>
+                            <v-btn rounded color="primary" type="submit" dark>Rounded Button</v-btn>
                         </div>
-                    </fieldset>
-                </form>
+                </v-form>
             </div>
 </template>
 
@@ -49,26 +70,16 @@ export default {
 <style scoped>
     /* containers and inside of contact form */
 
-    .contact-form-container {
-        background-color: var(--cool-gray5);
-    }
-
     .small-input-container,
     .text-area-container,
     .submit-button-container {
-        margin: var(--size6) 0;
+        /* margin: var(--size2) 0; */
     }
 
     .small-input,
     .text-area,
     button {
         border: none;
-    }
-
-    .small-input,
-    .text-area {
-        border-bottom: var(--border0) solid var(--cool-gray3);
-        background-color: var(--cool-gray5);
     }
 
     .small-input-container {
@@ -78,41 +89,17 @@ export default {
 
     .small-input {
         width: 46%;
-        padding: var(--size0);
+        padding: var(--size3);
     }
 
-    textarea {
-        width: 100%;
-        height: var(--size8);
+    .text-area-container {
+        padding: var(--size3);
     }
 
     .submit-button-container button{
         width: 100%;
         background-color: var(--cool-gray4);
         padding: var(--size0);
-    }
-
-     @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    .loadAnimate{
-        animation: spin 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    }
-    .hideAnimate{
-        display: none !important;
-    }
-
-    .notification {
-        display: none;
-        margin: auto var(--size4);
-        text-align: center;
-        background-color: var(--cool-gray2);
-        padding: var(--size2) 0;
     }
 
     /* MEDIA */
@@ -122,7 +109,7 @@ export default {
         .small-input-container,
         .text-area-container,
         .submit-button-container {
-            margin: var(--size5) 0;
+            /* margin: var(--size5) 0; */
     }
 
         .small-input-container {
@@ -136,7 +123,7 @@ export default {
         }
 
         .small-input:first-of-type {
-            margin-bottom: var(--size5)
+            /* margin-bottom: var(--size5) */
         }
     }
 

@@ -1,14 +1,19 @@
 <template>
     <TheSection class="section">
       <h2 class="section-title">OUR PROJECTS</h2>
-      <b-row cols="1" cols-md="1" cols-lg="2" class="portfolio-section-grid">
-        <b-col class="portfolio-section-card" v-for="imageObject in imageObjects" :key="imageObject.id">
+      <v-row justify="space-around">
+        <v-col
+        v-for="imageObject in imageObjects" 
+        :key="imageObject.id"
+        cols="12"
+        md="6"
+        class="portfolio-section-card">
           <GridImageCard
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
-        </b-col>
-      </b-row>
+        </v-col>
+      </v-row>
     </TheSection>
 </template>
 
@@ -74,20 +79,10 @@ export default {
     word-spacing: var(--size0);
   }
 
-    .portfolio-section-grid {
-    display: flex;
-    justify-content: space-around;
-     } 
-
   .portfolio-section-card {
-    margin-bottom: var(--size7);
-    max-width: var(--size14);
+    /* padding: var(--size5); */
+    /* max-width: 536px; */
   }
-  /*
-  .portfolio-section-card:last-of-type {
-    margin-bottom: 0;
-  } */
-
 
   @media only screen and (max-width: 576px) {
      
@@ -102,9 +97,6 @@ export default {
   }
 
   @media only screen and (max-width: 992px){
-    .portfolio-section-card {
-      margin-bottom: var(--size7);
-    }
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1200px){
