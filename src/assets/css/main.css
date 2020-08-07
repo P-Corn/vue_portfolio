@@ -108,3 +108,9 @@ a:hover {
     /* Opacity */
 }
 
+/* MISC STYLES */
+
+.text-container {
+  padding-left: var(--size2);
+  padding-right: var(--size2);
+}
