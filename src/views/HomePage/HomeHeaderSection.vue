@@ -11,7 +11,7 @@
               <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot. This might be a lengthy paragraph.</p>
             </div>
             <div class="header-button-container">
-              <v-btn large rounded class="header-text-button">Our projects</v-btn>
+              <v-btn large rounded color="var(--secondary-light)" class="header-text-button">Our projects</v-btn>
               <v-btn large rounded class="header-text-button">about us</v-btn>
             </div>
           </div>
@@ -87,6 +87,7 @@ export default {
 
 .header-text-button:first-of-type {
     margin-right: var(--size3);
+    color: var(--secondary-dark);
     /* width: var(--size9); */
 }
 
