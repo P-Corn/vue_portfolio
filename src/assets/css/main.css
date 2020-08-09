@@ -16,11 +16,11 @@ a:hover {
 
     /* PRIMARY */
 
-    --primary1: hsl(200, 100%, 15%);
-    --primary3: hsl(200, 90%, 35%);
-    --primary5: hsl(200, 85%, 55%);
-    --primary7: hsl(200, 80%, 70%);
-    --primary9: hsl(200, 90%, 97%);
+    --primary: hsl(243, 100%, 69%);
+    --primary-text: hsl(243, 100%, 95%);
+    --secondary-light: hsl(126,100%,88%);
+    --secondary-dark: hsl(126, 100%, 15%);
+
 
     /* COOL GRAY */
     --cool-gray0: hsl(209, 15%, 28%);
@@ -113,4 +113,14 @@ a:hover {
 .text-container {
   padding-left: var(--size2);
   padding-right: var(--size2);
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--font-size9);
+  margin-bottom: var(--size7);
+}
+
+.section-title-span {
+  color: var(--primary);
 }

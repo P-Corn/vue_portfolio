@@ -1,6 +1,6 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">OUR PROJECTS</h2>
+      <h2 class="section-title">Our <span class="section-title-span">projects.</span></h2>
       <v-row justify="space-around">
         <v-col
         v-for="imageObject in imageObjects" 
@@ -69,14 +69,7 @@ export default {
 <style scoped>
 
   .section {
-    /* background-color: #fafafa; */
-  }
-
-  .section-title {
-    text-align: center;
-    margin-bottom: var(--size7);
-    font-weight: var(--font-weight1);
-    word-spacing: var(--size0);
+    background-color: var(--cool-gray5);
   }
 
   .portfolio-section-card {

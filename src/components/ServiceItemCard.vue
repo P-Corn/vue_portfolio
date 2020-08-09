@@ -54,9 +54,9 @@ export default {
 .v-icon.v-icon {
   font-size: var(--font-size7);
   padding: var(--size3);
-  background-color: hsl(126,100%,88%);
+  background-color: var(--secondary-light);
   border-radius: 100px;
-  color: hsl(126,100%,15%);
+  color: var(--secondary-dark);
 }
 
 .hr-container {
@@ -65,7 +65,7 @@ export default {
 }
 
 hr {
-  border: 2px solid hsl(126, 100%, 88%);
+  border: 2px solid #c2ffc8;
   max-width: var(--size7);
   margin: 0 auto;
   /* border-radius: 200px; */
