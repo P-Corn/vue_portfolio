@@ -77,7 +77,6 @@ export default {
 
   .section {
     box-shadow: var(--boxshadow2);
-    padding: 200px;
   }
 
   .row {

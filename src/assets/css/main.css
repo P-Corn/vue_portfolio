@@ -117,7 +117,7 @@ a:hover {
 
 .section-title {
   text-align: center;
-  font-size: var(--font-size10);
+  font-size: var(--font-size9);
   margin-bottom: var(--size7);
   /* word-spacing: var(--size0);
   letter-spacing: 1px; */
@@ -133,4 +133,12 @@ a:hover {
 .shadow {
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+}
+
+@media only screen and (min-width: 960px) {
+  .section-title {
+    text-align: center;
+    font-size: var(--font-size10);
+    margin-bottom: var(--size7);
+  }
 }
