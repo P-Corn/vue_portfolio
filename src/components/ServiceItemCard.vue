@@ -1,20 +1,19 @@
 <template>
   <div>
-    <div class="vl"></div>
-      <div class="service-card__container">
-      <hr>
-      <div class="service-card__icon">
-        <b-icon class="service-card__icon-svg" icon="circle-fill"></b-icon>
+    <div class="service-card-container">
+      <div class="service-card-icon">
+        <v-icon>{{iconSrc}}</v-icon>
       </div>
-      <div class="service-card__title">
+      <div class="service-card-title">
         <h3>{{imgTitle}}</h3>
       </div>
-      <div class="service-card__text">
+      <div class="hr-container">
+        <hr>
+      </div>
+      <div class="service-card-text">
         <p>{{imgText}}</p>
       </div>
-      <hr>
     </div>
-    <div class="vl"></div>
   </div>
 </template>
 
@@ -36,69 +35,56 @@ export default {
 
 <style scoped>
 
-.vl {
-  height: 100%;
-  width: 1px;
-  background-color: blue;
-}
 
-.service-card__container {
-  /* background-color: var(--cool-gray5); */
+.service-card-container {
   text-align: center;
   
 }
 
-svg {
-  /* Not the final color, this is a placeholder to show off the intent */
-  fill: var(--primary7);
-  height: var(--size7);
-  width: var(--size7);
-  margin-bottom: var(--size3);
-}
-
-.service-card__title h3 {
+.service-card-title h3 {
   font-weight: var(--font-weight1);
   font-size: var(--font-size5);
-  color: var(--primary1);
+  /* color: var(--primary1); */
 }
 
-.service-card__text p {
+.service-card-icon {
+  margin-bottom: var(--size1);
+}
+
+.v-icon.v-icon {
+  font-size: var(--font-size7);
+  padding: var(--size3);
+  background-color: hsl(126,100%,88%);
+  border-radius: 100px;
+  color: hsl(126,100%,15%);
+}
+
+.hr-container {
+  width: 100%;
+  margin: var(--size0) 0;
+}
+
+hr {
+  border: 2px solid hsl(126, 100%, 88%);
+  max-width: var(--size7);
+  margin: 0 auto;
+  /* border-radius: 200px; */
+}
+
+.service-card-text p {
   color: var(--cool-gray1);
   margin: 0;
   font-size: var(--font-size3);
 }
 
-@media only screen and (max-width: 768px) {
-  .service-card__text p {
-    font-size: var(--font-size2);
+@media only screen and (min-width: 1200px){
+
+    .service-card-title h3 {
+      font-size: var(--font-size6);
+    }
+    .service-card-text p {
+      font-size: var(--font-size4);
+    }
   }
-}
-
-@media only screen and (max-width: 576px) {
-
-  .service-card__container {
-    text-align: center;
-  }
-
-  hr {
-    opacity: 1;
-  }
-
-  /* .service-card__container:last-of-type {
-    text-align: center;
-  } */
-}
-
-@media only screen and (min-width: 576px) {
-
-
-  hr {
-    opacity: 0;
-  }
-
-  /* .service-card__container:last-of-type {
-    text-align: center;
-  } */
-}
 
 </style>

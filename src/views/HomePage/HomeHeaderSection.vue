@@ -3,7 +3,7 @@
       <v-row>
         <v-col
         cols="12"
-        md="5"
+        md="6"
         >
           <div class="header-text">
             <h1 class="header-text-title">We are the website peeps.</h1>
@@ -18,7 +18,7 @@
           </v-col>     
         <v-col
         cols="12"
-        md="7"
+        md="6"
         class="image-container"
         >
           <div class="header-image">
@@ -118,6 +118,10 @@ svg {
   .header-text-title {
     font-size: var(--font-size10);
   }
+
+  .header-text-paragraph {
+    font-size: var(--font-size4);
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -139,7 +143,7 @@ svg {
   .header-text-paragraph {
     color: var(--cool-gray1);
     justify-content: start;
-}
+  }
 
 }
 
