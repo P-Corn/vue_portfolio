@@ -1,5 +1,5 @@
 <template>
-    <TheSection class="bg-color">
+    <TheSection class="section">
       <h2 class="section-title">What we <span class="section-title-span">do.</span></h2>
         <v-row>
           <v-col
@@ -74,6 +74,11 @@ export default {
 </script>
 
 <style scoped>
+
+  .section {
+    box-shadow: var(--boxshadow2);
+    padding: 200px;
+  }
 
   .row {
     justify-content: space-around;

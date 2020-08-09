@@ -52,11 +52,12 @@ export default {
 }
 
 .v-icon.v-icon {
-  font-size: var(--font-size7);
-  padding: var(--size3);
+  font-size: var(--font-size8);
+  padding: var(--size4);
   background-color: var(--secondary-light);
   border-radius: 100px;
   color: var(--secondary-dark);
+  box-shadow: var(--boxshadow1);
 }
 
 .hr-container {
@@ -80,10 +81,10 @@ hr {
 @media only screen and (min-width: 1200px){
 
     .service-card-title h3 {
-      font-size: var(--font-size6);
+      font-size: var(--font-size7);
     }
     .service-card-text p {
-      font-size: var(--font-size4);
+      font-size: var(--font-size5);
     }
   }
 

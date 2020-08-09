@@ -17,7 +17,7 @@ a:hover {
     /* PRIMARY */
 
     --primary: hsl(243, 100%, 69%);
-    --primary-text: hsl(243, 100%, 95%);
+    --primary-text: hsl(243, 100%, 96%);
     --secondary-light: hsl(126,100%,88%);
     --secondary-dark: hsl(126, 100%, 15%);
 
@@ -117,10 +117,20 @@ a:hover {
 
 .section-title {
   text-align: center;
-  font-size: var(--font-size9);
+  font-size: var(--font-size10);
   margin-bottom: var(--size7);
+  /* word-spacing: var(--size0);
+  letter-spacing: 1px; */
+  /* color: var(--cool-gray0); */
+  /* font-weight: var(--font-weight0); */
 }
 
 .section-title-span {
   color: var(--primary);
+  font-weight: var(--font-weight1);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
 }
