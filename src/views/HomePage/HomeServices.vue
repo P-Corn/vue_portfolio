@@ -108,7 +108,7 @@ export default {
 
   @media only screen and (min-width: 960px){
     .row {
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
   }
 
