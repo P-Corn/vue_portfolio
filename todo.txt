@@ -1,0 +1,44 @@
+---------------- TASKS ----------------------
+
+!!!!!!!!!! PRIORITIES !!!!!!!!!!!!!!!!
+
+- Finish Website!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+~~~~~~ OVERALL TASKS ~~~~~~~
+- Decide on a color Scheme
+- Typography?
+- More animations, especially mobile??
+- RESPONSIVENESS EVERYWHERE!
+
+~~~~~~ NAVBAR TASKS ~~~~~~~~
+- Make a Navbar
+
+~~~~~~ HEADER TASKS ~~~~~~~~
+- Find a background for the Header
+
+~~~~~~ SERVICES TASKS ~~~~~~~~~
+- Get icons for the services
+- Spacing needs to look gud
+- Borders between only the middle service??
+
+~~~~~~~ PORTFOLIO ~~~~~~~~~~~
+- Possibly some background stuff
+- Title needs to be better?
+- Add arrows
+- Add a hover effect??
+
+~~~~~~~ Contact Form ~~~~~~~~~
+- change loading to something cooler
+- change notification to something better
+- add an error notification
+
+~~~~~~~ Footer ~~~~~~~~~~~
+- Make one
+
+~~~~ Non-programming wise ~~~~~~
+
+ - Figure out a Logo
+ - FIGURE OUT A NAME
