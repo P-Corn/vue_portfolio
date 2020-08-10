@@ -17,9 +17,14 @@ a:hover {
     /* PRIMARY */
 
     --primary: hsl(243, 100%, 69%);
+    --primary2: hsl(243, 88%, 97%);
     --primary-text: hsl(243, 100%, 96%);
-    --secondary-light: hsl(126,100%,88%);
-    --secondary-dark: hsl(126, 100%, 15%);
+    /* --secondary-light: hsl(126,100%,88%); */
+    /* --secondary-dark: hsl(126, 100%, 15%); */
+    --secondary-light: hsl(338, 100%, 68%);
+    --secondary-dark: hsl(338, 50%, 30%);
+    --secondary-text: hsl(338, 100%, 97%);
+
 
 
     /* COOL GRAY */
@@ -128,7 +133,7 @@ a:hover {
 }
 
 .section-title-span {
-  color: var(--primary);
+  color: var(--secondary-light);
   font-weight: var(--font-weight1);
 }
 

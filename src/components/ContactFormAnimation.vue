@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
     .loading-container{
-        width: 488px;
+        width: 100%;
         height: 426px;
         display: flex;
         flex-direction: column;
@@ -32,5 +32,11 @@ export default {
     }
     .loading-text{
         margin: auto;
+    }
+
+    @media only screen and (max-width: 576px) {
+        .loading-container{
+            height: 606px;
+        }
     }
 </style>

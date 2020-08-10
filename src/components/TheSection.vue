@@ -16,11 +16,12 @@ export default {
 
   section {
     padding: var(--size7) 0;
+    display: flex;
+    align-items: center;
   }
 
   .container {
-    padding-left: var(--size4);
-    padding-right: var(--size4);
     height: 100%;
+    max-width: 1600px;
   }
 </style>

@@ -18,7 +18,8 @@ import { store } from '@/store.js'
 import TheSection from '@/components/TheSection.vue'
 import ContactForm from '@/components/ContactForm'
 import ContactFormAnimation from '@/components/ContactFormAnimation.vue'
-import ContactFormNotification from '@/components/ContactFormNotification.vue'
+import ContactNotificationSuccess from '@/components/ContactNotificationSuccess.vue'
+import ContactNotificationError from '@/components/ContactNotificationError.vue'
 
 export default {
     name: 'HomeContactSection',
@@ -26,7 +27,8 @@ export default {
         TheSection,
         ContactForm,
         ContactFormAnimation,
-        ContactFormNotification
+        ContactNotificationSuccess,
+        ContactNotificationError
     },
     data: function() {
         return {
@@ -34,7 +36,7 @@ export default {
         }
     },
     created(){
-        store.changeComponent('ContactFormAnimation')
+        store.changeComponent('ContactForm')
     }
 }
 </script>

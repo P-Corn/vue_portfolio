@@ -1,6 +1,6 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">What we <span class="section-title-span">do.</span></h2>
+      <h2 class="section-title">What we do<span class="section-title-span">.</span></h2>
         <v-row>
           <v-col
           cols="10"
@@ -83,7 +83,7 @@ export default {
 
   .section {
     /* box-shadow: var(--boxshadow2); */
-    background-color: var(--cool-gray5);
+    /* background-color: var(--cool-gray5); */
   }
 
   .row {

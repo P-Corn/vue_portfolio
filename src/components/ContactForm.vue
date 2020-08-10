@@ -56,10 +56,11 @@ export default {
             emailjs.sendForm('gmail', 'template_ZMxbSGEd', e.target, 'user_9uUk2CarKyhfbMdeVcx4V')
                 .then((result) => {
                     console.log('SUCCESS!', result.status, result.text);
-                    store.changeComponent('ContactFormNotification')
+                    store.changeComponent('ContactNotificationSuccess')
 
                 }, (error) => {
                     console.log('FAILED...', error);
+                    store.changeComponent('ContactNotificationError')
                     //need to put error notification here!
                 });
         },

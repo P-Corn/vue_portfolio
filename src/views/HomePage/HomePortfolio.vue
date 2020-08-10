@@ -1,6 +1,6 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">Our <span class="section-title-span">projects.</span></h2>
+      <h2 class="section-title">Our projects<span class="section-title-span">.</span></h2>
       <v-row justify="space-around">
         <v-col
         v-for="imageObject in imageObjects" 
