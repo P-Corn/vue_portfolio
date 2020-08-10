@@ -5,7 +5,9 @@
           <v-col
           cols="10"
           sm="5"
-          md="3"
+          lg="4"
+          xlg="3"
+          class="col"
           >
             <ServiceItemCard
               class="service-item-card"
@@ -16,7 +18,9 @@
           <v-col
           cols="10"
           sm="5"
-          md="3"
+          lg="4"
+          xlg="3"
+          class="col"
           >
             <ServiceItemCard
               class="middle-card service-item-card"
@@ -25,9 +29,11 @@
               imgTitle="Hosting"   />
           </v-col>
           <v-col
+          class="col"
           cols="10"
           sm="5"
-          md="3"
+          lg="4"
+          xlg="3"
           >
             <ServiceItemCard 
               class="service-item-card"
@@ -76,16 +82,18 @@ export default {
 <style scoped>
 
   .section {
-    box-shadow: var(--boxshadow2);
+    /* box-shadow: var(--boxshadow2); */
+    background-color: var(--cool-gray5);
   }
 
   .row {
     justify-content: space-around;
   }
 
-  .middle-card {
-    padding: 2rem;
+  .col {
+    max-width: var(--size13);
   }
+
 
   /* .service-item-card {
     max-width: 300px;
@@ -95,14 +103,12 @@ export default {
 /* MEDIA QUERIES */
 
   @media only screen and (min-width: 600px) {
-    .middle-card {
-      padding: 0;
-    }
+  
   }
 
   @media only screen and (min-width: 960px){
     .row {
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 

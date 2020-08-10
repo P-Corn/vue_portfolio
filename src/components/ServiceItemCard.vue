@@ -38,12 +38,18 @@ export default {
 
 .service-card-container {
   text-align: center;
-  
+  /* border: 1px solid black; */
+  padding: var(--size5);
+  box-shadow: var(--boxshadow2);
+  /* border-top-left-radius: var(--border-radius-card);
+  border-bottom-right-radius: var(--border-radius-card); */
+  border-radius: var(--border-radius-card);
+  background-color: white;
 }
 
 .service-card-title h3 {
   font-weight: var(--font-weight1);
-  font-size: var(--font-size5);
+  font-size: var(--font-size6);
   /* color: var(--primary1); */
 }
 
@@ -75,8 +81,13 @@ hr {
 .service-card-text p {
   color: var(--cool-gray1);
   margin: 0;
-  font-size: var(--font-size3);
+  font-size: var(--font-size4);
 }
+
+
+@media only screen and (max-width: 960px){
+ 
+  }
 
 @media only screen and (min-width: 1200px){
 

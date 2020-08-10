@@ -95,6 +95,8 @@ a:hover {
 
     /* Border Radius */
 
+    --border-radius-card: 10px;
+
     /* Border Width */
 
     --bootstrap-card-border: 1px solid rgba(0, 0, 0, 0.125);
