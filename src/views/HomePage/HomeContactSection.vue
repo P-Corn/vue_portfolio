@@ -34,7 +34,7 @@ export default {
         }
     },
     created(){
-        store.changeComponent('ContactForm')
+        store.changeComponent('ContactFormAnimation')
     }
 }
 </script>
@@ -66,18 +66,6 @@ export default {
         font-weight: var(--font-weight1);
         font-size: var(--font-size42);
         margin-bottom: var(--size4);
-    }
-
-    .contact-form {
-        /* max-width: var(--size14); */
-    }
-
-    .notification {
-        display: none;
-        margin: auto var(--size4);
-        text-align: center;
-        background-color: var(--cool-gray2);
-        padding: var(--size2) 0;
     }
 
     /* MEDIA QUERIES */

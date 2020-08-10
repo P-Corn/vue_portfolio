@@ -68,14 +68,6 @@ export default {
 </script>
 
 <style scoped>
-    /* containers and inside of contact form */
-
-    .small-input-container,
-    .text-area-container,
-    .submit-button-container {
-        /* margin: var(--size2) 0; */
-    }
-
     .small-input,
     .text-area,
     button {
@@ -106,12 +98,6 @@ export default {
 
     @media only screen and (max-width: 576px) {
 
-        .small-input-container,
-        .text-area-container,
-        .submit-button-container {
-            /* margin: var(--size5) 0; */
-    }
-
         .small-input-container {
             display: flex;
             flex-direction: column;
@@ -120,10 +106,6 @@ export default {
 
         .small-input {
             width: 100%;
-        }
-
-        .small-input:first-of-type {
-            /* margin-bottom: var(--size5) */
         }
     }
 
