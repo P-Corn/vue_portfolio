@@ -19,12 +19,8 @@ export default {
   }
 
   .container {
-    max-width: 1200px;
-  }
-
-  @media only screen and (max-width: 1200px){
-    .container {
-      padding: 0 var(--size4);
-    }
+    padding-left: var(--size4);
+    padding-right: var(--size4);
+    height: 100%;
   }
 </style>

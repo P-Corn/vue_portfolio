@@ -1,0 +1,45 @@
+
+---------------- TASKS ----------------------
+
+!!!!!!!!!! PRIORITIES !!!!!!!!!!!!!!!!
+
+- Finish Website!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+~~~~~~ OVERALL TASKS ~~~~~~~
+- Decide on a color Scheme
+- Typography?
+- Make a Button Component
+- More animations, especially mobile??
+- add vuetify to our project
+
+~~~~~~ NAVBAR TASKS ~~~~~~~~
+- Fiddle with the Navbar
+
+~~~~~~ HEADER TASKS ~~~~~~~~
+- Find a background for the Header
+
+~~~~~~ SERVICES TASKS ~~~~~~~~~
+- Get icons for the services
+- More seperation between sections??
+- Borders between only the middle service??
+
+~~~~~~~ PORTFOLIO ~~~~~~~~~~~
+- Possibly some background stuff
+- Title needs to be better?
+- Change arrow on hover?
+
+~~~~~~~ Contact Form ~~~~~~~~~
+- change loading to something cooler
+- change notification to something better
+- add an error notification
+
+~~~~~~~ Footer ~~~~~~~~~~~
+- Make one
+
+~~~~ Non-programming wise ~~~~~~
+
+ - Figure out a Logo
+ - FIGURE OUT A NAME

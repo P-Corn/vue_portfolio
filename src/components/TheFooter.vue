@@ -22,8 +22,7 @@ export default {
 
 <style scoped>
     footer{
-        height: var(--size10);
-        background-color: var(--cool-gray5);
+        height: 100%;
         margin: 0;
     }
 </style>
