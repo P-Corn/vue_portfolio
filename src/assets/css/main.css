@@ -16,12 +16,11 @@ a:hover {
 
     /* PRIMARY */
 
-    --primary: hsl(243, 100%, 69%);
-    --primary2: hsl(243, 88%, 97%);
+    --primary: #6961ff;
+    /* --primary: hsl(250, 100%, 69%); */
+    --primary2: hsl(240, 87%, 97%);
     --primary-text: hsl(243, 100%, 96%);
-    /* --secondary-light: hsl(126,100%,88%); */
-    /* --secondary-dark: hsl(126, 100%, 15%); */
-    --secondary-light: hsl(338, 100%, 68%);
+    --secondary-light: #ff5c98;
     --secondary-dark: hsl(338, 50%, 30%);
     --secondary-text: hsl(338, 100%, 97%);
 

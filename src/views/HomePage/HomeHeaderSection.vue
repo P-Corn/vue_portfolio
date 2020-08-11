@@ -3,7 +3,7 @@
       <div class="header-row">
         <div class="text-container">
           <div class="header-text">
-            <h1 class="header-text-title">We are the website peeps<span class="section-title-sp">.</span></h1>
+            <h1 class="header-text-title">We are Developers<span class="section-title-sp">.</span></h1>
             <div class="header-text-paragraph">
               <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
             </div>
@@ -65,8 +65,9 @@ export default {
   background: url("../../assets/images/headeryuh2.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-color: var(--primary); */
   /* position: relative; */
-  min-height: 90vh;
+  min-height: 95vh;
   /* box-shadow: var(--boxshadow2); */
 }
 
@@ -98,7 +99,7 @@ export default {
     font-size: var(--font-size10);
     font-weight: var(--font-weight1);
     line-height: var(--size7);
-    text-shadow: 2px 0px 8px rgba(0, 0, 0, .3);
+    text-shadow: 2px 1px rgba(0, 0, 0, .3);
     /* you got this */
     /* text shadow is gud */
 }
@@ -111,7 +112,7 @@ export default {
 }
 
 .header-text-paragraph p {
-  max-width: var(--size14);
+  max-width: var(--size15);
   margin: 0;
   color: var(--primary-text);
 }
@@ -130,6 +131,7 @@ export default {
     height: 100%;
     display: flex;
     align-items: center;
+    margin-top: var(--size8);
 }
 
 svg {
