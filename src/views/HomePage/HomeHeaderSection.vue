@@ -8,7 +8,7 @@
               <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
             </div>
             <div class="header-button-container">
-              <v-btn x-large color="var(--secondary-light)" class="header-text-button">Our projects</v-btn>
+              <v-btn x-large color="var(--secondary-light)" class="header-text-button">Hire us</v-btn>
             </div>
           </div>
         </div>     
@@ -99,7 +99,7 @@ export default {
     font-size: var(--font-size10);
     font-weight: var(--font-weight1);
     line-height: var(--size7);
-    text-shadow: 2px 1px rgba(0, 0, 0, .3);
+    text-shadow: var(--text-shadow1);
     /* you got this */
     /* text shadow is gud */
 }

@@ -8,10 +8,12 @@
         <h3>{{imgTitle}}</h3>
       </div>
       <div class="hr-container">
-        <hr>
       </div>
       <div class="service-card-text">
         <p>{{imgText}}</p>
+      </div>
+      <div class="service-card-link">
+        <a href="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></a>
       </div>
     </div>
   </div>
@@ -37,14 +39,36 @@ export default {
 
 
 .service-card-container {
-  text-align: center;
+  text-align: left;
   /* border: 1px solid black; */
   padding: var(--size5);
   box-shadow: var(--boxshadow2);
-  /* border-top-left-radius: var(--border-radius-card);
-  border-bottom-right-radius: var(--border-radius-card); */
-  border-radius: var(--border-radius-card);
+  border-top-left-radius: var(--border-radius-card);
+  border-bottom-right-radius: var(--border-radius-card);
+  /* border-radius: var(--border-radius-card); */
   background-color: white;
+  transition: all .3s;
+}
+
+.service-card-container:hover {
+  box-shadow: var(--boxshadow4);
+}
+
+.service-card-link .v-icon.v-icon {
+  color: var(--icon-yellow-dark);
+}
+
+.service-card-link {
+  margin-top: var(--size4);
+}
+
+.service-card-link a{
+  font-size: var(--font-size4);
+  color: var(--icon-yellow-dark);
+}
+
+.service-card-title {
+  margin: var(--size1) 0;
 }
 
 .service-card-title h3 {
@@ -53,35 +77,23 @@ export default {
   /* color: var(--primary1); */
 }
 
-.service-card-icon {
-  margin-bottom: var(--size1);
-}
-
-.v-icon.v-icon {
-  font-size: var(--font-size8);
-  padding: var(--size4);
-  background-color: var(--secondary-light);
-  border-radius: 100px;
-  color: var(--secondary-dark);
-  box-shadow: var(--boxshadow1);
-}
-
-.hr-container {
-  width: 100%;
-  margin: var(--size0) 0;
-}
-
-hr {
-  border: 2px solid #c2ffc8;
-  max-width: var(--size7);
-  margin: 0 auto;
-  /* border-radius: 200px; */
-}
-
 .service-card-text p {
   color: var(--cool-gray1);
-  margin: 0;
+  margin: var(--size1) 0;
   font-size: var(--font-size4);
+}
+
+.service-card-icon {
+  margin-bottom: var(--size3);
+}
+
+.service-card-icon .v-icon.v-icon {
+  font-size: var(--font-size7);
+  padding: var(--size3);
+  background-color: var(--icon-yellow);
+  border-radius: 100px;
+  color: var(--icon-yellow-dark);
+  /* box-shadow: var(--boxshadow1); */
 }
 
 
@@ -92,10 +104,10 @@ hr {
 @media only screen and (min-width: 1200px){
 
     .service-card-title h3 {
-      font-size: var(--font-size7);
+      font-size: var(--font-size6);
     }
     .service-card-text p {
-      font-size: var(--font-size5);
+      font-size: var(--font-size4);
     }
   }
 

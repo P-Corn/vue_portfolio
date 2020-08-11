@@ -1,7 +1,8 @@
 
-
+a,
 a:hover {
     text-decoration: none;
+    color: inherit;
   }
 
 :root {
@@ -23,6 +24,9 @@ a:hover {
     --secondary-light: #ff5c98;
     --secondary-dark: hsl(338, 50%, 30%);
     --secondary-text: hsl(338, 100%, 97%);
+
+    --icon-yellow: hsl(54, 100%, 88%);
+    --icon-yellow-dark: hsl(54, 100%, 35%);
 
 
 
@@ -56,7 +60,8 @@ a:hover {
 
     /* Font Weight */
     --font-weight0: 400;
-    --font-weight1: 700;
+    --font-weight1: 500;
+    --font-weight2: 700;
 
     /* ----------------- */
 
@@ -88,6 +93,10 @@ a:hover {
     --xl: 1200px;
 
     /* Line Height */
+
+    /* Text shadows*/
+
+    --text-shadow1: 2px 1px rgba(0, 0, 0, .3);
     
     /* Box Shadows */
 
@@ -99,7 +108,7 @@ a:hover {
 
     /* Border Radius */
 
-    --border-radius-card: 10px;
+    --border-radius-card: 35px;
 
     /* Border Width */
 

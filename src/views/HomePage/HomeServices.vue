@@ -1,46 +1,62 @@
 <template>
     <TheSection class="section">
-      <h4>Our services</h4>
+      <!-- <h4>Our services</h4> -->
       <h2 class="section-title">What we do<span class="section-title-span">.</span></h2>
-        <v-row>
+        <v-row
+        class="flex-wrap"
+        >
           <v-col
           cols="10"
           sm="5"
-          lg="4"
+          lg="3"
           xlg="3"
           class="col"
           >
-            <ServiceItemCard
+            <ServiceItemCard 
               class="service-item-card"
-              iconSrc="build" 
-              imgText="This is a paragraph but I'm making this one extra long for testing reasons so yeah here it"
-              imgTitle="Maintenance"   />
+              iconSrc="web" 
+              imgText="This is our bread and butter. Web development is the core of what we do. We can make your business come to life."
+              imgTitle="Web development"   />
           </v-col>
           <v-col
           cols="10"
           sm="5"
-          lg="4"
+          lg="3"
           xlg="3"
           class="col"
           >
             <ServiceItemCard
               class="middle-card service-item-card"
               iconSrc="dns" 
-              imgText="This is a paragraph as well. More text lorem yeah yeah test test 123 adding test text."
+              imgText="Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam."
               imgTitle="Hosting"   />
           </v-col>
           <v-col
           class="col"
           cols="10"
           sm="5"
-          lg="4"
+          lg="3"
           xlg="3"
           >
-            <ServiceItemCard 
+              <ServiceItemCard 
               class="service-item-card"
-              iconSrc="web" 
-              imgText="This is paragraph 3. We make cool sites isn't that obvious by the awesome stuff we have here?"
-              imgTitle="Web development"   />
+              iconSrc="smartphone" 
+              imgText="There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly."
+              imgTitle="Responsive design"   />
+          </v-col>
+          <v-col
+          class="col"
+          cols="10"
+          sm="5"
+          lg="3"
+          xlg="3"
+          >
+            <ServiceItemCard
+              class="service-item-card"
+              iconSrc="build" 
+              imgText="We maintain your site with monthly updates and stuff like adding new content. You don't have to worry about a thing."
+              imgTitle="Maintenance"
+              />
           </v-col>
         </v-row>
     </TheSection>
@@ -83,8 +99,8 @@ export default {
 <style scoped>
 
   .section {
-    /* box-shadow: var(--boxshadow2); */
-    /* background-color: var(--cool-gray5); */
+    padding-top: 0;
+    background-color: var(--cool-gray5);
   }
 
   .row {
@@ -92,13 +108,13 @@ export default {
   }
 
   .col {
-    max-width: var(--size13);
+    max-width: 400px;
   }
 
 
-  /* .service-item-card {
-    max-width: 300px;
-  } */
+  .service-item-card {
+    max-width: 350px;
+  } 
   
 
 /* MEDIA QUERIES */
