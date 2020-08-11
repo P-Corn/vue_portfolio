@@ -42,7 +42,7 @@ export default {
 
 h3 {
   margin: 0;
-  font-weight: var(--font-weight1);
+  font-weight: var(--font-weight2);
   /* text-shadow: var(--text-shadow1); */
   font-size: var(--font-size6);
   text-decoration: none;

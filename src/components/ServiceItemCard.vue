@@ -72,7 +72,7 @@ export default {
 }
 
 .service-card-title h3 {
-  font-weight: var(--font-weight1);
+  font-weight: var(--font-weight2);
   font-size: var(--font-size6);
   /* color: var(--primary1); */
 }
