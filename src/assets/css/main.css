@@ -17,13 +17,13 @@ a:hover {
 
     /* PRIMARY */
 
-    --primary: #6961ff;
-    /* --primary: hsl(250, 100%, 69%); */
+    --primary: hsl(243, 100%, 69%);
+    --primary-light: hsl(243, 100%, 95%);
     --primary2: hsl(240, 87%, 97%);
     --primary-text: hsl(243, 100%, 96%);
     --secondary-light: #ff5c98;
     --secondary-dark: hsl(338, 50%, 30%);
-    --secondary-text: hsl(338, 100%, 97%);
+    --secondary-text: hsl(338, 100%, 98%);
 
     --icon-yellow: hsl(54, 100%, 88%);
     --icon-yellow-dark: hsl(54, 100%, 35%);

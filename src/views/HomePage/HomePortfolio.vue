@@ -1,19 +1,17 @@
 <template>
     <TheSection class="section">
       <h2 class="section-title">Our projects<span class="section-title-span">.</span></h2>
-      <v-row justify="space-around">
-        <v-col
+      <div class="portfolio-grid">
+        <div
         v-for="imageObject in imageObjects" 
         :key="imageObject.id"
-        cols="12"
-        md="6"
-        class="portfolio-section-card">
+        class="portfolio-grid-item">
           <GridImageCard
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
-        </v-col>
-      </v-row>
+        </div>
+      </div>
     </TheSection>
 </template>
 
@@ -72,9 +70,16 @@ export default {
     background-color: var(--primary);
   }
 
-  .portfolio-section-card {
-    padding: var(--size4);
-    /* max-width: 536px; */
+  .portfolio-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: auto;
+    grid-gap: var(--size7);
+  }
+
+  .portfolio-grid-item {
+
   }
 
   .section-title {

@@ -68,7 +68,7 @@ export default {
 
   .section {
     padding-top: 0;
-    background-color: var(--cool-gray5);
+    /* background-color: var(--cool-gray5); */
   }
 
   .row {

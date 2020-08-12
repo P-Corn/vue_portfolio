@@ -1,23 +1,21 @@
 <template>
-    <a class="image-card__container" href="#">
+    <a @mouseover="hoverHide = true" @mouseleave="hoverHide = false" class="image-card__container" href="#">
       <!-- class="image-card"  THIS CLASS WAS ON THE CARD COMPONENT-->
       <v-card>
           <v-img :src="imgSrc"
-          gradient="to bottom, rgba(0,0,0,.05), rgba(0,0,0,.05)"
-          height="400px"
+          transition="fade-transition"
+          :class="[hoverHide ? 'zoom-out' : 'zoom-in']"
+          class="align-end card-image"
+          :aspect-ratio="5/4"
+          :gradient="[hoverHide ? 'to bottom, rgba(0,0,0,0), rgba(0,0,0,0)' : 'to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)']"
           >
           </v-img>
-          <v-card-title
-          class="align-center justify-space-between"
-          >
-            <h3>{{ imgTitle }}</h3>
-          </v-card-title>
-        <v-card-text>
-          <p>{{imgText}}</p>
-          <div class="v-card__link">
-            <a href="#">View site<v-icon class="link-icon">navigate_next</v-icon></a>
+          <div
+            :class="[hoverHide ? 'hide' : 'show']"
+            class="card-title align-center justify-space-between"
+            >
+              <h3>{{ imgTitle }}</h3>
           </div>
-        </v-card-text>
       </v-card>
     </a>
 </template>
@@ -40,71 +38,62 @@ export default {
 
 <style scoped>
 
-h3 {
-  margin: 0;
-  font-weight: var(--font-weight2);
-  /* text-shadow: var(--text-shadow1); */
-  font-size: var(--font-size6);
-  text-decoration: none;
-  /* position: absolute; */
-}
+/* --------- */
 
-.v-card__title {
-  padding-bottom: var(--size1);
-}
+  .fade-enter-active, .fade-enter-to, .fade-leave-active {
+    transition: linear-gradient 2s;
+  }
 
-.v-card__text p {
-  margin: 0;
-  font-size: var(--font-size4);
-  color: var(--cool-gray1);
-}
+  .show {
+    opacity: 1;
+  }
 
-.v-card__link {
-  margin-top: var(--size4);
-}
+  .hide {
+    opacity: 0;
+  }
 
-.v-card__text a {
-  color: var(--secondary-light);
-  font-size: var(--font-size4);
-}
+  .zoom-in {
+    transform: scale(1.10);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
+  }
 
-.v-card__text .v-icon.v-icon {
-  color: var(--secondary-light);
-}
+  .zoom-out {
+    transform: scale(1.01);
+  }
+
+/* --------- */
 
 .image-card__container {
   text-decoration: none;
+  position: relative;
 }
 
 .v-sheet.v-card {
-  box-shadow: var(--boxshadow5) !important;
+  box-shadow: var(--boxshadow3) !important;
   /* border-radius: var(--size0); */
+  transition: all .3s;
+  overflow: hidden;
+}
+
+.card-image {
   transition: all .3s;
 }
 
-.v-sheet.v-card:hover {
-  box-shadow: var(--boxshadow4) !important;
-  /* transform: translateY(-1px); */
-  /* border-radius: var(--size0); */
+.card-title {
+  transition: ease .35s;
+  position: absolute;
+  bottom: 0;
+  
 }
 
-/* .v-image {
-  height: var(--size-345);
-} */
-/* 
-.v-card__title {
-  padding-bottom: var(--size1);
-} */
-
-.image-card__icon {
-  /* font-size: var(--font-size5); */
-  color: var(--cool-gray1);
-  font-size: var(--font-size5);
+h3 {
+  margin: 0;
   font-weight: var(--font-weight1);
-  position: absolute;
-  right: 0;
-  top: 51%;
-  transform: translateY(-50%);
+  /* text-shadow: var(--text-shadow1); */
+  font-size: var(--font-size6);
+  text-decoration: none;
+  color: white;
+  /* position: absolute; */
 }
 
 

@@ -1,13 +1,21 @@
 <template>
     <TheSection class="bg-color">
         <v-row class="contact-section">
-            <v-col cols="12" md="6" class="contact-text">
-                <h4>Contact Us</h4>
-                <h2>We'll respond if we aren't asleep</h2>
-            </v-col>
-            <v-col cols="12" md="6" class="contact-form">
+            <v-col cols="12"
+            lg="5"
+            md="6"
+            sm="12"
+            class="contact-form">
                 <!-- <ContactForm /> -->
                 <component :is="storeState.dynamicComponent"></component>
+            </v-col>
+            <v-col cols="12"
+            lg="5" 
+            md="4"
+            sm="12"
+            class="contact-text">
+                <h4>Contact Us</h4>
+                <h2>We'll respond if we aren't asleep</h2>
             </v-col>
         </v-row>
     </TheSection>
@@ -92,9 +100,6 @@ export default {
     .contact-section {
         display: flex;
         justify-content: space-around;
-    }
-    .contact-form {
-        max-width: var(--size14);
     }
 }
 </style>

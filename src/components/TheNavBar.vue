@@ -35,7 +35,10 @@
             <v-list-item-group>
 
             <v-list-item-content>
-                <v-list-item-title>THE WEBSITE DUDES!</v-list-item-title>
+                <v-list-item-title class="title">LOGO</v-list-item-title>
+                <v-spacer></v-spacer>
+                <v-list-item-title class="title">THE WEBSITE DUDES!</v-list-item-title>
+                <v-spacer></v-spacer>
                 <v-list-item-subtitle>WE MAKES YOUR SITE REAL GUD</v-list-item-subtitle>
             </v-list-item-content>
 

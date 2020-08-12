@@ -1,43 +1,85 @@
 <template>
             <div class="contact-form-container">
                 <v-form name="contact-form" @submit.prevent="sendEmail">
-                        <div class="small-input-container">
-                            <v-text-field
+                        <v-row>
+                            <v-col
+                            cols="12"
+                            lg="6"
+                            md="6"
+                            sm="12">
+                                <v-text-field
                                 name="name"
                                 label="Name"
                                 class="small-input"
+                                
+                                filled
                                 required
-                            ></v-text-field>
-                            <v-text-field
+                                ></v-text-field>
+                            </v-col>
+                            <v-col
+                            cols="12"
+                            lg="6"
+                            md="6"
+                            sm="12">
+                                <v-text-field
                                 name="companyName"
                                 label="Company"
                                 class="small-input"
+                                
+                                filled
                                 required
-                            ></v-text-field>
-                        </div>
-                        <div class="small-input-container">
-                            <v-text-field
-                                name="email"
-                                label="Email"
-                                class="small-input"
-                                required
-                            ></v-text-field>
-                            <v-text-field
-                                name="phoneNumber"
-                                label="Phone Number"
-                                class="small-input"
-                                required
-                            ></v-text-field>
-                        </div>
-                        <div class="text-area-container">
-                            <v-textarea
+                                ></v-text-field>
+                            </v-col>
+                        </v-row>
+                        <!-- <div class="small-input-container"> -->
+                        <v-row>
+                            <v-col
+                            cols="12"
+                            lg="6"
+                            md="6"
+                            sm="12">
+                                <v-text-field
+                                    name="email"
+                                    label="Email"
+                                    class="small-input"
+                                    
+                                    filled
+                                    required
+                                ></v-text-field>
+                            </v-col>
+                            <v-col
+                            cols="12"
+                            lg="6"
+                            md="6"
+                            sm="12">
+                                <v-text-field
+                                    name="phoneNumber"
+                                    label="Phone Number"
+                                    class="small-input"
+                                    
+                                    filled
+                                    required
+                                ></v-text-field>
+                            </v-col>
+                        </v-row>
+                        <!-- </div> -->
+                        <v-row class="text-area-container">
+                            <v-col>
+                                <v-textarea
                                 name="message"
                                 label="Message"
-                            ></v-textarea>
-                        </div>
-                        <div class="submit-button-container">
-                            <v-btn rounded color="primary" type="submit" dark>Rounded Button</v-btn>
-                        </div>
+                                
+                                filled
+                                ></v-textarea>
+                            </v-col>
+                        </v-row>
+                        <v-row class="submit-button-container" justify="end">
+                            <v-col
+                            cols="auto"
+                            >
+                                <v-btn x-large color="var(--secondary-light)" class="header-text-button">Send message</v-btn>
+                            </v-col>
+                        </v-row>
                 </v-form>
             </div>
 </template>
@@ -69,45 +111,24 @@ export default {
 </script>
 
 <style scoped>
-    .small-input,
-    .text-area,
-    button {
-        border: none;
+    .contact-form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: var(--boxshadow3);
+        padding: 36px;
     }
 
-    .small-input-container {
-        display: flex;
-        justify-content: space-between;
+    .v-btn.v-btn {
+        color: var(--secondary-text);
     }
 
-    .small-input {
-        width: 46%;
-        padding: var(--size3);
-    }
-
-    .text-area-container {
-        padding: var(--size3);
-    }
-
-    .submit-button-container button{
-        width: 100%;
-        background-color: var(--cool-gray4);
-        padding: var(--size0);
+    input{
+        background-color: white;
     }
 
     /* MEDIA */
 
     @media only screen and (max-width: 576px) {
-
-        .small-input-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .small-input {
-            width: 100%;
-        }
     }
 
     @media only screen and (min-width: 576px) (max-width: 768px){
