@@ -6,6 +6,7 @@
             <h1 class="header-text-title">We are Developers<span class="section-title-sp">.</span></h1>
             <div class="header-text-paragraph">
               <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
+              <p>This is mobile responsive branch</p>
             </div>
             <div class="header-button-container">
               <v-btn x-large color="var(--secondary-light)" class="header-text-button">Hire us</v-btn>
