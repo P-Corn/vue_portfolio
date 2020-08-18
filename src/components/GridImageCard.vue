@@ -80,6 +80,7 @@ export default {
 }
 
 .card-title {
+  padding: var(--size2);
   transition: ease .35s;
   position: absolute;
   bottom: 0;

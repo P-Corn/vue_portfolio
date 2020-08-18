@@ -62,10 +62,10 @@ export default {
 
 .section {
   /* background: linear-gradient(-45deg, var(--cool-gray5) 50%, var(--primary) 50%); */
-  background: url("../../assets/images/headeryuh2.svg");
+  /* background: url("../../assets/images/headeryuh2.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: var(--primary); */
+  background-color: white;
   /* position: relative; */
   min-height: 95vh;
   /* box-shadow: var(--boxshadow2); */
@@ -92,16 +92,14 @@ export default {
 
 .header-text {
   text-align: center;
-  color: white;
+  /* color: white; */
 }
 
 .header-text-title {
     font-size: var(--font-size10);
     font-weight: var(--font-weight1);
     line-height: var(--size7);
-    text-shadow: var(--text-shadow1);
-    /* you got this */
-    /* text shadow is gud */
+    /* text-shadow: var(--text-shadow1); */
 }
 
 .header-text-paragraph {
@@ -114,7 +112,7 @@ export default {
 .header-text-paragraph p {
   max-width: var(--size15);
   margin: 0;
-  color: var(--primary-text);
+  color: var(--cool-gray0);
 }
 
 .header-text-button:first-of-type {

@@ -67,7 +67,7 @@ export default {
 <style scoped>
 
   .section {
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
   }
 
   .portfolio-grid {
@@ -83,7 +83,7 @@ export default {
   }
 
   .section-title {
-    color: white;
+    /* color: white; */
   }
 
   @media only screen and (max-width: 576px) {

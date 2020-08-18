@@ -2,7 +2,7 @@
   <div>
     <div class="service-card-container">
       <div class="service-card-icon">
-        <v-icon>{{iconSrc}}</v-icon>
+        <v-icon :color="color">{{iconSrc}}</v-icon>
       </div>
       <div class="service-card-title">
         <h3>{{imgTitle}}</h3>
@@ -13,7 +13,7 @@
         <p>{{imgText}}</p>
       </div>
       <div class="service-card-link">
-        <a href="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></a>
+        <a :color="color" href="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></a>
       </div>
     </div>
   </div>
@@ -25,7 +25,8 @@ export default {
   props: {
       iconSrc: String,
       imgTitle: String,
-      imgText: String
+      imgText: String,
+      color: String
   },
   data: function() {
     return {
