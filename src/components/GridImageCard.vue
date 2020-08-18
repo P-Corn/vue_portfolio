@@ -3,11 +3,9 @@
       <!-- class="image-card"  THIS CLASS WAS ON THE CARD COMPONENT-->
       <v-card>
           <v-img :src="imgSrc"
-          transition="fade-transition"
           :class="[hoverHide ? 'zoom-out' : 'zoom-in']"
           class="align-end card-image"
           :aspect-ratio="5/4"
-          :gradient="[hoverHide ? 'to bottom, rgba(0,0,0,0), rgba(0,0,0,0)' : 'to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)']"
           >
           </v-img>
           <div
@@ -20,7 +18,10 @@
     </a>
 </template>
 
+
 <script>
+//This goes on the v-img as an attribute
+// :gradient="[hoverHide ? 'to bottom, rgba(0,0,0,0), rgba(0,0,0,0)' : 'to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)']"
 export default {
   name: 'GridImageCard',
   props: {
@@ -39,11 +40,6 @@ export default {
 <style scoped>
 
 /* --------- */
-
-  .fade-enter-active, .fade-enter-to, .fade-leave-active {
-    transition: linear-gradient 2s;
-  }
-
   .show {
     opacity: 1;
   }
@@ -54,11 +50,14 @@ export default {
 
   .zoom-in {
     transform: scale(1.10);
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
   }
 
   .zoom-out {
     transform: scale(1.01);
+  }
+  .v-card .v-image .v-image__image {
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)) !important;
+    position: absolute;
   }
 
 /* --------- */

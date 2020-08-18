@@ -13,6 +13,7 @@
 - Typography?
 - Make a Button Component
 - More animations, especially mobile??
+- add vuetify to our project
 
 ~~~~~~ NAVBAR TASKS ~~~~~~~~
 - Fiddle with the Navbar
@@ -21,6 +22,7 @@
 - Find a background for the Header
 
 ~~~~~~ SERVICES TASKS ~~~~~~~~~
+- Get icons for the services
 - More seperation between sections??
 - Borders between only the middle service??
 
@@ -31,6 +33,8 @@
 
 ~~~~~~~ Contact Form ~~~~~~~~~
 - change loading to something cooler
+- change notification to something better
+- add an error notification
 
 ~~~~~~~ Footer ~~~~~~~~~~~
 - Make one
