@@ -64,6 +64,10 @@ export default {
   min-height: 95vh;
 } */
 
+.header-text-paragraph p {
+  margin: 0;
+}
+
 .header-row {
   display: flex;
   flex-direction: column;
@@ -83,7 +87,7 @@ export default {
 .header-text-title {
   font-size: var(--font-size9);
   font-weight: var(--font-weight1);
-  line-height: var(--size7);
+  line-height: var(--size6);
 }
 
 .header-text-paragraph {
@@ -143,13 +147,13 @@ svg {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .text-container {
-    align-items: unset;
+    /* align-items: unset; */
   }
   .header-text {
-    margin-top: var(--size9);
+    /* margin-top: var(--size11); */
   }
   .header-text-title {
-    font-size: var(--font-size10);
+    font-size: var(--font-size11);
   }
 
   .header-text-paragraph {
