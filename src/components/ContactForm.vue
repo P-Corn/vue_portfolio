@@ -6,7 +6,7 @@
                             cols="12"
                             lg="6"
                             md="6"
-                            sm="12">
+                            sm="6">
                                 <v-text-field
                                 name="name"
                                 label="Name"
@@ -20,7 +20,7 @@
                             cols="12"
                             lg="6"
                             md="6"
-                            sm="12">
+                            sm="6">
                                 <v-text-field
                                 name="companyName"
                                 label="Company"
@@ -37,7 +37,7 @@
                             cols="12"
                             lg="6"
                             md="6"
-                            sm="12">
+                            sm="6">
                                 <v-text-field
                                     name="email"
                                     label="Email"
@@ -51,7 +51,7 @@
                             cols="12"
                             lg="6"
                             md="6"
-                            sm="12">
+                            sm="6">
                                 <v-text-field
                                     name="phoneNumber"
                                     label="Phone Number"
@@ -111,12 +111,6 @@ export default {
 </script>
 
 <style scoped>
-    .contact-form-container {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: var(--boxshadow3);
-        padding: 36px;
-    }
 
     .v-btn.v-btn {
         color: var(--secondary-text);
@@ -128,18 +122,20 @@ export default {
 
     /* MEDIA */
 
-    @media only screen and (max-width: 576px) {
-    }
-
-    @media only screen and (min-width: 576px) (max-width: 768px){
+    @media only screen and (min-width: 576px) {
 
     }
 
-    @media only screen and (min-width: 768px) (max-width: 992px){
-
+    @media only screen and (min-width: 768px) {
+        .contact-form-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--boxshadow3);
+            padding: 36px;
+        }
     }
 
-    @media only screen and (min-width: 992px) and (max-width: 1200px){
+    @media only screen and (min-width: 992px){
 
     }
 

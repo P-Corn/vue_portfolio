@@ -57,6 +57,7 @@ export default {
 
     .contact-section {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-around;
     }
 
@@ -80,26 +81,21 @@ export default {
 
     /* MEDIA QUERIES */
 
-    @media only screen and (max-width: 576px) {
-        .contact-section {
-            padding: 0 var(--size3);
-        }
-    }
+  @media only screen and (min-width: 576px){
 
-    @media only screen and (max-width: 992px) {
-  
-    .contact-text h2 {
-        font-size: var(--font-size8);
-    }
-    .contact-text h4 {
-        font-size: var(--font-size6);
-    }
-    }
+  }
 
-    @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px){
+
+  }
+
+  @media only screen and (min-width: 960px){
     .contact-section {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
-}
+  }
+
+  @media only screen and (min-width: 1200px){
+
+  }
 </style>

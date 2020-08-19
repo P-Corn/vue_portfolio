@@ -1,8 +1,12 @@
 <template>
     <TheSection class="section">
       <h2 class="section-title">Our projects<span class="section-title-span">.</span></h2>
-      <div class="portfolio-grid">
-        <div
+      <v-row>
+        <v-col
+        cols="12"
+        sm="6"
+        md="6"
+        lg="6"
         v-for="imageObject in imageObjects" 
         :key="imageObject.id"
         class="portfolio-grid-item">
@@ -10,8 +14,8 @@
             :imgSrc="imageObject.imgSrc" 
             :imgTitle="imageObject.imgTitle"
             :imgText="imageObject.imgText"   />
-        </div>
-      </div>
+        </v-col>
+      </v-row>
     </TheSection>
 </template>
 
@@ -66,10 +70,6 @@ export default {
 
 <style scoped>
 
-  .section {
-    /* background-color: var(--primary); */
-  }
-
   .portfolio-grid {
     display: grid;
     justify-content: center;
@@ -78,35 +78,19 @@ export default {
     grid-gap: var(--size7);
   }
 
-  .portfolio-grid-item {
+  @media only screen and (min-width: 576px){
 
   }
 
-  .section-title {
-    /* color: white; */
-  }
-
-  @media only screen and (max-width: 576px) {
-     
-  }
-
-  @media only screen and (min-width: 576px) (max-width: 768px){
-
-  }
-
-  @media only screen and (min-width: 768px) (max-width: 992px){
+  @media only screen and (min-width: 768px){
 
   }
 
   @media only screen and (max-width: 992px){
   }
 
-  @media only screen and (min-width: 992px) and (max-width: 1200px){
-
-  }
-
   @media only screen and (min-width: 1200px){
 
-  } 
+  }
 
 </style>

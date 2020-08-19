@@ -2,24 +2,29 @@
     <TheSection class="section">
       <h2 class="section-title">What we do<span class="section-title-span">.</span></h2>
         <v-row
-        class="flex-wrap">
+        justify="center">
 
         <v-col
-          v-for="item in imageObjects"
+          v-for="(item, index) in imageObjects"
           :key="item.imgTitle"
-          cols="10"
-          sm="5"
+          :class="{ hidden: index >= 3 && windowWidth <= 600}"
+          cols="12"
+          sm="6"
+          md="6"
           lg="3"
           xlg="3"
           class="col">
             <ServiceItemCard
               class="service-item-card"
-              :iconSrc="item.iconSrc" 
+              :iconSrc="item.iconSrc"
               :imgText="item.imgText"
-              :imgTitle="item.imgTitle"   />
+              :imgTitle="item.imgTitle" />
           </v-col>
 
         </v-row>
+        <div class="button-container">
+          <v-btn color="warning" :class="{ hidden: windowWidth > 600}" dark>More</v-btn>
+        </div>
     </TheSection>
 </template>
 
@@ -35,6 +40,7 @@ export default {
   },
   data: function() {
     return {
+      windowWidth: window.innerWidth,
       imageObjects: [
         {
           iconSrc: "web",
@@ -62,11 +68,19 @@ export default {
         },
       ]
     }
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth
+    }
   }
 }
 </script>
 
 <style scoped>
+  .hidden {
+    display: none !important;
+  }
 
   .section {
     /* padding-top: 0; */
@@ -82,26 +96,42 @@ export default {
   }
 
   .col {
-    max-width: 400px;
+    display: flex;
+    justify-content: center;
   }
-
 
   .service-item-card {
     max-width: 350px;
-  } 
-  
-
-/* MEDIA QUERIES */
-
-  @media only screen and (min-width: 600px) {
-  
   }
 
-  @media only screen and (min-width: 960px){
-    .row {
-      justify-content: space-evenly;
-    }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--size2);
   }
+
+/* MEDIA */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
 
   
 
