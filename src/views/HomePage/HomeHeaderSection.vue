@@ -8,7 +8,7 @@
                     <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
                   </div>
                   <div class="header-button-container">
-                    <v-btn x-large width="100%" color="var(--secondary-light)" class="header-text-button">Hire us</v-btn>
+                    <v-btn x-large color="var(--secondary-light)" class="header-text-button">Hire us</v-btn>
                   </div>
               </div>
           </div>     
@@ -66,9 +66,9 @@ export default {
 
 .header-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 10%;
 
   /* THIS MIGHT BE RELEVANT TO SVG HEADER */
   /* position: relative;
@@ -96,13 +96,14 @@ export default {
 
 .header-text-button:first-of-type {
   color: var(--secondary-text);
+  width: 100%;
 }
 
 .header-image {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: var(--size1) 0;
+    padding: var(--size4) 0;
 }
 
 svg {
@@ -115,12 +116,23 @@ svg {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-
+  .header-text-title {
+    white-space: nowrap;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  .header-row {
+    flex-direction: row;
+  }
+  .header-image {
+    /* display: none; */
+    margin-top: var(--size8);
+  }
+  .header-text-button:first-of-type {
+    width: 50%;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -130,7 +142,24 @@ svg {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .text-container {
+    align-items: unset;
+  }
+  .header-text {
+    margin-top: var(--size9);
+  }
+  .header-text-title {
+    font-size: var(--font-size10);
+  }
 
+  .header-text-paragraph {
+    font-size: var(--font-size5);
+    width: 80%;
+  }
+
+  .header-image {
+    width: 80%;
+  }
 }
 
 </style>
