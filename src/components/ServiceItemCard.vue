@@ -2,7 +2,7 @@
   <div>
     <div class="service-card-container">
       <div class="service-card-icon">
-        <v-icon :color="color">{{iconSrc}}</v-icon>
+        <v-icon :style="{ backgroundColor: backColor }" :color="color">{{iconSrc}}</v-icon>
       </div>
       <div class="service-card-title">
         <h3>{{imgTitle}}</h3>
@@ -13,7 +13,7 @@
         <p>{{imgText}}</p>
       </div>
       <div class="service-card-link">
-        <a :color="color" href="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></a>
+        <router-link :color="color" to="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></router-link>
       </div>
     </div>
   </div>
@@ -26,7 +26,8 @@ export default {
       iconSrc: String,
       imgTitle: String,
       imgText: String,
-      color: String
+      color: String,
+      backColor: String,
   },
   data: function() {
     return {
@@ -91,11 +92,12 @@ export default {
 .service-card-icon .v-icon.v-icon {
   font-size: var(--font-size7);
   padding: var(--size3);
-  background-color: var(--icon-yellow);
+  /* background-color: var(--icon-yellow); */
   border-radius: 100px;
   color: var(--icon-yellow-dark);
   /* box-shadow: var(--boxshadow1); */
 }
+
 
 
 @media only screen and (max-width: 960px){
