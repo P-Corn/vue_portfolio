@@ -1,31 +1,26 @@
 <template>
     <TheSection class="section">
       <h2 class="section-title">What we do<span class="section-title-span">.</span></h2>
-        <v-row
-        justify="center">
-
-        <v-col
-          v-for="(item, index) in imageObjects"
-          :key="item.imgTitle"
-          :class="{ hidden: index >= 3 && windowWidth <= 600}"
-          cols="12"
-          sm="6"
-          md="6"
-          lg="3"
-          xlg="3"
-          class="col">
-            <ServiceItemCard
-              class="service-item-card"
-              :color="item.color"
-              :iconSrc="item.iconSrc"
-              :imgText="item.imgText"
-              :imgTitle="item.imgTitle" />
-          </v-col>
-
-        </v-row>
-        <div class="button-container">
-          <v-btn color="warning" :class="{ hidden: windowWidth > 600}" dark>More</v-btn>
-        </div>
+        <div class="item-row">
+          <div
+            v-for="(item, index) in imageObjects"
+            :key="item.imgTitle"
+            :class="{ hidden: index >= 3 && windowWidth <= 600}"
+            class="item-container">
+              <ServiceItemCard
+                class="service-item-card"
+                :color="item.color"
+                :iconSrc="item.iconSrc"
+                :imgText="item.imgText"
+                :imgTitle="item.imgTitle"
+                :backColor="item.backColor"
+                :linkColor="item.linkColor"
+                 />
+          </div>
+      </div>
+      <div class="button-container">
+        <v-btn color="warning" :class="{ hidden: windowWidth > 600}" dark>More</v-btn>
+      </div>
     </TheSection>
 </template>
 
@@ -47,29 +42,33 @@ export default {
           iconSrc: "web",
           imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business come to life.",
           imgTitle: "Web development",
-          color: "hsl(54, 100%, 88%)",
-          backColor: 'yellow'
+          color: "var(--icon-yellow)",
+          backColor: 'background-color: var(--icon-bg-yellow);',
+          linkColor: "color: var(--icon-yellow);"
         },
         {
           iconSrc: "dns",
           imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam.",
           imgTitle: "Hosting",
-          color: "blue",
-          backColor: "teal"
+          color: "var(--icon-blue)",
+          backColor: 'background-color: var(--icon-bg-blue);',
+          linkColor: 'color: var(--icon-blue);'
         },
         {
           iconSrc: "smartphone",
           imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly.",
           imgTitle: "Responsive design",
-          color: "green",
-          backColor: "orange"
+          color: "var(--icon-green)",
+          backColor: 'background-color: var(--icon-bg-green);',
+          linkColor: 'color: var(--icon-green);'
         },
         {
           iconSrc: "build",
           imgText: "We maintain your site with monthly updates and stuff like adding new content. You don't have to worry about a thing.",
           imgTitle: "Maintenance",
-          color: "orange",
-          backColor: "green"
+          color: "var(--icon-purple)",
+          backColor: 'background-color: var(--icon-bg-purple);',
+          linkColor: 'color: var(--icon-purple);'
         },
       ]
     }
@@ -83,30 +82,36 @@ export default {
 </script>
 
 <style scoped>
+
   .hidden {
     display: none !important;
   }
 
   .section {
     /* padding-top: 0; */
-    background-color: var(--cool-gray0);
+    background: linear-gradient(to bottom, var(--cool-gray-1), var(--cool-gray-2));
   }
 
   .section-title {
     color: white;
+
   }
 
-  .row {
+  .item-row {
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
-  .col {
+  .item-container {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--size7);
+    max-width: var(--size-345);
   }
 
   .service-item-card {
-    max-width: 350px;
+    /* max-width: 350px; */
   }
 
   .button-container {

@@ -2,7 +2,7 @@
   <div>
     <div class="service-card-container">
       <div class="service-card-icon">
-        <v-icon :style="{ backgroundColor: backColor }" :color="color">{{iconSrc}}</v-icon>
+        <v-icon :style="backColor" :color="color">{{iconSrc}}</v-icon>
       </div>
       <div class="service-card-title">
         <h3>{{imgTitle}}</h3>
@@ -13,7 +13,7 @@
         <p>{{imgText}}</p>
       </div>
       <div class="service-card-link">
-        <router-link :color="color" to="#">Learn more<v-icon class="link-icon">navigate_next</v-icon></router-link>
+        <router-link :style="linkColor" to="#">Learn more<v-icon :style="linkColor" class="link-icon">navigate_next</v-icon></router-link>
       </div>
     </div>
   </div>
@@ -28,6 +28,7 @@ export default {
       imgText: String,
       color: String,
       backColor: String,
+      linkColor: String
   },
   data: function() {
     return {
@@ -39,25 +40,25 @@ export default {
 
 <style scoped>
 
-
 .service-card-container {
   text-align: left;
   /* border: 1px solid black; */
   padding: var(--size5);
-  box-shadow: var(--boxshadow2);
+  box-shadow: var(--boxshadow3);
   border-top-left-radius: var(--border-radius-card);
   border-bottom-right-radius: var(--border-radius-card);
   /* border-radius: var(--border-radius-card); */
   background-color: white;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .service-card-container:hover {
-  box-shadow: var(--boxshadow4);
+  box-shadow: var(--boxshadow6);
+  transform: translateY(-5px);
 }
 
 .service-card-link .v-icon.v-icon {
-  color: var(--icon-yellow-dark);
+  /* color: var(--icon-yellow-dark); */
 }
 
 .service-card-link {
@@ -66,7 +67,7 @@ export default {
 
 .service-card-link a{
   font-size: var(--font-size4);
-  color: var(--icon-yellow-dark);
+  color: inherit;
 }
 
 .service-card-title {
@@ -90,7 +91,7 @@ export default {
 }
 
 .service-card-icon .v-icon.v-icon {
-  font-size: var(--font-size7);
+  font-size: var(--font-size8);
   padding: var(--size3);
   /* background-color: var(--icon-yellow); */
   border-radius: 100px;

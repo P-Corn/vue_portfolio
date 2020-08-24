@@ -57,12 +57,12 @@ export default {
   left: 0%;
 } */
 
-/* .section {
+.section {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
   min-height: 95vh;
-} */
+}
 
 .header-text-paragraph p {
   margin: 0;

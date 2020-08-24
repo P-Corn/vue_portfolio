@@ -25,12 +25,20 @@ a:hover {
     --secondary-dark: hsl(338, 50%, 30%);
     --secondary-text: hsl(338, 100%, 98%);
 
-    --icon-yellow: hsl(54, 100%, 88%);
-    --icon-yellow-dark: hsl(54, 100%, 35%);
+    --icon-bg-yellow: hsl(60, 100%, 92%);
+    --icon-yellow: hsl(44, 90%, 35%);
+    --icon-bg-blue: hsl(198, 100%, 95%);
+    --icon-blue: hsl(216, 90%, 35%);
+    --icon-bg-green: hsl(126, 100%, 95%);
+    --icon-green: hsl(126, 90%, 28%);
+    --icon-bg-purple: hsl(297, 100%, 96%);
+    --icon-purple: hsl(297, 90%, 35%);
 
 
 
     /* COOL GRAY */
+    --cool-gray-2: hsl(210, 15%, 16%);
+    --cool-gray-1: hsl(210, 15%, 22%);
     --cool-gray0: hsl(209, 15%, 28%);
     --cool-gray1: hsl(207, 12%, 43%);
     --cool-gray2: hsl(207, 12%, 58%);
@@ -79,7 +87,7 @@ a:hover {
     --size10: 192px;
     --size11: 256px;
     --size12: 290px;
-    --size-345: 345px;
+    --size-345: 360px;
     --size13: 384px;
     --size14: 512px;
     --size15: 640px;
@@ -100,11 +108,12 @@ a:hover {
     
     /* Box Shadows */
 
-    --boxshadow1: 0 1px 3px hsla(0,0%,0%,.2);
+    --boxshadow1: 0 .5px 0px hsla(0,0%,0%,.2);
     --boxshadow2: 0 4px 6px hsla(0,0%,0%,.2);
     --boxshadow3: 0 5px 15px hsla(0,0%,0%,.2);
     --boxshadow4: 0 10px 24px hsla(0,0%,0%,.2);
     --boxshadow5: 0 15px 35px hsla(0,0%,0%,.2);
+    --boxshadow6: 0 20px 40px hsla(0,0%,0%,.2);
 
     /* Border Radius */
 
@@ -118,7 +127,7 @@ a:hover {
     --border1: 2px;
     --border2: 3px;
     --border3: 4px;
-    -border4: 5px;
+    --border4: 5px;
 
     /* Opacity */
 }
@@ -141,7 +150,7 @@ a:hover {
 }
 
 .section-title-span {
-  color: var(--secondary-light);
+  /* color: var(--secondary-light); */
   font-weight: var(--font-weight1);
 }
 
@@ -157,3 +166,5 @@ a:hover {
     margin-bottom: var(--size7);
   }
 }
+
+/* Service section icon stuff */
