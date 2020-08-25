@@ -4,9 +4,9 @@
       <v-row>
         <v-col
         cols="12"
-        sm="6"
-        md="6"
-        lg="6"
+        sm="5"
+        md="4"
+        lg="4"
         v-for="imageObject in imageObjects" 
         :key="imageObject.id"
         class="portfolio-grid-item">
@@ -69,13 +69,12 @@ export default {
 </script>
 
 <style scoped>
+  .row {
+    justify-content: space-between;
+  }
 
-  .portfolio-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3,33%);
-    grid-template-rows: auto;
-    grid-gap: var(--size7);
+  .portfolio-grid-item {
+    /* padding: 2rem; */
   }
 
   @media only screen and (min-width: 576px){

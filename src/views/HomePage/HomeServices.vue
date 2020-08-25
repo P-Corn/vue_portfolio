@@ -2,7 +2,8 @@
     <TheSection class="section">
       <div class="section-header-container">
         <h2 class="section-title">Our Skills</h2>
-        <p class="section-paragraph">Here's some text to maybe explain more things and just add more content in this area?</p>
+        <hr width="50px">
+        <p class="section-paragraph">We have various skills but here are our main services</p>
       </div>
         <div class="item-row">
           <div
@@ -21,9 +22,9 @@
                  />
           </div>
       </div>
-      <!-- <div class="button-container">
-        <v-btn large color="var(--vuetify-blue)" outlined dark>More</v-btn>
-      </div> -->
+      <div class="button-container">
+        <v-btn large color="var(--vuetify-blue)" outlined dark>learn more</v-btn>
+      </div>
     </TheSection>
 </template>
 
@@ -43,7 +44,7 @@ export default {
       imageObjects: [
         {
           iconSrc: "web",
-          imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business",
+          imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business come alive on the web.",
           imgTitle: "Web development",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
@@ -51,7 +52,7 @@ export default {
         },
         {
           iconSrc: "dns",
-          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam.",
+          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam. Hosting is our specialty.",
           imgTitle: "Hosting",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
@@ -59,7 +60,7 @@ export default {
         },
         {
           iconSrc: "smartphone",
-          imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly.",
+          imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly. Text.",
           imgTitle: "Responsive design",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
@@ -103,12 +104,18 @@ export default {
   }
 
   .item-container {
-    margin-bottom: var(--size5);
+    margin-bottom: var(--size4);
     max-width: var(--size15);
+  }
+
+  .item-container:last-of-type {
+    margin-bottom: 0;
   }
 
   .button-container {
     margin-top: var(--size6);
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -130,12 +137,22 @@ export default {
   .item-container {
     max-width: var(--size13);
   }
+
+  .button-container {
+    margin-top: var(--size7);
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .item-row {
     justify-content: space-between;
+  }
+
+  .item-container {
+    margin-bottom: 0;
   }
 }
 

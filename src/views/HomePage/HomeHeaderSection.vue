@@ -131,16 +131,15 @@ svg {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
+  .header-text-title {
+    font-size: var(--font-size10);
+    line-height: var(--size7);
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-  .header-text-title {
-    font-size: var(--font-size10);
-    line-height: var(--size7);
-  }
 }
 
 </style>

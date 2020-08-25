@@ -159,6 +159,13 @@ a:hover {
   margin-bottom: var(--size6);
 }
 
+.section-header-container hr {
+    background-color: var(--vuetify-blue);
+    margin: 0 auto;
+    margin-bottom: var(--size1);
+    padding: 1px 0;
+}
+
 .section-title-span {
   color: var(--vuetify-blue);
 }
@@ -190,5 +197,9 @@ a:hover {
 
   .section-paragraph {
     font-size: var(--font-size4);
+  }
+
+  .section-header-container {
+    margin-bottom: var(--size7);
   }
 }

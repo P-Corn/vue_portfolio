@@ -12,9 +12,9 @@
           <p>{{imgText}}</p>
         </div>
       </div>      
-      <div class="service-card-link">
+      <!-- <div class="service-card-link">
         <router-link :style="linkColor" to="#">LEARN MORE<v-icon :style="linkColor" class="link-icon">navigate_next</v-icon></router-link>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -43,15 +43,16 @@ export default {
 .service-card-container {
   text-align: left;
   /* border: 1px solid black; */
-  padding: var(--size5);
-  box-shadow: var(--boxshadow2);
+  padding: var(--size0);
+  /* box-shadow: var(--boxshadow2); */
   transition: all .2s;
   background-color: white;
+  display: flex;
 }
 
 .service-card-container:hover {
-  box-shadow: var(--boxshadow3);
-  transform: translateY(-5px);
+  /* box-shadow: var(--boxshadow3);
+  transform: translateY(-5px); */
 }
 
 .service-card-link .v-icon.v-icon {
@@ -94,17 +95,14 @@ export default {
   /* background-color: var(--icon-yellow); */
   border-radius: 100px;
   /* box-shadow: var(--boxshadow1); */
+  margin-right: 1rem;
+  margin-top: .7rem;
 }
 
 
 
-@media only screen and (max-width: 960px){
- 
-  }
-
-@media only screen and (min-width: 1200px){
-
-    .service-card-title h3 {
+@media only screen and (min-width: 960px){
+  .service-card-title h3 {
       font-size: var(--font-size6);
     }
     .service-card-text p {
@@ -119,6 +117,11 @@ export default {
     .service-card-link .v-icon.v-icon {
       font-size: var(--font-size3);
     }
+  }
+
+@media only screen and (min-width: 1200px){
+
+    
   }
 
 </style>
