@@ -22,8 +22,9 @@ a:hover {
     --primary2: hsl(240, 87%, 97%);
     --primary-text: hsl(243, 100%, 96%);
     --secondary-light: #ff5c98;
-    --secondary-dark: hsl(338, 50%, 30%);
-    --secondary-text: hsl(338, 100%, 98%);
+    --secondary-dark: hsl(0, 0%, 96%);
+    --paragraph-light: hsl(338, 100%, 98%);
+    --light-btn-text: hsl(212, 78%, 42%);
 
     --icon-bg-yellow: hsl(60, 100%, 92%);
     --icon-yellow: hsl(44, 90%, 35%);
@@ -67,6 +68,7 @@ a:hover {
 
 
     /* Font Weight */
+    --font-weight-300: 300;
     --font-weight0: 400;
     --font-weight1: 500;
     --font-weight2: 700;
@@ -167,4 +169,14 @@ a:hover {
   }
 }
 
-/* Service section icon stuff */
+.section-paragraph {
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-size6);
+  letter-spacing: .0250rem;
+}
+
+/* header overrides*/
+
+.header-button-container .header-button:first-of-type {
+  color: var(--light-btn-text);
+}

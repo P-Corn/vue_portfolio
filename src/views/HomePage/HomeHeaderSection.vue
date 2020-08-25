@@ -5,10 +5,11 @@
               <div class="header-text">
                   <h1 class="header-text-title">We are Developers.</h1>
                   <div class="header-text-paragraph">
-                    <p>We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
+                    <p class="section-paragraph">We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
                   </div>
                   <div class="header-button-container">
-                    <v-btn x-large color="var(--secondary-light)" class="header-text-button">Hire us</v-btn>
+                    <v-btn min-width="200px" height="58px" color="white" class="header-button">Hire us</v-btn>
+                    <v-btn min-width="200px" height="58px" color="white" outlined class="header-button">View our projects</v-btn>
                   </div>
               </div>
           </div>     
@@ -39,29 +40,10 @@ export default {
 </script>
 
 <style scoped>
-/* SVG DO NOT */
-.cls-1{isolation:isolate;}.cls-11,.cls-2,.cls-26{fill:#a8c4e5;}.cls-2{opacity:0.4;}.cls-11,.cls-2{mix-blend-mode:multiply;}.cls-3{fill:#d7e8f7;}.cls-17,.cls-31,.cls-4,.cls-41{fill:#fff;}.cls-5{fill:#4367c7;}.cls-6{fill:#dcf1ff;}.cls-7{fill:#ebd265;}.cls-8{fill:#2c4482;}.cls-9{fill:#add5f7;}.cls-10{fill:#ff5c97;}.cls-12{fill:#27e0c0;}.cls-13{fill:#ffd22d;}.cls-14{fill:#ffc2b0;}.cls-15{fill:#88bdeb;}.cls-16{fill:#283d75;}.cls-17{opacity:0.46;}.cls-18{fill:#513554;}.cls-19{fill:#fcfeff;}.cls-20{fill:#dbefff;}.cls-21{fill:#715154;}.cls-22{fill:#dcefff;}.cls-23{fill:#21275e;}.cls-24{fill:#d0e7f4;}.cls-25{fill:#ea8a6c;}.cls-27{fill:#e1eaf4;}.cls-28{fill:#d84177;}.cls-29{fill:#a7d1e8;}.cls-30{fill:#ffe47c;}.cls-31{opacity:0.51;}.cls-32{fill:#5986ff;}.cls-33{fill:#dea749;}.cls-34{fill:#324d94;}.cls-35{fill:#ff619a;}.cls-36{fill:#ef487c;}.cls-37{fill:#50dec6;}.cls-38{fill:#45bfab;}.cls-39{fill:#8585ff;}.cls-40{fill:#36475c;}.cls-41{opacity:0.43;}.cls-42{fill:#4264bf;}.cls-43{fill:#715255;}.cls-44{fill:#e9e9ff;}.cls-45{fill:#a1a1e5;}.cls-46{fill:#565682;}.cls-47{fill:#6b6b9b;}.cls-48{fill:#45446c;}.cls-49{fill:#5366c4;}.cls-50{fill:#97cbff;}.cls-51{fill:#514677;}.cls-52{fill:#423a66;}.cls-53{fill:#bc4073;}
-
-/* BACKGROUND SVG */
-.b-cls-1,.b-cls-4{fill:#6961ff;}.b-cls-1,.b-cls-3{stroke:#000;}.b-cls-1,.b-cls-2,.b-cls-3,.b-cls-4{stroke-miterlimit:10;}.b-cls-2,.b-cls-3{fill:#d1cffc;}.b-cls-2,.b-cls-4{stroke:#d1cffc;}
-
-/* BACKGROUND V2.0  */
-.bg-cls-1{fill:#d1cffc;}.bg-cls-2{fill:#6961ff;}
-
-/* DONT DELETE!! THIS IS BACKGROUND SVG FOR HEADER */
-/* .bg-svg{
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0%;
-  left: 0%;
-} */
 
 .section {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: white;
-  min-height: 95vh;
+  background: linear-gradient(180deg,#1867c0,#5cbbf6);
+  min-height: 80vh;
 }
 
 .header-text-paragraph p {
@@ -72,7 +54,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 10%;
+  /* height: 10%; */
 
   /* THIS MIGHT BE RELEVANT TO SVG HEADER */
   /* position: relative;
@@ -86,21 +68,29 @@ export default {
 
 .header-text-title {
   font-size: var(--font-size9);
-  font-weight: var(--font-weight1);
-  line-height: var(--size6);
+  font-weight: var(--font-weight0);
+  color: white;
 }
 
 .header-text-paragraph {
     font-size: var(--font-size4);
-    color: var(--cool-gray1);
-    padding: var(--size5) 0;
+    color: var(--paragraph-light);
+    padding-bottom: var(--size6);
     display: flex;
     justify-content: center;
 }
 
-.header-text-button:first-of-type {
-  color: var(--secondary-text);
-  width: 100%;
+.header-button-container {
+  margin-left: -8px;
+}
+
+.header-button {
+  margin: 8px;
+  font-size: var(--font-size3);
+}
+
+.v-btn__content {
+  color: red !important;
 }
 
 .header-image {
@@ -120,9 +110,9 @@ svg {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-  .header-text-title {
+  /* .header-text-title {
     white-space: nowrap;
-  }
+  } */
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -133,9 +123,6 @@ svg {
   .header-image {
     /* display: none; */
     margin-top: var(--size8);
-  }
-  .header-text-button:first-of-type {
-    width: 50%;
   }
 }
 
@@ -156,13 +143,8 @@ svg {
     font-size: var(--font-size11);
   }
 
-  .header-text-paragraph {
-    font-size: var(--font-size5);
-    width: 80%;
-  }
-
   .header-image {
-    width: 80%;
+
   }
 }
 

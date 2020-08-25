@@ -94,7 +94,6 @@ export default {
 
   .section-title {
     color: white;
-
   }
 
   .item-row {
