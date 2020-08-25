@@ -8,8 +8,8 @@
                     <p class="section-paragraph">We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
                   </div>
                   <div class="header-button-container">
-                    <v-btn color="white" class="header-button">Hire us</v-btn>
-                    <v-btn color="white" outlined class="header-button">Our projects</v-btn>
+                    <v-btn x-large color="white" class="header-button">Hire us</v-btn>
+                    <v-btn x-large color="white" outlined class="header-button">Our projects</v-btn>
                   </div>
               </div>
           </div>     
@@ -47,10 +47,6 @@ export default {
   padding-top: var(--size9);
 }
 
-.header-text-paragraph p {
-  margin: 0;
-}
-
 .header-row {
   display: flex;
   flex-direction: column;
@@ -73,16 +69,19 @@ export default {
   font-weight: var(--font-weight-300);
   color: white;
   line-height: var(--line-height-1);
-  padding-bottom: var(--size3);
+  padding-bottom: var(--size4);
 }
 
 .header-text-paragraph {
-    font-size: var(--font-size2);
     color: var(--paragraph-light);
     padding-bottom: var(--size5);
     display: flex;
     justify-content: center;
 }
+
+.header-text-paragraph p {
+  margin: 0;
+} 
 
 .header-button-container {
   margin-left: -8px;
@@ -90,7 +89,6 @@ export default {
 
 .header-button {
   margin: 8px;
-  font-size: var(--font-size3);
 }
 
 
@@ -125,21 +123,24 @@ svg {
   .text-container {
     margin-bottom: unset;
   }
+
+  .header-image {
+    max-width: 60%;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
   .header-text-title {
-    font-size: var(--font-size11);
-    line-height: var(--line-height-2);
+    font-size: var(--font-size10);
+    line-height: var(--size7);
   }
-
 }
 
 </style>

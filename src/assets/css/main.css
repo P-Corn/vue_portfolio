@@ -17,6 +17,8 @@ a:hover {
 
     /* PRIMARY */
 
+    --vuetify-blue: hsl(212, 78%, 42%);
+
     --primary: hsl(243, 100%, 69%);
     --primary-light: hsl(243, 100%, 95%);
     --primary2: hsl(240, 87%, 97%);
@@ -26,14 +28,7 @@ a:hover {
     --paragraph-light: #f5f5f5;
     --light-btn-text: hsl(212, 78%, 42%);
 
-    --icon-bg-yellow: hsl(60, 100%, 92%);
-    --icon-yellow: hsl(44, 90%, 35%);
-    --icon-bg-blue: hsl(198, 100%, 95%);
-    --icon-blue: hsl(216, 90%, 35%);
-    --icon-bg-green: hsl(126, 100%, 95%);
-    --icon-green: hsl(126, 90%, 28%);
-    --icon-bg-purple: hsl(297, 100%, 96%);
-    --icon-purple: hsl(297, 90%, 35%);
+    --icon-bg-blue: hsl(212, 100%, 95%);
 
 
 
@@ -139,6 +134,7 @@ a:hover {
 
 /* MISC STYLES */
 
+
 .text-container {
   padding-left: var(--size2);
   padding-right: var(--size2);
@@ -146,27 +142,25 @@ a:hover {
 
 .section-title {
   text-align: center;
-  font-size: var(--font-size9);
-  margin-bottom: var(--size7);
+  font-size: var(--font-size8);
   /* word-spacing: var(--size0);
   letter-spacing: 1px; */
   /* color: var(--cool-gray0); */
-  font-weight: var(--font-weight0);
-}
-
-.section-title-span {
   font-weight: var(--font-weight1);
-}
-
-.shadow {
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
-    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
 }
 
 .section-paragraph {
   font-weight: var(--font-weight-300);
   letter-spacing: .0250rem;
-  font-size: var(--font-size2);
+  font-size: var(--font-size3);
+}
+
+.section-header-container {
+  margin-bottom: var(--size6);
+}
+
+.section-title-span {
+  color: var(--vuetify-blue);
 }
 
 /* header overrides*/
@@ -184,20 +178,17 @@ a:hover {
 
 @media only screen and (min-width: 600px) {
   .header-button-container .header-button {
-    min-height: var(--size6);
-    width: 40%;
+    width: 37%;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .section-title {
     text-align: center;
-    font-size: var(--font-size10);
-    margin-bottom: var(--size7);
+    font-size: var(--font-size9);
   }
 
   .section-paragraph {
-    font-size: var(--font-size6);
+    font-size: var(--font-size4);
   }
-
 }

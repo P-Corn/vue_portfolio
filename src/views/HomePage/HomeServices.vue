@@ -1,6 +1,9 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">What we do</h2>
+      <div class="section-header-container">
+        <h2 class="section-title">Our Skills</h2>
+        <p class="section-paragraph">Here's some text to maybe explain more things and just add more content in this area?</p>
+      </div>
         <div class="item-row">
           <div
             v-for="(item, index) in imageObjects"
@@ -18,9 +21,9 @@
                  />
           </div>
       </div>
-      <div class="button-container">
-        <v-btn color="warning" :class="{ hidden: windowWidth > 600}" dark>More</v-btn>
-      </div>
+      <!-- <div class="button-container">
+        <v-btn large color="var(--vuetify-blue)" outlined dark>More</v-btn>
+      </div> -->
     </TheSection>
 </template>
 
@@ -40,36 +43,36 @@ export default {
       imageObjects: [
         {
           iconSrc: "web",
-          imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business come to life.",
+          imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business",
           imgTitle: "Web development",
-          color: "var(--icon-yellow)",
-          backColor: 'background-color: var(--icon-bg-yellow);',
-          linkColor: "color: var(--icon-yellow);"
+          color: "var(--vuetify-blue)",
+          backColor: 'background-color: var(--icon-bg-blue);',
+          linkColor: "color: var(--vuetify-blue);"
         },
         {
           iconSrc: "dns",
           imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam.",
           imgTitle: "Hosting",
-          color: "var(--icon-blue)",
+          color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
-          linkColor: 'color: var(--icon-blue);'
+          linkColor: "color: var(--vuetify-blue);"
         },
         {
           iconSrc: "smartphone",
           imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly.",
           imgTitle: "Responsive design",
-          color: "var(--icon-green)",
-          backColor: 'background-color: var(--icon-bg-green);',
-          linkColor: 'color: var(--icon-green);'
+          color: "var(--vuetify-blue)",
+          backColor: 'background-color: var(--icon-bg-blue);',
+          linkColor: "color: var(--vuetify-blue);"
         },
-        {
-          iconSrc: "build",
-          imgText: "We maintain your site with monthly updates and stuff like adding new content. You don't have to worry about a thing.",
-          imgTitle: "Maintenance",
-          color: "var(--icon-purple)",
-          backColor: 'background-color: var(--icon-bg-purple);',
-          linkColor: 'color: var(--icon-purple);'
-        },
+        // {
+        //   iconSrc: "build",
+        //   imgText: "We maintain your site with monthly updates and stuff like adding new content. You don't have to worry about a thing.",
+        //   imgTitle: "Maintenance",
+        //   color: "var(--icon-purple)",
+        //   backColor: 'background-color: var(--icon-bg-purple);',
+        //   linkColor: 'color: var(--icon-purple);'
+        // },
       ]
     }
   },
@@ -83,16 +86,14 @@ export default {
 
 <style scoped>
 
-  .hidden {
-    display: none !important;
-  }
+  /* .section {
+    background-color: var(--paragraph-light);
+  } */
 
-  .section {
-    
-  }
-
-  .section-title {
-    /* color: white; */
+  .section-paragraph {
+    text-align: center;
+    max-width: var(--size15);
+    margin: 0 auto;
   }
 
   .item-row {
@@ -102,43 +103,40 @@ export default {
   }
 
   .item-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--size7);
-    max-width: var(--size-345);
-  }
-
-  .service-item-card {
-    /* max-width: 350px; */
+    margin-bottom: var(--size5);
+    max-width: var(--size15);
   }
 
   .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: var(--size2);
+    margin-top: var(--size6);
   }
+
+
 
 /* MEDIA */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 600px) { 
 
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 960px) {
+  .item-container {
+    max-width: var(--size13);
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+  .item-row {
+    justify-content: space-between;
+  }
 }
 
   

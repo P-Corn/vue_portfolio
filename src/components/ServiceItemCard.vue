@@ -4,16 +4,16 @@
       <div class="service-card-icon">
         <v-icon :style="backColor" :color="color">{{iconSrc}}</v-icon>
       </div>
-      <div class="service-card-title">
-        <h3>{{imgTitle}}</h3>
-      </div>
-      <div class="hr-container">
-      </div>
-      <div class="service-card-text">
-        <p>{{imgText}}</p>
-      </div>
+      <div class="card-text-container">
+        <div class="service-card-title">
+          <h3>{{imgTitle}}</h3>
+        </div>
+        <div class="service-card-text">
+          <p>{{imgText}}</p>
+        </div>
+      </div>      
       <div class="service-card-link">
-        <router-link :style="linkColor" to="#">Learn more<v-icon :style="linkColor" class="link-icon">navigate_next</v-icon></router-link>
+        <router-link :style="linkColor" to="#">LEARN MORE<v-icon :style="linkColor" class="link-icon">navigate_next</v-icon></router-link>
       </div>
     </div>
   </div>
@@ -44,30 +44,18 @@ export default {
   text-align: left;
   /* border: 1px solid black; */
   padding: var(--size5);
-  box-shadow: var(--boxshadow3);
-  border-top-left-radius: var(--border-radius-card);
-  border-bottom-right-radius: var(--border-radius-card);
-  /* border-radius: var(--border-radius-card); */
-  background-color: white;
+  box-shadow: var(--boxshadow2);
   transition: all .2s;
+  background-color: white;
 }
 
 .service-card-container:hover {
-  box-shadow: var(--boxshadow6);
+  box-shadow: var(--boxshadow3);
   transform: translateY(-5px);
 }
 
 .service-card-link .v-icon.v-icon {
-  /* color: var(--icon-yellow-dark); */
-}
-
-.service-card-link {
-  margin-top: var(--size4);
-}
-
-.service-card-link a{
-  font-size: var(--font-size4);
-  color: inherit;
+  font-size: var(--font-size2);
 }
 
 .service-card-title {
@@ -76,18 +64,28 @@ export default {
 
 .service-card-title h3 {
   font-weight: var(--font-weight1);
-  font-size: var(--font-size6);
+  font-size: var(--font-size5);
   /* color: var(--primary1); */
 }
 
 .service-card-text p {
   color: var(--cool-gray1);
   margin: var(--size1) 0;
-  font-size: var(--font-size4);
+  font-size: var(--font-size2);
 }
 
 .service-card-icon {
   margin-bottom: var(--size3);
+}
+
+.service-card-link {
+  margin-top: var(--size4);
+}
+
+.service-card-link a{
+  font-size: var(--font-size2);
+  color: inherit;
+  letter-spacing: .1px;
 }
 
 .service-card-icon .v-icon.v-icon {
@@ -95,7 +93,6 @@ export default {
   padding: var(--size3);
   /* background-color: var(--icon-yellow); */
   border-radius: 100px;
-  color: var(--icon-yellow-dark);
   /* box-shadow: var(--boxshadow1); */
 }
 
@@ -111,7 +108,16 @@ export default {
       font-size: var(--font-size6);
     }
     .service-card-text p {
-      font-size: var(--font-size4);
+      font-size: var(--font-size3);
+    }
+
+    .service-card-link a{
+      font-size: var(--font-size3);
+      color: inherit;
+    }
+
+    .service-card-link .v-icon.v-icon {
+      font-size: var(--font-size3);
     }
   }
 
