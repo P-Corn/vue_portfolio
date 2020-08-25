@@ -1,36 +1,49 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">Our projects<span class="section-title-span">.</span></h2>
-      <v-row>
-        <v-col
-        cols="12"
-        sm="5"
-        md="4"
-        lg="4"
-        v-for="imageObject in imageObjects" 
-        :key="imageObject.id"
-        class="portfolio-grid-item">
-          <GridImageCard
-            :imgSrc="imageObject.imgSrc" 
-            :imgTitle="imageObject.imgTitle"
-            :imgText="imageObject.imgText"   />
-        </v-col>
-      </v-row>
+      <div class="section-header-container">
+        <h2 class="section-title">Our Projects</h2>
+        <hr>
+        <p class="section-paragraph">We create anything from a simple static website to a complex web app. Heres more text to fill</p>
+      </div>
+      <v-carousel
+        cycle
+        show-arrows-on-hover
+        :show-arrows="false"
+        height="350px"
+        class="carousel"
+      >
+        <v-carousel-item
+          v-for="imageObject in imageObjects"
+          :key="imageObject.id"
+          :src="imageObject.imgSrc"
+          gradient="to bottom, rgba(0,0,0,.3), rgba(0,0,0,.6)"
+        >
+            <v-row
+              class="fill-height"
+              align="center"
+              justify="center"
+            >
+              <div class="carousel-title">{{imageObject.imgTitle}}</div>
+            </v-row>
+        </v-carousel-item>
+      </v-carousel>
+      <div class="section-button-container">
+        <v-btn large color="var(--vuetify-blue)" outlined dark>view all projects</v-btn>
+      </div>
     </TheSection>
 </template>
 
 <script>
 import TheSection from '@/components/TheSection.vue'
-import GridImageCard from '@/components/GridImageCard.vue'
 
 export default {
   name: 'HomePortfolio',
   components: {
     TheSection,
-    GridImageCard
   },
   data: function() {
     return {
+      hoverHide: true,
       imageObjects: [
         {
           imgTitle: "Casa Ole",
@@ -53,12 +66,12 @@ export default {
           imgSrc: require("@/assets/images/img3.png"),
         },
         {
-          imgTitle: "Title 5",
+          imgTitle: "Five Below",
           imgText: "This is a paragraph 5",
           imgSrc: require("@/assets/images/img4.png"),
         },
         {
-          imgTitle: "Title 6",
+          imgTitle: "Dollar Tree",
           imgText: "This is a paragraph 6",
           imgSrc: require("@/assets/images/img5.png"),
         },
@@ -69,12 +82,21 @@ export default {
 </script>
 
 <style scoped>
-  .row {
-    justify-content: space-between;
+
+  .section {
+    border-top: 1px solid #f5f5f5;
   }
 
-  .portfolio-grid-item {
-    /* padding: 2rem; */
+  .section-paragraph {
+    text-align: center;
+    max-width: var(--size15);
+    margin: 0 auto;
+  }
+
+  .carousel-title {
+    font-size: var(--font-size7);
+    font-weight: var(--font-weight-300);
+    letter-spacing: 1px;
   }
 
   @media only screen and (min-width: 576px){
@@ -85,7 +107,11 @@ export default {
 
   }
 
-  @media only screen and (max-width: 992px){
+  @media only screen and (min-width: 992px){
+
+    .carousel-title {
+      font-size: var(--font-size9);
+    }
   }
 
   @media only screen and (min-width: 1200px){

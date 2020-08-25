@@ -43,7 +43,7 @@ export default {
 .service-card-container {
   text-align: left;
   /* border: 1px solid black; */
-  padding: var(--size0);
+  padding: 0 var(--size0);
   /* box-shadow: var(--boxshadow2); */
   transition: all .2s;
   background-color: white;

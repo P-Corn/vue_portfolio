@@ -3,8 +3,10 @@
         <HomeHeaderSection />
         <HomeServices />
         <HomePortfolio />
-        <HomeContactSection />
+        <div class="vuetify-gradient">
+            <HomeContactSection />
         <TheFooter />
+        </div>
     </main>
 </template>
 
@@ -28,9 +30,7 @@ export default {
 </script>
 
 <style scoped>
-    .hey {
-        height: var(--size10);
-        width: 100%;
-        background-color: var(--cool-gray3);
+    .vuetify-gradient {
+        background: linear-gradient(180deg,#5cbbf6, #1867c0);
     }
 </style>

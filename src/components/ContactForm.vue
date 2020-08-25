@@ -6,13 +6,13 @@
                             cols="12"
                             lg="6"
                             md="6"
-                            sm="6">
+                            sm="6"
+                            >
                                 <v-text-field
                                 name="name"
                                 label="Name"
                                 class="small-input"
-                                
-                                filled
+                                outlined
                                 required
                                 ></v-text-field>
                             </v-col>
@@ -26,7 +26,7 @@
                                 label="Company"
                                 class="small-input"
                                 
-                                filled
+                                 outlined
                                 required
                                 ></v-text-field>
                             </v-col>
@@ -43,7 +43,7 @@
                                     label="Email"
                                     class="small-input"
                                     
-                                    filled
+                                     outlined
                                     required
                                 ></v-text-field>
                             </v-col>
@@ -57,7 +57,7 @@
                                     label="Phone Number"
                                     class="small-input"
                                     
-                                    filled
+                                     outlined
                                     required
                                 ></v-text-field>
                             </v-col>
@@ -69,7 +69,7 @@
                                 name="message"
                                 label="Message"
                                 
-                                filled
+                                 outlined
                                 ></v-textarea>
                             </v-col>
                         </v-row>
@@ -77,7 +77,7 @@
                             <v-col
                             cols="auto"
                             >
-                                <v-btn x-large color="var(--secondary-light)" class="header-text-button">Send message</v-btn>
+                                <v-btn x-large color="white" class="header-text-button">Send message</v-btn>
                             </v-col>
                         </v-row>
                 </v-form>
@@ -113,12 +113,9 @@ export default {
 <style scoped>
 
     .v-btn.v-btn {
-        color: var(--secondary-text);
+        color: var(--light-btn-text);
     }
 
-    input{
-        background-color: white;
-    }
 
     /* MEDIA */
 
@@ -128,9 +125,6 @@ export default {
 
     @media only screen and (min-width: 768px) {
         .contact-form-container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: var(--boxshadow3);
             padding: 36px;
         }
     }

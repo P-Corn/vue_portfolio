@@ -130,10 +130,9 @@ svg {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .header-text-title {
-    font-size: var(--font-size10);
-    line-height: var(--size7);
+    font-size: var(--font-size9);
   }
 }
 

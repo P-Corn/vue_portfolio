@@ -6,6 +6,7 @@
           :class="[hoverHide ? 'zoom-out' : 'zoom-in']"
           class="align-end card-image"
           :aspect-ratio="5/4"
+          
           >
           </v-img>
           <div

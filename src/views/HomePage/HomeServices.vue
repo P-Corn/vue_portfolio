@@ -2,8 +2,8 @@
     <TheSection class="section">
       <div class="section-header-container">
         <h2 class="section-title">Our Skills</h2>
-        <hr width="50px">
-        <p class="section-paragraph">We have various skills but here are our main services</p>
+        <hr>
+        <p class="section-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vero laborum text filler yeah </p>
       </div>
         <div class="item-row">
           <div
@@ -22,7 +22,7 @@
                  />
           </div>
       </div>
-      <div class="button-container">
+      <div class="section-button-container">
         <v-btn large color="var(--vuetify-blue)" outlined dark>learn more</v-btn>
       </div>
     </TheSection>
@@ -87,9 +87,9 @@ export default {
 
 <style scoped>
 
-  /* .section {
-    background-color: var(--paragraph-light);
-  } */
+  .section {
+    border-bottom: 1px solid #f5f5f5;  
+  }
 
   .section-paragraph {
     text-align: center;
@@ -112,12 +112,6 @@ export default {
     margin-bottom: 0;
   }
 
-  .button-container {
-    margin-top: var(--size6);
-    display: flex;
-    justify-content: center;
-  }
-
 
 
 /* MEDIA */
@@ -136,12 +130,6 @@ export default {
 @media (min-width: 960px) {
   .item-container {
     max-width: var(--size13);
-  }
-
-  .button-container {
-    margin-top: var(--size7);
-    display: flex;
-    justify-content: center;
   }
 }
 
