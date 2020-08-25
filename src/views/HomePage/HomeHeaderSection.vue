@@ -65,6 +65,7 @@ export default {
 .text-container {
   display: flex;
   align-items: center;
+  margin-bottom: var(--size5);
 }
 
 .header-text-title {
@@ -78,7 +79,7 @@ export default {
 .header-text-paragraph {
     font-size: var(--font-size2);
     color: var(--paragraph-light);
-    padding-bottom: var(--size6);
+    padding-bottom: var(--size5);
     display: flex;
     justify-content: center;
 }
@@ -119,6 +120,10 @@ svg {
 @media (min-width: 768px) {
   .header-row {
     flex-direction: row;
+  }
+
+  .text-container {
+    margin-bottom: unset;
   }
 }
 

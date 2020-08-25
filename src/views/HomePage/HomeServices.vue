@@ -1,6 +1,6 @@
 <template>
     <TheSection class="section">
-      <h2 class="section-title">What we do<span class="section-title-span">.</span></h2>
+      <h2 class="section-title">What we do</h2>
         <div class="item-row">
           <div
             v-for="(item, index) in imageObjects"
@@ -88,12 +88,11 @@ export default {
   }
 
   .section {
-    /* padding-top: 0; */
-    background: linear-gradient(to bottom, var(--cool-gray-1), var(--cool-gray-2));
+    
   }
 
   .section-title {
-    color: white;
+    /* color: white; */
   }
 
   .item-row {
