@@ -15,7 +15,7 @@ export default {
 <style scoped>
 
   section {
-    padding: var(--size7) 0;
+    padding: var(--size7) var(--size2);
     display: flex;
     align-items: center;
   }

@@ -104,6 +104,9 @@ a:hover {
 
     /* Line Height */
 
+    --line-height-1: 52px;
+    --line-height-2: 80px;
+
     /* Text shadows*/
 
     --text-shadow1: 2px 1px rgba(0, 0, 0, .3);
@@ -152,7 +155,6 @@ a:hover {
 }
 
 .section-title-span {
-  /* color: var(--secondary-light); */
   font-weight: var(--font-weight1);
 }
 
@@ -161,22 +163,41 @@ a:hover {
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
 }
 
+.section-paragraph {
+  font-weight: var(--font-weight-300);
+  letter-spacing: .0250rem;
+  font-size: var(--font-size2);
+}
+
+/* header overrides*/
+
+.header-button-container .header-button {
+  min-height: var(--size6);
+  width: 100%;
+}
+
+.header-button-container .header-button:first-of-type {
+  color: var(--light-btn-text);
+}
+
+/* MEDIEAA */
+
+@media only screen and (min-width: 600px) {
+  .header-button-container .header-button {
+    min-height: var(--size6);
+    width: 40%;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .section-title {
     text-align: center;
     font-size: var(--font-size10);
     margin-bottom: var(--size7);
   }
-}
 
-.section-paragraph {
-  font-weight: var(--font-weight-300);
-  font-size: var(--font-size6);
-  letter-spacing: .0250rem;
-}
+  .section-paragraph {
+    font-size: var(--font-size6);
+  }
 
-/* header overrides*/
-
-.header-button-container .header-button:first-of-type {
-  color: var(--light-btn-text);
 }

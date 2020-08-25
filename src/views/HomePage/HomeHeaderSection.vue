@@ -3,13 +3,13 @@
       <div class="header-row">
           <div class="text-container">
               <div class="header-text">
-                  <h1 class="header-text-title">We are Developers.</h1>
+                  <h1 class="header-text-title">Web Development Company</h1>
                   <div class="header-text-paragraph">
                     <p class="section-paragraph">We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
                   </div>
                   <div class="header-button-container">
-                    <v-btn min-width="200px" height="58px" color="white" class="header-button">Hire us</v-btn>
-                    <v-btn min-width="200px" height="58px" color="white" outlined class="header-button">View our projects</v-btn>
+                    <v-btn color="white" class="header-button">Hire us</v-btn>
+                    <v-btn color="white" outlined class="header-button">Our projects</v-btn>
                   </div>
               </div>
           </div>     
@@ -44,6 +44,7 @@ export default {
 .section {
   background: linear-gradient(180deg,#1867c0,#5cbbf6);
   min-height: 80vh;
+  padding-top: var(--size9);
 }
 
 .header-text-paragraph p {
@@ -68,12 +69,14 @@ export default {
 
 .header-text-title {
   font-size: var(--font-size9);
-  font-weight: var(--font-weight0);
+  font-weight: var(--font-weight-300);
   color: white;
+  line-height: var(--line-height-1);
+  padding-bottom: var(--size3);
 }
 
 .header-text-paragraph {
-    font-size: var(--font-size4);
+    font-size: var(--font-size2);
     color: var(--paragraph-light);
     padding-bottom: var(--size6);
     display: flex;
@@ -89,15 +92,12 @@ export default {
   font-size: var(--font-size3);
 }
 
-.v-btn__content {
-  color: red !important;
-}
 
 .header-image {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: var(--size4) 0;
+    /* padding: var(--size4) 0; */
 }
 
 svg {
@@ -109,20 +109,16 @@ svg {
 /* MEDIA */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-  /* .header-text-title {
-    white-space: nowrap;
-  } */
+@media only screen and (min-width: 600px) { 
+  .header-text-paragraph {
+    padding-bottom: var(--size6);
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .header-row {
     flex-direction: row;
-  }
-  .header-image {
-    /* display: none; */
-    margin-top: var(--size8);
   }
 }
 
@@ -133,19 +129,12 @@ svg {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .text-container {
-    /* align-items: unset; */
-  }
-  .header-text {
-    /* margin-top: var(--size11); */
-  }
+
   .header-text-title {
     font-size: var(--font-size11);
+    line-height: var(--line-height-2);
   }
 
-  .header-image {
-
-  }
 }
 
 </style>
