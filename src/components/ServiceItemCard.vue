@@ -43,16 +43,17 @@ export default {
 .service-card-container {
   text-align: left;
   /* border: 1px solid black; */
-  padding: 0 var(--size0);
-  /* box-shadow: var(--boxshadow2); */
+  padding: var(--size3);
+  box-shadow: var(--boxshadow2);
   transition: all .2s;
   background-color: white;
   display: flex;
+  border-radius: 10px;
 }
 
 .service-card-container:hover {
-  /* box-shadow: var(--boxshadow3);
-  transform: translateY(-5px); */
+  box-shadow: var(--boxshadow3);
+  transform: translateY(-5px);
 }
 
 .service-card-link .v-icon.v-icon {

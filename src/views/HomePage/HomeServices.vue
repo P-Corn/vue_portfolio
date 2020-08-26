@@ -52,7 +52,7 @@ export default {
         },
         {
           iconSrc: "dns",
-          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam. Hosting is our specialty.",
+          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam. Hosting is.",
           imgTitle: "Hosting",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
@@ -60,7 +60,7 @@ export default {
         },
         {
           iconSrc: "smartphone",
-          imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly. Text.",
+          imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly.",
           imgTitle: "Responsive design",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',
