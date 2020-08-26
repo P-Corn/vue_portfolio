@@ -52,7 +52,7 @@ export default {
         },
         {
           iconSrc: "dns",
-          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam. Hosting is.",
+          imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam.",
           imgTitle: "Hosting",
           color: "var(--vuetify-blue)",
           backColor: 'background-color: var(--icon-bg-blue);',

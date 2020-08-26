@@ -44,15 +44,18 @@ export default {
   text-align: left;
   /* border: 1px solid black; */
   padding: var(--size3);
-  box-shadow: var(--boxshadow2);
+  box-shadow: var(--boxshadow1);
   transition: all .2s;
   background-color: white;
   display: flex;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid 3px #f5f5f5;
 }
 
 .service-card-container:hover {
-  box-shadow: var(--boxshadow3);
+  box-shadow: var(--boxshadow2);
   transform: translateY(-5px);
 }
 
