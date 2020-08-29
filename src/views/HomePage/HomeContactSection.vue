@@ -1,12 +1,12 @@
 <template>
     <TheSection class="bg-color">
+        <h2 class="section-title"><span class="section-title-span">Contact</span></h2>
         <v-row class="contact-section">
             <v-col cols="12"
             lg="5" 
             md="4"
             sm="12"
             class="contact-text">
-                <h2 class="section-title"><span class="section-title-span">Contact</span></h2>
                 <h3 class="section-text-info"><v-icon>call</v-icon>555-555-5555</h3>
                 <h3 class="section-text-info"><v-icon>email</v-icon>contact@apdesign.com</h3>
                 <h3 class="section-text-info"><v-icon>facebook</v-icon>@apdesign</h3>
@@ -75,7 +75,7 @@ export default {
 
     .section-title {
         color: white;
-        text-align: left;
+        text-align: center;
         margin-bottom: var(--size6);
     }
 
@@ -105,12 +105,24 @@ export default {
 
   @media only screen and (min-width: 960px){
     .contact-section {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .contact-text h3 {
         font-size: var(--font-size6);
-        margin-bottom: var(--size5);
+        margin-bottom: var(--size6);
+    }
+
+    .contact-text {
+        /* padding: var(--size7); */
+        justify-content: center;
+    }
+
+    .contact-form {
+        border: 2px solid #f5f5f5;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: var(--boxshadow1);
     }
   }
 

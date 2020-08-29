@@ -10,7 +10,7 @@
                             >
                                 <v-text-field
                                 name="name"
-                                label="Name"
+                                label="Your name"
                                 class="small-input"
                                 outlined
                                 required
@@ -24,7 +24,7 @@
                             sm="6">
                                 <v-text-field
                                 name="companyName"
-                                label="Company"
+                                label="Company name"
                                 class="small-input"
                                 
                                  outlined
@@ -41,7 +41,7 @@
                             sm="6">
                                 <v-text-field
                                     name="email"
-                                    label="Email"
+                                    label="Your email"
                                     class="small-input"
                                     
                                      outlined
@@ -55,7 +55,7 @@
                             sm="6">
                                 <v-text-field
                                     name="phoneNumber"
-                                    label="Phone Number"
+                                    label="Phone number"
                                     class="small-input"
                                     
                                      outlined
@@ -68,7 +68,7 @@
                             <v-col>
                                 <v-textarea
                                 name="message"
-                                label="Message"
+                                label="What can we do for you?"
                                 
                                  outlined
                                 ></v-textarea>
@@ -112,6 +112,10 @@ export default {
 </script>
 
 <style scoped>
+
+    .contact-form {
+        border: 5px solid #f5f5f5;
+    }
 
 
     .v-btn.v-btn {
