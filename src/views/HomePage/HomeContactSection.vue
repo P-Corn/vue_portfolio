@@ -7,7 +7,7 @@
             md="4"
             sm="12"
             class="contact-text">
-                <h3 class="section-text-info"><v-icon>call</v-icon>555-555-5555</h3>
+                <h3 class="section-text-info"><v-icon>call</v-icon>555-555-5544</h3>
                 <h3 class="section-text-info"><v-icon>email</v-icon>contact@apdesign.com</h3>
                 <h3 class="section-text-info"><v-icon>facebook</v-icon>@apdesign</h3>
             </v-col>
