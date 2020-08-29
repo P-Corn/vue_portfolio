@@ -89,7 +89,7 @@ export default {
         background-color: white;
         border-radius: 100px;
         color: var(--vuetify-blue);
-        margin-right: var(--size5);
+        margin-right: var(--size1);
         /* box-shadow: var(--boxshadow1); */
     }
 
