@@ -100,7 +100,7 @@ export default {
 .header-image {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     /* padding: var(--size4) 0; */
 }
 
@@ -130,8 +130,9 @@ svg {
   }
 
   .header-image {
-    max-width: 60%;
-  }
+    width: 90%;
+    /* padding: var(--size4) 0; */
+}
 }
 
 /* // Large devices (desktops, 992px and up) */
