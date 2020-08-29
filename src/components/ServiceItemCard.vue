@@ -57,6 +57,7 @@ export default {
 .service-card-container:hover {
   box-shadow: var(--boxshadow2);
   transform: translateY(-5px);
+  border: solid 3px var(--vuetify-blue);
 }
 
 .service-card-link .v-icon.v-icon {
@@ -95,7 +96,7 @@ export default {
 
 .service-card-icon .v-icon.v-icon {
   font-size: var(--font-size8);
-  padding: var(--size3);
+  padding: var(--size2);
   /* background-color: var(--icon-yellow); */
   border-radius: 100px;
   /* box-shadow: var(--boxshadow1); */
@@ -116,10 +117,6 @@ export default {
     .service-card-link a{
       font-size: var(--font-size3);
       color: inherit;
-    }
-
-    .service-card-link .v-icon.v-icon {
-      font-size: var(--font-size3);
     }
   }
 

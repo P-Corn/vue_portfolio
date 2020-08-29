@@ -3,13 +3,14 @@
       <div class="header-row">
           <div class="text-container">
               <div class="header-text">
-                  <h1 class="header-text-title">Web Development Company</h1>
+                  <h1 class="header-text-title">A/P Web Design
+                  </h1>
                   <div class="header-text-paragraph">
-                    <p class="section-paragraph">We make cool websites. You can tell because this website is cool. Here's some more text to fill this spot.</p>
+                    <p class="section-paragraph">We are a team who designs, develops, and maintains your website all in one place.</p>
                   </div>
                   <div class="header-button-container">
                     <v-btn x-large color="white" class="header-button">Hire us</v-btn>
-                    <v-btn x-large color="white" outlined class="header-button">Our projects</v-btn>
+                    <v-btn x-large color="white" outlined class="header-button">view projects</v-btn>
                   </div>
               </div>
           </div>     
@@ -44,7 +45,7 @@ export default {
 .section {
   background: linear-gradient(180deg,#1867c0,#5cbbf6);
   min-height: 80vh;
-  padding-top: var(--size9);
+  padding: var(--size6) 0;
 }
 
 .header-row {
@@ -56,6 +57,10 @@ export default {
   /* THIS MIGHT BE RELEVANT TO SVG HEADER */
   /* position: relative;
   z-index: 1; */
+}
+
+.section-paragraph {
+  font-size: var(--font-size4);
 }
 
 .text-container {
@@ -95,7 +100,7 @@ export default {
 .header-image {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
     /* padding: var(--size4) 0; */
 }
 
@@ -132,8 +137,12 @@ svg {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 960px) {
   .header-text-title {
-    font-size: var(--font-size9);
+    font-size: var(--font-size10);
   }
+
+  .section-paragraph {
+  font-size: var(--font-size5);
+}
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */

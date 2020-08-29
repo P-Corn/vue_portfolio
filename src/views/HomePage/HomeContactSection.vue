@@ -6,9 +6,10 @@
             md="4"
             sm="12"
             class="contact-text">
-                <!-- <h4 class="header-text-title">Contact Us</h4>
-                <hr> -->
-                <h2>Contact us</h2>
+                <h2 class="section-title"><span class="section-title-span">Contact</span></h2>
+                <h3 class="section-text-info"><v-icon>call</v-icon>555-555-5555</h3>
+                <h3 class="section-text-info"><v-icon>email</v-icon>contact@apdesign.com</h3>
+                <h3 class="section-text-info"><v-icon>facebook</v-icon>@apdesign</h3>
             </v-col>
             <v-col cols="12"
             lg="5"
@@ -65,26 +66,31 @@ export default {
         justify-content: center;
     }
 
-    .contact-text h4 {
+    .contact-text h3 {
         font-weight: var(--font-weight0);
-        font-size: var(--font-size7);
-        margin-bottom: 0;
+        font-size: var(--font-size5);
+        margin-bottom: var(--size5);
         color: white;
     }
 
-    .contact-text h2{
-        font-weight: var(--font-weight-300);
+    .section-title {
+        color: white;
+        text-align: left;
+        margin-bottom: var(--size6);
+    }
+
+    .section-title .section-title-span {
+        text-decoration-color: white;
+    }
+
+    .section-text-info .v-icon.v-icon {
         font-size: var(--font-size8);
-        color: white;
-        line-height: var(--line-height-1);
-    }
-
-    hr {
-        width: var(--size8);
-        padding: 1px 0;
+        padding: var(--size2);
         background-color: white;
-        margin-top: var(--size2);
-        margin-bottom: var(--size3);
+        border-radius: 100px;
+        color: var(--vuetify-blue);
+        margin-right: var(--size5);
+        /* box-shadow: var(--boxshadow1); */
     }
 
     /* MEDIA QUERIES */
@@ -102,12 +108,9 @@ export default {
         flex-direction: row;
     }
 
-    .contact-text h4 {
-        font-size: var(--font-size8);
-    }
-
-    .contact-text h2 {
-        font-size: var(--font-size9);
+    .contact-text h3 {
+        font-size: var(--font-size6);
+        margin-bottom: var(--size5);
     }
   }
 

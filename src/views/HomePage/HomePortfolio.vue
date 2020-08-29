@@ -1,22 +1,23 @@
 <template>
     <TheSection class="section">
       <div class="section-header-container">
-        <h2 class="section-title">Our Projects</h2>
-        <hr>
-        <p class="section-paragraph">We create anything from a simple static website to a complex web app. Heres more text to fill</p>
+        <h2 class="section-title">Our <span class="section-title-span">Projects</span></h2>
+        <!-- <hr> -->
+        <p class="section-paragraph">We create anything from simple websites to complex applications.</p>
       </div>
       <v-carousel
         cycle
+        continuous
         show-arrows-on-hover
-        :show-arrows="false"
-        height="350px"
+        :show-arrows="true" 
         class="carousel"
+        height="350"
       >
         <v-carousel-item
           v-for="imageObject in imageObjects"
           :key="imageObject.id"
           :src="imageObject.imgSrc"
-          gradient="to bottom, rgba(0,0,0,.3), rgba(0,0,0,.6)"
+          gradient="to bottom, rgba(0,0,0,.2), rgba(0,0,0,.55)"
         >
             <v-row
               class="fill-height"
@@ -28,7 +29,7 @@
         </v-carousel-item>
       </v-carousel>
       <div class="section-button-container">
-        <v-btn large color="var(--vuetify-blue)" outlined dark>view all projects</v-btn>
+        <v-btn x-large color="var(--vuetify-blue)" outlined dark>view all projects</v-btn>
       </div>
     </TheSection>
 </template>
@@ -43,15 +44,17 @@ export default {
   },
   data: function() {
     return {
+      windowWidth: window.innerWidth,
       hoverHide: true,
+      carouselHeight: 300,
       imageObjects: [
         {
-          imgTitle: "Casa Ole",
+          imgTitle: "Stripe",
           imgText: "A mexican restaurant chain with stuff. Filler text yeah yeah. Here's more text to see how the card looks.",
           imgSrc: require("@/assets/images/img0.png"),
         },
         {
-          imgTitle: "Acatea",
+          imgTitle: "AirBnB",
           imgText: "We actually never finished this site. We dun learnt tho. Maybe the cards would look better if they had more text",
           imgSrc: require("@/assets/images/img1.png"),
         },
@@ -61,22 +64,44 @@ export default {
           imgSrc: require("@/assets/images/img2.png"),
         },
         {
-          imgTitle: "Raine's Design",
+          imgTitle: "Google Domains",
           imgText: "This is a paragraph 4, also this is Netflix.",
           imgSrc: require("@/assets/images/img3.png"),
         },
         {
-          imgTitle: "Five Below",
+          imgTitle: "Pie in the Sky",
           imgText: "This is a paragraph 5",
           imgSrc: require("@/assets/images/img4.png"),
         },
         {
-          imgTitle: "Dollar Tree",
+          imgTitle: "McDonalds",
           imgText: "This is a paragraph 6",
           imgSrc: require("@/assets/images/img5.png"),
         },
       ]
     }
+  },
+  methods: {
+    onResize() {
+      if (window.innerWidth > 960) {
+        this.carouselHeight = 10
+      } else {
+        this.carouselHeight = 900
+      }
+  }
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth
+    }
+  },
+
+  created() {
+  window.addEventListener('resize', this.onResize)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
   }
 }
 </script>
@@ -91,11 +116,12 @@ export default {
     text-align: center;
     max-width: var(--size15);
     margin: 0 auto;
+    margin-top: var(--size2);
   }
 
   .carousel-title {
-    font-size: var(--font-size7);
-    font-weight: var(--font-weight-300);
+    font-size: var(--font-size8);
+    font-weight: var(--font-weight0);
     letter-spacing: 1px;
   }
 

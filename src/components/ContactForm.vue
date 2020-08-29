@@ -14,6 +14,7 @@
                                 class="small-input"
                                 outlined
                                 required
+                                color="var(--cool-gray1)"
                                 ></v-text-field>
                             </v-col>
                             <v-col
@@ -112,10 +113,16 @@ export default {
 
 <style scoped>
 
+
     .v-btn.v-btn {
         color: var(--light-btn-text);
     }
 
+    .col-12,
+    .col {
+        padding-top: var(--size1);
+        padding-bottom: var(--size1);
+    }
 
     /* MEDIA */
 

@@ -1,9 +1,9 @@
 <template>
     <TheSection class="section">
       <div class="section-header-container">
-        <h2 class="section-title">Our Skills</h2>
-        <hr>
-        <p class="section-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vero laborum text filler yeah </p>
+        <h2 class="section-title">Our <span class="section-title-span">Skills</span></h2>
+        <!-- <hr> -->
+        <!-- <p class="section-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi vero laborum text filler yeah </p> -->
       </div>
         <div class="item-row">
           <div
@@ -23,7 +23,7 @@
           </div>
       </div>
       <div class="section-button-container">
-        <v-btn large color="var(--vuetify-blue)" outlined dark>learn more</v-btn>
+        <v-btn x-large color="var(--vuetify-blue)" outlined dark>learn more</v-btn>
       </div>
     </TheSection>
 </template>
@@ -46,24 +46,24 @@ export default {
           iconSrc: "web",
           imgText: "This is our bread and butter. Web development is the core of what we do. We can make your business come alive on the web.",
           imgTitle: "Web development",
-          color: "var(--vuetify-blue)",
-          backColor: 'background-color: var(--icon-bg-blue);',
+          color: "var(--paragraph-light)",
+          backColor: 'background-color: var(--vuetify-blue);',
           linkColor: "color: var(--vuetify-blue);"
         },
         {
           iconSrc: "dns",
           imgText: "Do you know how to host a website? Do you even know what that means? We do, no worries. We gotchu fam.",
           imgTitle: "Hosting",
-          color: "var(--vuetify-blue)",
-          backColor: 'background-color: var(--icon-bg-blue);',
+          color: "var(--paragraph-light)",
+          backColor: 'background-color: var(--vuetify-blue);',
           linkColor: "color: var(--vuetify-blue);"
         },
         {
           iconSrc: "smartphone",
           imgText: "There's a 52% chance you're browsing on your phone now. Most people do. We ensure your site is mobile friendly.",
           imgTitle: "Responsive design",
-          color: "var(--vuetify-blue)",
-          backColor: 'background-color: var(--icon-bg-blue);',
+          color: "var(--paragraph-light)",
+          backColor: 'background-color: var(--vuetify-blue);',
           linkColor: "color: var(--vuetify-blue);"
         },
         // {

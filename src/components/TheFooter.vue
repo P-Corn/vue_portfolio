@@ -2,6 +2,7 @@
   <v-card class="v-card-footer" height="150">
     <v-footer
       absolute
+      color="var(--vuetify-blue)"
       class="font-weight-medium footer"
     >
       <v-col
@@ -22,22 +23,10 @@ export default {
 
 <style scoped>
 
-    .footer {
-      background-color: black;
-    }
-
     footer{
         height: 100%;
         margin: 0;
         background-color: black;
-    }
-
-    .v-card-footer {
-      background-color: black;
-    }
-
-    template {
-      background-color: black;
     }
 
 

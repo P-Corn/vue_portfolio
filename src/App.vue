@@ -2,29 +2,27 @@
   <div id="app">
     <v-app>
       <TheNavBar />
-      <router-view></router-view>
+      <router-view class="main"></router-view>
+      <TheFooter />
     </v-app>
   </div>
 </template>
 
 <script>
 import TheNavBar from './components/TheNavBar.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    TheNavBar
+    TheNavBar,
+    TheFooter
   }
 }
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+  .main {
+    padding-top: 64px;
+  }
 </style>
