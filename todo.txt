@@ -7,6 +7,7 @@
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
 ~~~~~~ OVERALL TASKS ~~~~~~~
 - Decide on a color Scheme
 - Typography?
