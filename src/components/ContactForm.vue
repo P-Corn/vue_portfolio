@@ -12,7 +12,7 @@
                                 name="name"
                                 label="Your name"
                                 class="small-input"
-                                outlined
+                                filled
                                 required
                                 color="var(--cool-gray1)"
                                 ></v-text-field>
@@ -27,7 +27,7 @@
                                 label="Company name"
                                 class="small-input"
                                 
-                                 outlined
+                                 filled
                                 required
                                 ></v-text-field>
                             </v-col>
@@ -44,7 +44,7 @@
                                     label="Your email"
                                     class="small-input"
                                     
-                                     outlined
+                                     filled
                                     required
                                 ></v-text-field>
                             </v-col>
@@ -58,7 +58,7 @@
                                     label="Phone number"
                                     class="small-input"
                                     
-                                     outlined
+                                     filled
                                     required
                                 ></v-text-field>
                             </v-col>
@@ -70,7 +70,7 @@
                                 name="message"
                                 label="What can we do for you?"
                                 
-                                 outlined
+                                 filled
                                 ></v-textarea>
                             </v-col>
                         </v-row>
@@ -78,7 +78,7 @@
                             <v-col
                             cols="auto"
                             >
-                                <v-btn x-large color="white" class="header-text-button">Send message</v-btn>
+                                <v-btn x-large color="var(--vuetify-blue)" class="header-text-button">Send message</v-btn>
                             </v-col>
                         </v-row>
                 </v-form>
@@ -113,13 +113,12 @@ export default {
 
 <style scoped>
 
-    .contact-form {
-        border: 5px solid #f5f5f5;
+    .contact-form-container {
+        padding: 10px;
     }
 
-
     .v-btn.v-btn {
-        color: var(--light-btn-text);
+        color: var(--paragraph-light);
     }
 
     .col-12,

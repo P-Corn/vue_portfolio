@@ -93,6 +93,14 @@ export default {
         /* box-shadow: var(--boxshadow1); */
     }
 
+    .contact-form {
+        border: 2px solid #f5f5f5;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: var(--boxshadow3);
+        background-color: white;
+    }
+
     /* MEDIA QUERIES */
 
   @media only screen and (min-width: 576px){
@@ -118,11 +126,9 @@ export default {
         justify-content: center;
     }
 
-    .contact-form {
-        border: 2px solid #f5f5f5;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        box-shadow: var(--boxshadow1);
+    .section-text-info .v-icon.v-icon {
+        margin-right: var(--size5);
+        /* box-shadow: var(--boxshadow1); */
     }
   }
 
